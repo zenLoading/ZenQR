@@ -1,0 +1,38 @@
+{
+  "extension_short_name": {
+    "message": "QRCraft"
+  },
+  "amo_summary": {
+    "message": "👌Générateur et scanneur de codes QR facile à utiliser et 🛡️respectueux de la vie privée."
+  },
+  "amo_description": {
+    "message": "QRCraft génère et scanne des codes QR sans dépendre de services tiers.\n\n\n=== Fonctionnalités ===\n\n✅ Générer des codes QR pour :\n-  Onglet actif \n-  Liens \n-  Texte sélectionné \n-  Saisie utilisateur \n\n✅ Scanner le code QR à partir de :\n-  Images \n-  Presse-papiers \n-  N'importe quelle partie de la page Web \n-  Webcam \n\n✅ Se souvenir de ce que vous avez généré ou scanné.\n✅ Tout fonctionne complètement hors ligne, rien n'est envoyé sur le réseau.\n\n\nQRCraft est un logiciel open source distribué sous la licence MIT.\nSi vous appréciez cette extension, veuillez nous donner une évaluation 5 étoiles, merci :)"
+  },
+  "promo_banner_modifying_html": {
+    "message": "👌 Facile à utiliser 🛡️ Respectueux de la vie privée"
+  },
+  "promo_banner_defining_html": {
+    "message": "<span>Code QR<br><strong>Générateur</strong> et <strong>Scanner</strong></span>"
+  },
+  "promo_screenshot_generator_title_html": {
+    "message": "Générer<br>Code QR"
+  },
+  "promo_screenshot_generator_description_html": {
+    "message": "à partir d'onglets, de liens et de texte"
+  },
+  "promo_screenshot_scanner_title_html": {
+    "message": "Scanner<br>Code QR"
+  },
+  "promo_screenshot_scanner_description_html": {
+    "message": "à partir d'images, de webcam, du presse-papiers,<br>ou n'importe où sur la page Web"
+  },
+  "promo_screenshot_history_title_html": {
+    "message": "Gérer<br>l'Historique"
+  },
+  "promo_screenshot_history_description_html": {
+    "message": "des éléments récemment générés et numérisés"
+  },
+  "extension_name": {
+    "message": "QRCraft - Générateur et Scanner de Codes QR"
+  }
+}

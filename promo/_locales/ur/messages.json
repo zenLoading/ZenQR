@@ -1,0 +1,38 @@
+{
+  "extension_short_name": {
+    "message": "QRCraft"
+  },
+  "amo_summary": {
+    "message": "👌استعمال میں آسان، 🛡️رازداری کا خیال رکھنے والا QR کوڈ جنریٹر اور اسکینر۔"
+  },
+  "amo_description": {
+    "message": "QRCraft تھرڈ پارٹی سروسز پر انحصار کیے بغیر QR کوڈز کو جنریٹ اور اسکین کرتا ہے۔\n\n\n=== خصوصیات ===\n\n✅ QR کوڈز ان کے لیے جنریٹ کریں:\n-  فعال ٹیب \n-  لنکس \n-  منتخب کردہ متن \n-  صارف کا ان پٹ \n\n✅ QR کوڈز یہاں سے اسکین کریں:\n-  تصاویر \n-  کلپ بورڈ \n-  ویب پیج کا کوئی بھی حصہ \n-  ویب کیم \n\n✅ یاد رکھیں کہ آپ نے کیا جنریٹ یا اسکین کیا ہے۔\n✅ سب کچھ مکمل طور پر آف لائن کام کرتا ہے، نیٹ ورک پر کچھ بھی نہیں بھیجا جاتا ہے۔\n\n\nQRCraft ایک اوپن سورس سافٹ ویئر ہے جو MIT لائسنس کے تحت تقسیم کیا گیا ہے۔\nاگر آپ کو یہ ایکسٹینشن پسند ہے، تو براہ کرم ہمیں 5-ستارہ جائزہ دیں، شکریہ :)"
+  },
+  "promo_banner_modifying_html": {
+    "message": "👌 استعمال میں آسان 🛡️ رازداری کے لیے دوستانہ"
+  },
+  "promo_banner_defining_html": {
+    "message": "<span>QR کوڈ<br><strong>جنریٹر</strong> اور <strong>اسکینر</strong></span>"
+  },
+  "promo_screenshot_generator_title_html": {
+    "message": "QR کوڈ<br>جنریٹ کریں"
+  },
+  "promo_screenshot_generator_description_html": {
+    "message": "ٹیبز، لنکس اور متن سے"
+  },
+  "promo_screenshot_scanner_title_html": {
+    "message": "QR کوڈ<br>اسکین کریں"
+  },
+  "promo_screenshot_scanner_description_html": {
+    "message": "تصاویر، ویب کیم، کلپ بورڈ،<br>یا ویب پیج میں کہیں سے بھی"
+  },
+  "promo_screenshot_history_title_html": {
+    "message": "تاریخ<br>مینج کریں"
+  },
+  "promo_screenshot_history_description_html": {
+    "message": "حالیہ جنریٹ اور اسکین کیے گئے آئٹمز کا"
+  },
+  "extension_name": {
+    "message": "QRCraft - کیو آر کوڈ جنریٹر اور اسکینر"
+  }
+}

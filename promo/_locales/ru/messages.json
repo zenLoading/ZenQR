@@ -1,0 +1,38 @@
+{
+  "extension_short_name": {
+    "message": "QRCraft"
+  },
+  "amo_summary": {
+    "message": "👌Простой в использовании, 🛡️конфиденциальный генератор и сканер QR-кодов."
+  },
+  "amo_description": {
+    "message": "QRCraft генерирует и сканирует QR-коды без использования сторонних сервисов.\n\n\n=== Функции ===\n\n✅ Генерация QR-кодов для:\n-  Активной вкладки \n-  Ссылок \n-  Выделенного текста \n-  Ввода пользователя \n\n✅ Сканирование QR-кодов из:\n-  Изображений \n-  Буфера обмена \n-  Любой части веб-страницы \n-  Веб-камеры \n\n✅ Запоминание сгенерированных или отсканированных данных.\n✅ Всё работает полностью в автономном режиме, ничего не отправляется по сети.\n\n\nQRCraft - это программное обеспечение с открытым исходным кодом, распространяемое по лицензии MIT.\nЕсли вам нравится это расширение, пожалуйста, поставьте нам 5-звёздочный отзыв, спасибо :)"
+  },
+  "promo_banner_modifying_html": {
+    "message": "👌 Простой в использовании 🛡️ Конфиденциальный"
+  },
+  "promo_banner_defining_html": {
+    "message": "<span>QR-код<br><strong>Генератор</strong> и <strong>Сканер</strong></span>"
+  },
+  "promo_screenshot_generator_title_html": {
+    "message": "Генерация<br>QR-кода"
+  },
+  "promo_screenshot_generator_description_html": {
+    "message": "из вкладок, ссылок и текста"
+  },
+  "promo_screenshot_scanner_title_html": {
+    "message": "Сканирование<br>QR-кода"
+  },
+  "promo_screenshot_scanner_description_html": {
+    "message": "из изображений, веб-камеры, буфера обмена,<br>или в любом месте веб-страницы"
+  },
+  "promo_screenshot_history_title_html": {
+    "message": "Управление<br>историей"
+  },
+  "promo_screenshot_history_description_html": {
+    "message": "недавно сгенерированных и отсканированных элементов"
+  },
+  "extension_name": {
+    "message": "QRCraft - Генератор и сканер QR-кодов"
+  }
+}

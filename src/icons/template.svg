@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360px" height="360px" viewBox="0 0 360 360" version="1.2">
+<g id="surface-template">
+<path style="fill:none;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(15.686275%,20%,18.82353%);stroke-opacity:1;stroke-miterlimit:10;" d="M 90 40 L 90 320 L 280 320 L 280 130 L 200 40 Z "/>
+<path style="fill:none;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(15.686275%,20%,18.82353%);stroke-opacity:1;stroke-miterlimit:10;" d="M 200 40 L 200 130 L 280 130 "/>
+<path style="fill:none;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(15.686275%,20%,18.82353%);stroke-opacity:1;stroke-miterlimit:10;" d="M 130 190 L 240 190 "/>
+<path style="fill:none;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(15.686275%,20%,18.82353%);stroke-opacity:1;stroke-miterlimit:10;" d="M 130 250 L 240 250 "/>
+</g>
+</svg>

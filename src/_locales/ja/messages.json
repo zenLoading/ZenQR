@@ -1,0 +1,565 @@
+{
+  "extension_name": {
+    "message": "QRCraft - QRコードジェネレーター＆スキャナー"
+  },
+  "extension_short_name": {
+    "message": "QRCraft",
+    "description": "[keep-original]"
+  },
+  "extension_description": {
+    "message": "オフラインでQRコードを生成またはスキャンします。"
+  },
+  "save_image_btn": {
+    "message": "保存"
+  },
+  "save_image_btn_title": {
+    "message": "このQRコードの画像を保存する"
+  },
+  "copy_image_btn": {
+    "message": "コピー"
+  },
+  "copy_image_btn_title": {
+    "message": "このQRコード画像をクリップボードにコピーする"
+  },
+  "copy_image_ok": {
+    "message": "コピーOK!"
+  },
+  "open_url_btn": {
+    "message": "URLを開く"
+  },
+  "open_url_btn_title": {
+    "message": "スキャン結果を新しいタブで開く"
+  },
+  "tab_generate_title": {
+    "message": "生成"
+  },
+  "tab_scan_title": {
+    "message": "スキャン"
+  },
+  "tab_history_title": {
+    "message": "履歴"
+  },
+  "clear_history_btn": {
+    "message": "クリア"
+  },
+  "clear_history_btn_title": {
+    "message": "履歴をクリアする"
+  },
+  "github_link_title": {
+    "message": "QRCraftのGithub上のプロジェクトページを訪問する"
+  },
+  "toggle_generator_options_btn_label": {
+    "message": "オプション"
+  },
+  "toggle_generator_options_btn_title": {
+    "message": "QRコード生成オプションを表示/非表示"
+  },
+  "error_correction_level_btn_low_title": {
+    "message": "低、データバイトの7%を復元できます"
+  },
+  "error_correction_level_btn_medium_title": {
+    "message": "中、データバイトの15%を復元できます"
+  },
+  "error_correction_level_btn_quartile_title": {
+    "message": "4分の1、データバイトの25%を復元できます"
+  },
+  "error_correction_level_btn_high_title": {
+    "message": "高、データバイトの30%を復元できます"
+  },
+  "error_correction_level_label": {
+    "message": "訂正:"
+  },
+  "error_correction_level_label_title": {
+    "message": "エラー訂正レベル"
+  },
+  "content_length_label_title": {
+    "message": "QRコードのコンテンツ長（文字数）"
+  },
+  "finder_style_label": {
+    "message": "ファインダースタイル:"
+  },
+  "finder_style_label_title": {
+    "message": "ファインダーパターン（3つの隅のマーカー）のスタイルを選択"
+  },
+  "module_style_label": {
+    "message": "モジュールスタイル:"
+  },
+  "module_style_label_title": {
+    "message": "データモジュールのスタイルを選択"
+  },
+  "image_size_label": {
+    "message": "画像サイズ:"
+  },
+  "image_size_label_title": {
+    "message": "QRコードの画像サイズを設定"
+  },
+  "content_length_label": {
+    "message": "長さ:"
+  },
+  "content_title": {
+    "message": "QRコードのコンテンツ"
+  },
+  "content_placeholder": {
+    "message": "テキストを入力してQRコードを作成"
+  },
+  "context_menu_make_qr_code_for_link": {
+    "message": "このリンクのQRコードを生成"
+  },
+  "context_menu_make_qr_code_for_selected_text": {
+    "message": "「%s」のQRコードを生成"
+  },
+  "context_menu_scan_qr_code_in_image": {
+    "message": "画像内のQRコードをスキャン"
+  },
+  "context_menu_pick_region_to_scan": {
+    "message": "スキャン領域を選択..."
+  },
+  "context_menu_scan_with_camera": {
+    "message": "カメラでスキャン"
+  },
+  "scan_region_picker_tips_scrollwheel": {
+    "message": "スクロールホイール"
+  },
+  "scan_region_picker_tips_adjust_size": {
+    "message": "サイズ調整"
+  },
+  "scan_region_picker_tips_leftclick": {
+    "message": "左クリック"
+  },
+  "scan_region_picker_tips_scan": {
+    "message": "スキャン"
+  },
+  "scan_region_picker_tips_esc": {
+    "message": "Esc",
+    "description": "[keep-original]"
+  },
+  "scan_region_picker_tips_exit": {
+    "message": "終了"
+  },
+  "copy_btn": {
+    "message": "コピー"
+  },
+  "copy_btn_copied": {
+    "message": "コピーしました"
+  },
+  "decoding_failed": {
+    "message": "デコードに失敗しました: $MSG$",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      }
+    }
+  },
+  "unable_to_decode": {
+    "message": "QRコードをデコードできません"
+  },
+  "scan_instructions_html": {
+    "message": "画像を右クリックし、<br>「<img class=\"icon\" src=\"../icons/qrcraft.svg\"></img> この画像のQRコードをスキャン」を選択"
+  },
+  "scan_from_clipboard_instructions_html": {
+    "message": "クリップボードの画像をスキャンするには、<br><kbd>Ctrl</kbd> + <kbd>V</kbd> <br> Mac の場合は <kbd>⌘</kbd> + <kbd>V</kbd> を押し"
+  },
+  "pick_region_to_scan_btn": {
+    "message": "スキャン領域を選択"
+  },
+  "camera_scan_btn": {
+    "message": "カメラでスキャン"
+  },
+  "rescan_btn_label": {
+    "message": "新しいスキャン"
+  },
+  "rescan_btn_title": {
+    "message": "別のスキャンを開始"
+  },
+  "grant_permissions_instructions_html": {
+    "message": "この機能には次の追加の権限が必要です。<br><br><strong>$PERMISSION$</strong><br>",
+    "placeholders": {
+      "permission": {
+        "content": "$1"
+      }
+    }
+  },
+  "grant_permissions_btn": {
+    "message": "権限を許可"
+  },
+  "grant_camera_permission_name": {
+    "message": "カメラへのアクセス"
+  },
+  "grant_permissions_window_title": {
+    "message": "許可を付与"
+  },
+  "grant_camera_initial_instructions_firefox_html": {
+    "message": "これから QRCraft にカメラへのアクセスを許可します。<br><br>QRCraft にカメラの使用を許可するか尋ねられたら、<strong>\"すべてのカメラでこの設定を記憶する\"</strong> のチェックボックスがオンになっていることを確認してから、<strong>\"許可\"</strong> をクリックしてください。<br><br>下のボタンをクリックして開始します。"
+  },
+  "grant_camera_initial_instructions_chrome_html": {
+    "message": "これから QRCraft にカメラへのアクセスを許可します。<br><br>QRCraft にカメラの使用を許可するか尋ねられたら、<strong>\"サイトの閲覧中は許可\"</strong> を選択してください。<br><br>下のボタンをクリックして開始します。"
+  },
+  "grant_camera_blocked_instructions_firefox_html": {
+    "message": "QRCraftがカメラを使用することが<strong>ブロック</strong>されているようです。<br><br>これを変更するには、アドレスバーの左側にある <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> アイコンをクリックし、「カメラの使用」行の「ブロック」のステータスを<strong>削除</strong>してください。<br><br>その後、このページを再読み込みしてください。"
+  },
+  "grant_camera_blocked_instructions_chrome_html": {
+    "message": "QRCraftがカメラを使用することが<strong>ブロック</strong>されているようです。<br><br>これを変更するには、アドレスバーの <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> アイコンをクリックし、<strong>QRCraft - QRコードジェネレーター＆スキャナー がカメラにアクセスすることを常に許可</strong> を選択してください。<br><br>その後、このページを再読み込みしてください。"
+  },
+  "grant_camera_granted_instructions_html": {
+    "message": "QRCraftはカメラを使用する権限を付与されました。<br><br>このページは今閉じても構いません。"
+  },
+  "grant_page_refresh_btn": {
+    "message": "再読み込み"
+  },
+  "grant_page_dont_see_icon_btn_html": {
+    "message": "<img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> アイコンが見つかりません！"
+  },
+  "grant_page_dont_see_icon_instructions_html": {
+    "message": "一部のブラウザーでは数秒後にアイコンが非表示になります。下のボタンをクリックして表示してください。"
+  },
+  "grant_page_dont_see_icon_instructions_reveal_icon_btn_label": {
+    "message": "アイコンを表示"
+  },
+  "grant_page_close_btn": {
+    "message": "閉じる"
+  },
+  "or": {
+    "message": "または"
+  },
+  "scanning": {
+    "message": "スキャン中..."
+  },
+  "unable_to_decode_qr_code": {
+    "message": "QRコードをデコードできません"
+  },
+  "browser_action_command_description": {
+    "message": "ポップアップを表示"
+  },
+  "select_region_to_scan_command_description": {
+    "message": "スキャン領域を選択"
+  },
+  "scan_with_camera_command_description": {
+    "message": "カメラでスキャン"
+  },
+  "picker_close_btn_title": {
+    "message": "閉じる"
+  },
+  "disable_history_btn_title": {
+    "message": "履歴記録を一時停止"
+  },
+  "disable_history_btn_label": {
+    "message": "一時停止"
+  },
+  "enable_history_btn_title": {
+    "message": "履歴記録を再開"
+  },
+  "enable_history_btn_label": {
+    "message": "再開"
+  },
+  "remove_history_btn_title": {
+    "message": "履歴からこのエントリを削除"
+  },
+  "select_region_to_scan_open_command_description": {
+    "message": "スキャンする領域を選択してURLを開く"
+  },
+  "select_region_to_scan_open_new_bg_tab_command_description": {
+    "message": "スキャンする領域を選択して、新しいバックグラウンドタブでURLを開く"
+  },
+  "select_region_to_scan_open_new_fg_tab_command_description": {
+    "message": "スキャンする領域を選択して、新しいフォアグラウンドタブでURLを開く"
+  },
+  "picker_url_mode_auto_open_no": {
+    "message": "URLを自動的に開かない"
+  },
+  "picker_url_mode_auto_open_in_current_tab": {
+    "message": "現在のタブでURLを自動的に開く"
+  },
+  "picker_url_mode_auto_open_in_bg_tab": {
+    "message": "新しいバックグラウンドタブでURLを自動的に開く"
+  },
+  "picker_url_mode_auto_open_in_fg_tab": {
+    "message": "新しいフォアグラウンドタブでURLを自動的に開く"
+  },
+  "copy_btn_title": {
+    "message": "クリップボードにコピー"
+  },
+  "grant_permissions_error_details_summary": {
+    "message": "エラーの詳細"
+  },
+  "grant_camera_unusable_instructions_html": {
+    "message": "カメラにアクセスできないようです。他にカメラを使用しているプログラムはありますか？<br><br>カメラを使用している可能性のある他のプログラムを閉じてから、このページを更新してください。"
+  },
+  "grant_camera_unknow_error_instructions_html": {
+    "message": "カメラへのアクセスを取得しようとしたときに、不明なエラーが発生しました。<br><br>このページを更新して、もう一度お試しください。"
+  },
+  "unable_to_access_camera": {
+    "message": "カメラにアクセスできません。他にカメラを使用しているプログラムはありますか？"
+  },
+  "settings_window_title": {
+    "message": "QRCraftの設定"
+  },
+  "settings_scan_success_sound_enabled_label": {
+    "message": "スキャン成功時に音を再生"
+  },
+  "settings_scan_success_sound_enabled_explainer": {
+    "message": "QRコードが正常にスキャンされたときにビープ音を再生します。"
+  },
+  "settings_white_on_black_qr_ccode_in_dark_mode_label": {
+    "message": "ダークモードで黒い背景に白いQRコードを生成する"
+  },
+  "settings_white_on_black_qr_ccode_in_dark_mode_explainer": {
+    "message": "ダークモードでは、暗い背景に明るい前景色のQRコードを生成します。一部のスキャナでは、このようなQRコードのスキャンに問題が発生する可能性があります。「保存」ボタンと「コピー」ボタンを使用して保存またはコピーしたQRコードは、常に背景が白で、前景が黒になります。"
+  },
+  "settings_scanner_legend": {
+    "message": "QRコードスキャナー"
+  },
+  "settings_generator_legend": {
+    "message": "QRコードジェネレーター"
+  },
+  "tab_settings_title": {
+    "message": "QRCraftの設定を変更する"
+  },
+  "settings_config_keyboard_shortcuts_btn_label": {
+    "message": "キーボードショートカットを設定する"
+  },
+  "unable_to_access_camera_unknown_error": {
+    "message": "カメラにアクセスできません。予期しないエラーが発生しました。"
+  },
+  "scan_region_picker_tips_rescan": {
+    "message": "新しいスキャン"
+  },
+  "scan_region_picker_tips_open_url_mode_title": {
+    "message": "スキャン結果のURLの処理方法を選択してください"
+  },
+  "unable_to_load_image": {
+    "message": "画像を読み込めません"
+  },
+  "settings_picker_pause_videos_onload_enabled_label": {
+    "message": "「スキャンする領域を選択」中にすべての動画を一時停止"
+  },
+  "settings_picker_pause_videos_onload_enabled_explainer": {
+    "message": "スキャン領域を選択している間、動画を一時停止してQRコードを見逃さないようにします。"
+  },
+  "image_scanner_failed_to_load_image": {
+    "message": "画像の読み込みに失敗しました。ソースにアクセスできないか、制限されている可能性があります。代わりに画面の領域をスキャンしてみてください。"
+  },
+  "loading_image": {
+    "message": "画像を読み込み中..."
+  },
+  "batch_generator_link_label": {
+    "message": "一括"
+  },
+  "batch_generator_link_title": {
+    "message": "一括QRコード生成を新しいタブで開く"
+  },
+  "batch_generator_input_placeholder": {
+    "message": "1行につき1つのQRコード（例）\nhttps://example.com/1\nhttps://example.com/2"
+  },
+  "batch_generator_instructions": {
+    "message": "以下に複数行のテキストを入力または貼り付けてください。空でない各行がそれぞれ1つのQRコードになります。"
+  },
+  "batch_generator_saving_all_btn": {
+    "message": "保存中..."
+  },
+  "batch_generator_window_title": {
+    "message": "QRCraft 一括生成"
+  },
+  "context_menu_batch_generate_from_selection": {
+    "message": "QRコードを一括生成（1行につき1つ）"
+  },
+  "logo_choose_btn": {
+    "message": "画像を選択"
+  },
+  "logo_choose_btn_title": {
+    "message": "QRコードの中央に埋め込む画像を選択"
+  },
+  "logo_ec_level_hint": {
+    "message": "ヒント: ロゴを使用する場合は、より確実に読み取れるよう訂正レベルを「高」に設定してください。"
+  },
+  "logo_label": {
+    "message": "ロゴ:"
+  },
+  "logo_label_title": {
+    "message": "QRコードの中央に小さなロゴ画像を埋め込む"
+  },
+  "logo_remove_btn_title": {
+    "message": "ロゴを削除"
+  },
+  "logo_show_checkbox_label": {
+    "message": "表示"
+  },
+  "logo_show_checkbox_title": {
+    "message": "生成されたQRコードにロゴを表示する"
+  },
+  "export_history_btn": {
+    "message": "エクスポート"
+  },
+  "export_history_btn_title": {
+    "message": "履歴をJSONファイルにエクスポート"
+  },
+  "import_history_btn": {
+    "message": "インポート"
+  },
+  "import_history_btn_title": {
+    "message": "以前にエクスポートしたJSONファイルから履歴をインポート"
+  },
+  "import_history_error": {
+    "message": "履歴のインポートに失敗しました: 無効または破損したファイルです"
+  },
+  "template_apply_btn": {
+    "message": "QRコードを生成"
+  },
+  "template_email_body_placeholder": {
+    "message": "本文"
+  },
+  "template_email_subject_placeholder": {
+    "message": "件名"
+  },
+  "template_email_to_placeholder": {
+    "message": "宛先のメールアドレス"
+  },
+  "template_event_description_placeholder": {
+    "message": "説明"
+  },
+  "template_event_end_label": {
+    "message": "終了:"
+  },
+  "template_event_location_placeholder": {
+    "message": "場所"
+  },
+  "template_event_start_label": {
+    "message": "開始:"
+  },
+  "template_event_title_placeholder": {
+    "message": "予定のタイトル"
+  },
+  "template_phone_placeholder": {
+    "message": "電話番号"
+  },
+  "template_sms_message_placeholder": {
+    "message": "メッセージ"
+  },
+  "template_sms_phone_placeholder": {
+    "message": "電話番号"
+  },
+  "template_type_email": {
+    "message": "メール"
+  },
+  "template_type_event": {
+    "message": "カレンダーの予定"
+  },
+  "template_type_phone": {
+    "message": "電話番号"
+  },
+  "template_type_sms": {
+    "message": "SMS"
+  },
+  "template_type_vcard": {
+    "message": "連絡先（vCard）"
+  },
+  "template_type_wifi": {
+    "message": "WiFiネットワーク"
+  },
+  "template_vcard_email_placeholder": {
+    "message": "メールアドレス"
+  },
+  "template_vcard_first_name_placeholder": {
+    "message": "名"
+  },
+  "template_vcard_last_name_placeholder": {
+    "message": "姓"
+  },
+  "template_vcard_org_placeholder": {
+    "message": "組織"
+  },
+  "template_vcard_phone_placeholder": {
+    "message": "電話番号"
+  },
+  "template_vcard_url_placeholder": {
+    "message": "ウェブサイトURL"
+  },
+  "template_wifi_encryption_wep": {
+    "message": "WEP"
+  },
+  "template_wifi_encryption_wpa": {
+    "message": "WPA/WPA2/WPA3"
+  },
+  "template_wifi_hidden_label": {
+    "message": "非公開ネットワーク"
+  },
+  "template_wifi_no_password": {
+    "message": "パスワードなし"
+  },
+  "template_wifi_password_placeholder": {
+    "message": "パスワード"
+  },
+  "template_wifi_ssid_placeholder": {
+    "message": "ネットワーク名（SSID）"
+  },
+  "toggle_template_builder_btn_label": {
+    "message": "テンプレート"
+  },
+  "toggle_template_builder_btn_title": {
+    "message": "QRコードテンプレートビルダーの表示/非表示（WiFi、連絡先、予定など）"
+  },
+  "settings_appearance_legend": {
+    "message": "外観"
+  },
+  "settings_data_legend": {
+    "message": "データ"
+  },
+  "settings_generator_defaults_explainer": {
+    "message": "これらの既定値は、新しいQRコードを作成するたびに使用されます。ジェネレーターの「オプション」パネルから、QRコードごとに個別に上書きすることもできます。"
+  },
+  "settings_history_legend": {
+    "message": "履歴"
+  },
+  "settings_history_max_items_explainer": {
+    "message": "この上限に達すると、最も古い項目が自動的に削除されます。"
+  },
+  "settings_history_max_items_label": {
+    "message": "保持件数"
+  },
+  "settings_motion_explainer": {
+    "message": "QRCraft全体で使用されるアニメーションとトランジションを制御します。"
+  },
+  "settings_motion_label": {
+    "message": "モーション"
+  },
+  "settings_motion_option_full": {
+    "message": "フル"
+  },
+  "settings_motion_option_reduced": {
+    "message": "低減"
+  },
+  "settings_motion_option_system": {
+    "message": "システム"
+  },
+  "settings_reset_btn_label": {
+    "message": "設定を初期状態に戻す"
+  },
+  "settings_reset_confirm_btn_label": {
+    "message": "もう一度クリックしてリセットを確定"
+  },
+  "settings_reset_explainer": {
+    "message": "外観、生成のデフォルト設定、スキャナーのオプションを初期値に戻します。スキャン・生成の履歴には影響しません。"
+  },
+  "settings_theme_explainer": {
+    "message": "QRCraftをシステムのテーマに合わせるか、常に特定のテーマを使用するかを選択します。"
+  },
+  "settings_theme_label": {
+    "message": "テーマ"
+  },
+  "settings_theme_option_dark": {
+    "message": "ダーク"
+  },
+  "settings_theme_option_light": {
+    "message": "ライト"
+  },
+  "settings_theme_option_system": {
+    "message": "システム"
+  },
+  "batch_generator_save_all_btn": {
+    "message": "すべて保存（$COUNT$）",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  }
+}

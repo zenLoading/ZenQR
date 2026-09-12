@@ -1,0 +1,38 @@
+{
+  "extension_short_name": {
+    "message": "QRCraft"
+  },
+  "amo_summary": {
+    "message": "👌সহজে ব্যবহারযোগ্য, 🛡️গোপনীয়তা-বান্ধব QR কোড জেনারেটর এবং স্ক্যানার।"
+  },
+  "amo_description": {
+    "message": "QRCraft তৃতীয় পক্ষের পরিষেবাগুলির উপর নির্ভর না করে QR কোড তৈরি এবং স্ক্যান করে।\n\n\n=== বৈশিষ্ট্য ===\n\n✅ এর জন্য QR কোড তৈরি করুন:\n-  সক্রিয় ট্যাব \n-  লিঙ্ক \n-  নির্বাচিত পাঠ্য \n-  ব্যবহারকারীর ইনপুট \n\n✅ QR কোড স্ক্যান করুন:\n-  ছবি \n-  ক্লিপবোর্ড \n-  ওয়েব পৃষ্ঠার যেকোনো অংশ \n-  ওয়েবক্যাম \n\n✅ আপনি যা তৈরি বা স্ক্যান করেছেন তা মনে রাখুন।\n✅ সবকিছু সম্পূর্ণ অফলাইনে কাজ করে, নেটওয়ার্কের মাধ্যমে কিছুই পাঠানো হয় না।\n\n\nQRCraft হল MIT লাইসেন্সের অধীনে বিতরণ করা ওপেন-সোর্স সফ্টওয়্যার।\nআপনি যদি এই এক্সটেনশনটি উপভোগ করেন, তাহলে অনুগ্রহ করে আমাদের 5-তারা রেটিং দিন, ধন্যবাদ :)"
+  },
+  "promo_banner_modifying_html": {
+    "message": "👌ব্যবহার করা সহজ 🛡️গোপনীয়তা-বান্ধব"
+  },
+  "promo_banner_defining_html": {
+    "message": "<span>QR কোড<br><strong>জেনারেটর</strong> এবং <strong>স্ক্যানার</strong></span>"
+  },
+  "promo_screenshot_generator_title_html": {
+    "message": "QR Code<br>তৈরি করুন"
+  },
+  "promo_screenshot_generator_description_html": {
+    "message": "ট্যাব, লিঙ্ক এবং পাঠ্য থেকে"
+  },
+  "promo_screenshot_scanner_title_html": {
+    "message": "QR Code<br>স্ক্যান করুন"
+  },
+  "promo_screenshot_scanner_description_html": {
+    "message": "ছবি, ওয়েবক্যাম, ক্লিপবোর্ড,<br>অথবা ওয়েব পৃষ্ঠার যেকোনো স্থান থেকে"
+  },
+  "promo_screenshot_history_title_html": {
+    "message": "ইতিহাস<br>পরিচালনা করুন"
+  },
+  "promo_screenshot_history_description_html": {
+    "message": "সম্প্রতি তৈরি এবং স্ক্যান করা আইটেমগুলির"
+  },
+  "extension_name": {
+    "message": "QRCraft - কিউআর কোড জেনারেটর এবং স্ক্যানার"
+  }
+}

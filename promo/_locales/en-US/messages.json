@@ -1,0 +1,38 @@
+{
+  "extension_short_name": {
+    "message": "QRCraft"
+  },
+  "amo_summary": {
+    "message": "👌Easy-to-use, 🛡️privacy-friendly QR code generator and scanner."
+  },
+  "amo_description": {
+    "message": "QRCraft generates and scans QR codes without relying on 3rd-party services.\n\n\n=== Features ===\n\n✅ Generate QR codes for:\n-  Active tab \n-  Links \n-  Selected text \n-  User input \n\n✅ Scan QR code from:\n-  Images \n-  Clipboard \n-  Any part of the web page \n-  Webcam \n\n✅ Remember what you generated or scanned.\n✅ Everything works completely offline, nothing is sent over the network.\n\n\nQRCraft is open-source software distributed under the MIT license.\nIf you enjoy this extension, please give us a 5-star review, thank you :)"
+  },
+  "promo_banner_modifying_html": {
+    "message": "👌Easy-to-use 🛡️Privacy-friendly"
+  },
+  "promo_banner_defining_html": {
+    "message": "<span>QR Code<br><strong>Generator</strong> and <strong>Scanner</strong>"
+  },
+  "promo_screenshot_generator_title_html": {
+    "message": "Generate<br>QR Code"
+  },
+  "promo_screenshot_generator_description_html": {
+    "message": "from tabs, links and text"
+  },
+  "promo_screenshot_scanner_title_html": {
+    "message": "Scan<br>QR Code"
+  },
+  "promo_screenshot_scanner_description_html": {
+    "message": "from images, webcam, clipboard, <br> or anywhere in the web page"
+  },
+  "promo_screenshot_history_title_html": {
+    "message": "Manage<br>History"
+  },
+  "promo_screenshot_history_description_html": {
+    "message": "of recently generated and scanned items"
+  },
+  "extension_name": {
+    "message": "QRCraft - QR Code Generator and Scanner"
+  }
+}

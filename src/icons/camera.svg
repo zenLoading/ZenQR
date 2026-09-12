@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360px" height="360px"
+    viewBox="0 0 360 360" version="1.2" xmlns:bx="https://boxy-svg.com">
+    <g id="surface89156">
+        <path
+            style="stroke-width: 30px; stroke-linecap: round; stroke-linejoin: round; stroke: rgb(40, 51, 48); stroke-opacity: 1; stroke-miterlimit: 10; paint-order: fill; fill: none;"
+            d="M 40 100 L 60 80 L 220 80 L 240 60 L 300 60 L 320 80 L 320 300 L 300 320 L 60 320 L 40 300 L 40 100 ">
+        </path>
+    </g>
+    <ellipse style="stroke-width: 30px; fill: none; stroke: rgb(40, 51, 48);" cx="180" cy="200" rx="62.459" ry="62.459">
+    </ellipse>
+</svg>

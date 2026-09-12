@@ -1,0 +1,566 @@
+{
+  "extension_name": {
+    "message": "QRCraft - QR 코드 생성기 및 스캐너"
+  },
+  "extension_short_name": {
+    "message": "QRCraft",
+    "description": "[keep-original]"
+  },
+  "extension_description": {
+    "message": "오프라인에서 QR 코드를 생성하거나 스캔합니다."
+  },
+  "save_image_btn": {
+    "message": "저장"
+  },
+  "save_image_btn_title": {
+    "message": "이 QR 코드 이미지 저장"
+  },
+  "copy_image_btn": {
+    "message": "복사"
+  },
+  "copy_image_btn_title": {
+    "message": "이 QR 코드 이미지를 클립보드에 복사"
+  },
+  "copy_image_ok": {
+    "message": "복사됨!"
+  },
+  "open_url_btn": {
+    "message": "URL 열기"
+  },
+  "open_url_btn_title": {
+    "message": "새 탭에서 스캔한 URL 열기"
+  },
+  "tab_generate_title": {
+    "message": "생성"
+  },
+  "tab_scan_title": {
+    "message": "스캔"
+  },
+  "tab_history_title": {
+    "message": "기록"
+  },
+  "clear_history_btn": {
+    "message": "지우기"
+  },
+  "clear_history_btn_title": {
+    "message": "기록 지우기"
+  },
+  "disable_history_btn_title": {
+    "message": "기록 일시 중지"
+  },
+  "disable_history_btn_label": {
+    "message": "중지"
+  },
+  "enable_history_btn_title": {
+    "message": "기록 다시 시작"
+  },
+  "enable_history_btn_label": {
+    "message": "재개"
+  },
+  "remove_history_btn_title": {
+    "message": "기록에서 이 항목 삭제"
+  },
+  "github_link_title": {
+    "message": "QRCraft의 Github 프로젝트 페이지 방문"
+  },
+  "toggle_generator_options_btn_label": {
+    "message": "옵션"
+  },
+  "toggle_generator_options_btn_title": {
+    "message": "QR 코드 생성기 옵션 표시/숨기기"
+  },
+  "error_correction_level_btn_low_title": {
+    "message": "낮음, 데이터 바이트의 7% 복구 가능"
+  },
+  "error_correction_level_btn_medium_title": {
+    "message": "중간, 데이터 바이트의 15% 복구 가능"
+  },
+  "error_correction_level_btn_quartile_title": {
+    "message": "사분위수, 데이터 바이트의 25% 복구 가능"
+  },
+  "error_correction_level_btn_high_title": {
+    "message": "높음, 데이터 바이트의 30% 복구 가능"
+  },
+  "error_correction_level_label": {
+    "message": "수정:"
+  },
+  "error_correction_level_label_title": {
+    "message": "오류 수정 수준"
+  },
+  "content_length_label_title": {
+    "message": "QR 코드 콘텐츠 길이(문자 수)"
+  },
+  "finder_style_label": {
+    "message": "파인더 스타일:"
+  },
+  "finder_style_label_title": {
+    "message": "파인더 패턴(세 모서리 마커)의 스타일 선택"
+  },
+  "module_style_label": {
+    "message": "모듈 스타일:"
+  },
+  "module_style_label_title": {
+    "message": "데이터 모듈의 스타일 선택"
+  },
+  "image_size_label": {
+    "message": "이미지 크기:"
+  },
+  "image_size_label_title": {
+    "message": "QR 코드의 이미지 크기 설정"
+  },
+  "content_length_label": {
+    "message": "길이:"
+  },
+  "content_title": {
+    "message": "QR 코드 콘텐츠"
+  },
+  "content_placeholder": {
+    "message": "QR 코드를 생성할 텍스트를 입력하세요."
+  },
+  "context_menu_make_qr_code_for_link": {
+    "message": "이 링크에 대한 QR 코드 생성"
+  },
+  "context_menu_make_qr_code_for_selected_text": {
+    "message": "\"%s\"에 대한 QR 코드 생성"
+  },
+  "context_menu_scan_qr_code_in_image": {
+    "message": "이미지에서 QR 코드 스캔"
+  },
+  "context_menu_pick_region_to_scan": {
+    "message": "스캔할 영역 선택…"
+  },
+  "context_menu_scan_with_camera": {
+    "message": "카메라로 스캔"
+  },
+  "scan_region_picker_tips_scrollwheel": {
+    "message": "스크롤 휠"
+  },
+  "scan_region_picker_tips_adjust_size": {
+    "message": "크기 조정"
+  },
+  "scan_region_picker_tips_leftclick": {
+    "message": "왼쪽 클릭"
+  },
+  "scan_region_picker_tips_scan": {
+    "message": "스캔"
+  },
+  "scan_region_picker_tips_esc": {
+    "message": "Esc",
+    "description": "[keep-original]"
+  },
+  "scan_region_picker_tips_exit": {
+    "message": "나가기"
+  },
+  "copy_btn": {
+    "message": "복사"
+  },
+  "copy_btn_copied": {
+    "message": "복사됨"
+  },
+  "decoding_failed": {
+    "message": "디코딩 실패: $MSG$",
+    "placeholders": {
+      "msg": {
+        "content": "$1",
+        "default": "알 수 없는 오류"
+      }
+    }
+  },
+  "unable_to_decode": {
+    "message": "QR 코드를 디코딩할 수 없습니다."
+  },
+  "scan_instructions_html": {
+    "message": "이미지를 마우스 오른쪽 버튼으로 클릭하고 <br>\"<img class=\"icon\" src=\"../icons/qrcraft.svg\"></img> 이 이미지에서 QR 코드 스캔\"을 선택하세요."
+  },
+  "scan_from_clipboard_instructions_html": {
+    "message": "클립보드의 이미지를 스캔하려면 <br><kbd>Ctrl</kbd> + <kbd>V</kbd> <br> 또는 Mac에서는 <kbd>⌘</kbd> + <kbd>V</kbd> 를 누르세요"
+  },
+  "pick_region_to_scan_btn": {
+    "message": "스캔할 영역 선택"
+  },
+  "camera_scan_btn": {
+    "message": "카메라로 스캔"
+  },
+  "rescan_btn_label": {
+    "message": "새로 스캔"
+  },
+  "rescan_btn_title": {
+    "message": "다른 스캔 시작"
+  },
+  "grant_permissions_instructions_html": {
+    "message": "이 기능에는 다음과 같은 추가 권한이 필요합니다.<br><br><strong>$PERMISSION$</strong><br>",
+    "placeholders": {
+      "permission": {
+        "content": "$1"
+      }
+    }
+  },
+  "grant_permissions_btn": {
+    "message": "권한 부여"
+  },
+  "grant_camera_permission_name": {
+    "message": "카메라에 대한 접근"
+  },
+  "grant_permissions_window_title": {
+    "message": "권한 부여"
+  },
+  "grant_camera_initial_instructions_firefox_html": {
+    "message": "QRCraft가 카메라에 접근하도록 허용하려고 합니다.<br><br>QRCraft가 카메라를 사용하도록 허용할지 묻는 경우 <strong>\"모든 카메라에 대해 기억\"</strong> 확인란이 선택되어 있는지 확인한 다음 <strong>\"허용\"</strong>을 클릭하세요.<br><br>아래 버튼을 클릭하여 시작하세요."
+  },
+  "grant_camera_initial_instructions_chrome_html": {
+    "message": "QRCraft가 카메라에 접근하도록 허용하려고 합니다.<br><br>QRCraft가 카메라를 사용하도록 허용할지 묻는 경우 <strong>\"사이트를 방문하는 동안 허용\"</strong>을 선택하세요.<br><br>아래 버튼을 클릭하여 시작하세요."
+  },
+  "grant_camera_blocked_instructions_firefox_html": {
+    "message": "QRCraft에 대한 카메라 사용이 <strong>차단</strong>된 것 같습니다.<br><br>이 설정을 변경하려면 주소 표시줄 왼쪽에 있는 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 아이콘을 클릭하고 \"카메라 사용\" 행에서 \"차단됨\" 상태를 <strong>제거</strong>하십시오.<br><br>그런 다음 이 페이지를 새로 고치십시오."
+  },
+  "grant_camera_blocked_instructions_chrome_html": {
+    "message": "QRCraft에 대한 카메라 사용이 <strong>차단</strong>된 것 같습니다.<br><br>이 설정을 변경하려면 주소 표시줄의 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 아이콘을 클릭하고, <strong>QRCraft - QR 코드 생성기 및 스캐너가 카메라에 액세스하도록 항상 허용</strong>을 선택하세요.<br><br>그런 다음 이 페이지를 새로 고치십시오."
+  },
+  "grant_camera_granted_instructions_html": {
+    "message": "QRCraft가 카메라에 대한 접근을 성공적으로 받았습니다.<br><br>이제 이 페이지를 닫을 수 있습니다."
+  },
+  "grant_page_refresh_btn": {
+    "message": "새로고침"
+  },
+  "grant_page_dont_see_icon_btn_html": {
+    "message": "<img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 아이콘을 찾을 수 없어요!"
+  },
+  "grant_page_dont_see_icon_instructions_html": {
+    "message": "일부 브라우저는 몇 초 후 아이콘을 숨깁니다. 아래 버튼을 클릭해 아이콘을 표시해 주세요."
+  },
+  "grant_page_dont_see_icon_instructions_reveal_icon_btn_label": {
+    "message": "아이콘 표시"
+  },
+  "grant_page_close_btn": {
+    "message": "닫기"
+  },
+  "or": {
+    "message": "또는"
+  },
+  "scanning": {
+    "message": "스캔 중…"
+  },
+  "unable_to_decode_qr_code": {
+    "message": "QR 코드를 디코딩할 수 없습니다."
+  },
+  "browser_action_command_description": {
+    "message": "팝업 표시"
+  },
+  "select_region_to_scan_command_description": {
+    "message": "스캔할 영역 선택"
+  },
+  "scan_with_camera_command_description": {
+    "message": "카메라로 스캔"
+  },
+  "picker_close_btn_title": {
+    "message": "닫기"
+  },
+  "select_region_to_scan_open_command_description": {
+    "message": "스캔할 영역을 선택하고 URL 열기"
+  },
+  "select_region_to_scan_open_new_bg_tab_command_description": {
+    "message": "스캔할 영역을 선택하고 새 백그라운드 탭에서 URL 열기"
+  },
+  "select_region_to_scan_open_new_fg_tab_command_description": {
+    "message": "스캔할 영역을 선택하고 새 포그라운드 탭에서 URL 열기"
+  },
+  "picker_url_mode_auto_open_no": {
+    "message": "URL을 자동으로 열지 않음"
+  },
+  "picker_url_mode_auto_open_in_current_tab": {
+    "message": "현재 탭에서 URL 자동 열기"
+  },
+  "picker_url_mode_auto_open_in_bg_tab": {
+    "message": "새 백그라운드 탭에서 URL 자동 열기"
+  },
+  "picker_url_mode_auto_open_in_fg_tab": {
+    "message": "새 포그라운드 탭에서 URL 자동 열기"
+  },
+  "copy_btn_title": {
+    "message": "클립보드에 복사"
+  },
+  "grant_permissions_error_details_summary": {
+    "message": "오류 세부 정보"
+  },
+  "grant_camera_unusable_instructions_html": {
+    "message": "카메라에 접근할 수 없는 것 같습니다. 다른 프로그램에서 카메라를 사용 중인가요?<br><br>카메라를 사용 중일 수 있는 다른 프로그램을 닫고 이 페이지를 새로 고쳐주세요."
+  },
+  "grant_camera_unknow_error_instructions_html": {
+    "message": "카메라 접근 권한을 얻으려고 하는 중 알 수 없는 오류가 발생했습니다.<br><br>이 페이지를 새로 고치고 다시 시도해 보세요."
+  },
+  "unable_to_access_camera": {
+    "message": "카메라에 접근할 수 없습니다. 다른 프로그램에서 카메라를 사용 중인가요?"
+  },
+  "settings_window_title": {
+    "message": "QRCraft 설정"
+  },
+  "settings_scan_success_sound_enabled_label": {
+    "message": "스캔 성공 시 소리 재생"
+  },
+  "settings_scan_success_sound_enabled_explainer": {
+    "message": "QR 코드가 성공적으로 스캔되면 삐 소리를 재생합니다."
+  },
+  "settings_white_on_black_qr_ccode_in_dark_mode_label": {
+    "message": "다크 모드에서 검은색 배경에 흰색 QR 코드 생성"
+  },
+  "settings_white_on_black_qr_ccode_in_dark_mode_explainer": {
+    "message": "다크 모드에서는 어두운 배경에 밝은 전경색의 QR 코드를 생성합니다. 일부 스캐너는 이러한 QR 코드를 스캔하는 데 문제가 있을 수 있습니다. \"저장\" 및 \"복사\" 버튼을 통해 저장하거나 복사하는 QR 코드는 항상 흰색 배경과 검은색 전경을 갖습니다."
+  },
+  "settings_scanner_legend": {
+    "message": "QR 코드 스캐너"
+  },
+  "settings_generator_legend": {
+    "message": "QR 코드 생성기"
+  },
+  "tab_settings_title": {
+    "message": "QRCraft 설정 변경"
+  },
+  "settings_config_keyboard_shortcuts_btn_label": {
+    "message": "키보드 단축키 구성"
+  },
+  "unable_to_access_camera_unknown_error": {
+    "message": "카메라에 액세스할 수 없습니다. 예기치 않은 오류가 발생했습니다."
+  },
+  "scan_region_picker_tips_rescan": {
+    "message": "새로 스캔"
+  },
+  "scan_region_picker_tips_open_url_mode_title": {
+    "message": "스캔 결과의 URL 처리 방법을 선택하세요"
+  },
+  "unable_to_load_image": {
+    "message": "이미지를 로드할 수 없습니다"
+  },
+  "settings_picker_pause_videos_onload_enabled_label": {
+    "message": "\"스캔할 영역 선택\" 중 모든 동영상 일시 중지"
+  },
+  "settings_picker_pause_videos_onload_enabled_explainer": {
+    "message": "스캔 영역을 선택하는 동안 동영상을 일시 중지하여 QR 코드를 놓치지 않도록 합니다."
+  },
+  "image_scanner_failed_to_load_image": {
+    "message": "이미지를 로드하지 못했습니다. 소스에 액세스할 수 없거나 제한되었을 수 있습니다. 대신 화면 영역을 스캔해 보십시오."
+  },
+  "loading_image": {
+    "message": "이미지 로딩 중..."
+  },
+  "batch_generator_link_label": {
+    "message": "일괄"
+  },
+  "batch_generator_link_title": {
+    "message": "일괄 QR 코드 생성기를 새 탭에서 열기"
+  },
+  "batch_generator_input_placeholder": {
+    "message": "한 줄에 하나의 QR 코드, 예:\nhttps://example.com/1\nhttps://example.com/2"
+  },
+  "batch_generator_instructions": {
+    "message": "아래에 여러 줄의 텍스트를 입력하거나 붙여넣으세요. 비어 있지 않은 각 줄은 개별 QR 코드가 됩니다."
+  },
+  "batch_generator_saving_all_btn": {
+    "message": "저장 중..."
+  },
+  "batch_generator_window_title": {
+    "message": "QRCraft 일괄 생성기"
+  },
+  "context_menu_batch_generate_from_selection": {
+    "message": "QR 코드 일괄 생성 (줄당 하나)"
+  },
+  "logo_choose_btn": {
+    "message": "이미지 선택"
+  },
+  "logo_choose_btn_title": {
+    "message": "QR 코드 중앙에 삽입할 이미지 선택"
+  },
+  "logo_ec_level_hint": {
+    "message": "팁: 로고를 사용할 때는 더 안정적인 스캔을 위해 오류 수정 수준을 \"높음\"으로 설정하세요."
+  },
+  "logo_label": {
+    "message": "로고:"
+  },
+  "logo_label_title": {
+    "message": "QR 코드 중앙에 작은 로고 이미지 삽입"
+  },
+  "logo_remove_btn_title": {
+    "message": "로고 제거"
+  },
+  "logo_show_checkbox_label": {
+    "message": "표시"
+  },
+  "logo_show_checkbox_title": {
+    "message": "생성된 QR 코드에 로고 표시"
+  },
+  "export_history_btn": {
+    "message": "내보내기"
+  },
+  "export_history_btn_title": {
+    "message": "기록을 JSON 파일로 내보내기"
+  },
+  "import_history_btn": {
+    "message": "가져오기"
+  },
+  "import_history_btn_title": {
+    "message": "이전에 내보낸 JSON 파일에서 기록 가져오기"
+  },
+  "import_history_error": {
+    "message": "기록을 가져오지 못했습니다: 파일이 잘못되었거나 손상되었습니다"
+  },
+  "template_apply_btn": {
+    "message": "QR 코드 생성"
+  },
+  "template_email_body_placeholder": {
+    "message": "본문"
+  },
+  "template_email_subject_placeholder": {
+    "message": "제목"
+  },
+  "template_email_to_placeholder": {
+    "message": "받는 사람 이메일 주소"
+  },
+  "template_event_description_placeholder": {
+    "message": "설명"
+  },
+  "template_event_end_label": {
+    "message": "종료:"
+  },
+  "template_event_location_placeholder": {
+    "message": "장소"
+  },
+  "template_event_start_label": {
+    "message": "시작:"
+  },
+  "template_event_title_placeholder": {
+    "message": "일정 제목"
+  },
+  "template_phone_placeholder": {
+    "message": "전화번호"
+  },
+  "template_sms_message_placeholder": {
+    "message": "메시지"
+  },
+  "template_sms_phone_placeholder": {
+    "message": "전화번호"
+  },
+  "template_type_email": {
+    "message": "이메일"
+  },
+  "template_type_event": {
+    "message": "캘린더 일정"
+  },
+  "template_type_phone": {
+    "message": "전화번호"
+  },
+  "template_type_sms": {
+    "message": "SMS"
+  },
+  "template_type_vcard": {
+    "message": "연락처 (vCard)"
+  },
+  "template_type_wifi": {
+    "message": "WiFi 네트워크"
+  },
+  "template_vcard_email_placeholder": {
+    "message": "이메일 주소"
+  },
+  "template_vcard_first_name_placeholder": {
+    "message": "이름"
+  },
+  "template_vcard_last_name_placeholder": {
+    "message": "성"
+  },
+  "template_vcard_org_placeholder": {
+    "message": "회사/조직"
+  },
+  "template_vcard_phone_placeholder": {
+    "message": "전화번호"
+  },
+  "template_vcard_url_placeholder": {
+    "message": "웹사이트 URL"
+  },
+  "template_wifi_encryption_wep": {
+    "message": "WEP"
+  },
+  "template_wifi_encryption_wpa": {
+    "message": "WPA/WPA2/WPA3"
+  },
+  "template_wifi_hidden_label": {
+    "message": "숨겨진 네트워크"
+  },
+  "template_wifi_no_password": {
+    "message": "비밀번호 없음"
+  },
+  "template_wifi_password_placeholder": {
+    "message": "비밀번호"
+  },
+  "template_wifi_ssid_placeholder": {
+    "message": "네트워크 이름 (SSID)"
+  },
+  "toggle_template_builder_btn_label": {
+    "message": "템플릿"
+  },
+  "toggle_template_builder_btn_title": {
+    "message": "QR 코드 템플릿 작성기 표시/숨기기 (WiFi, 연락처, 일정 등)"
+  },
+  "settings_appearance_legend": {
+    "message": "화면"
+  },
+  "settings_data_legend": {
+    "message": "데이터"
+  },
+  "settings_generator_defaults_explainer": {
+    "message": "이 기본값은 새 QR 코드를 만들 때마다 사용됩니다. 생성기의 옵션 패널에서 QR 코드별로 재정의할 수도 있습니다."
+  },
+  "settings_history_legend": {
+    "message": "기록"
+  },
+  "settings_history_max_items_explainer": {
+    "message": "이 한도에 도달하면 가장 오래된 항목이 자동으로 삭제됩니다."
+  },
+  "settings_history_max_items_label": {
+    "message": "최대 보관 개수"
+  },
+  "settings_motion_explainer": {
+    "message": "QRCraft 전반에서 사용되는 애니메이션과 전환 효과를 제어합니다."
+  },
+  "settings_motion_label": {
+    "message": "모션"
+  },
+  "settings_motion_option_full": {
+    "message": "전체"
+  },
+  "settings_motion_option_reduced": {
+    "message": "줄이기"
+  },
+  "settings_motion_option_system": {
+    "message": "시스템"
+  },
+  "settings_reset_btn_label": {
+    "message": "설정을 기본값으로 재설정"
+  },
+  "settings_reset_confirm_btn_label": {
+    "message": "다시 클릭하여 재설정 확인"
+  },
+  "settings_reset_explainer": {
+    "message": "화면, 생성기 기본값, 스캐너 옵션을 원래 값으로 되돌립니다. 스캔 및 생성 기록에는 영향을 주지 않습니다."
+  },
+  "settings_theme_explainer": {
+    "message": "QRCraft가 시스템 테마를 따를지, 항상 특정 테마를 사용할지 선택하세요."
+  },
+  "settings_theme_label": {
+    "message": "테마"
+  },
+  "settings_theme_option_dark": {
+    "message": "다크"
+  },
+  "settings_theme_option_light": {
+    "message": "라이트"
+  },
+  "settings_theme_option_system": {
+    "message": "시스템"
+  },
+  "batch_generator_save_all_btn": {
+    "message": "모두 저장 ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  }
+}

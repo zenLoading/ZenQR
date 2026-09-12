@@ -1,0 +1,131 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  min-height: 100vh;
+  background:
+    radial-gradient(80% 50% at 15% 0%, rgba(var(--accent-2-rgb), 0.14), transparent 55%),
+    radial-gradient(70% 60% at 100% 10%, rgba(var(--accent-rgb), 0.2), transparent 55%),
+    var(--bg);
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box {
+  box-sizing: border-box;
+  padding: 2.5rem 3rem;
+  width: 70em;
+  max-width: 100%;
+  color: var(--text-primary-color);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--bg-content);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--border-radius);
+  box-shadow: 0 24px 60px -30px rgba(20, 10, 60, 0.4);
+  margin-top: 1em;
+  animation: qrc-fade-up var(--duration-normal) var(--ease-out-expo) both;
+}
+
+@media screen and (max-width: 70em) {
+  html {
+    background: var(--bg-content);
+  }
+
+  .box {
+    border: none;
+    margin-top: 0;
+    border-radius: 0;
+  }
+}
+
+.header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 1.1rem;
+  margin: 0;
+  letter-spacing: 0.01em;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.logo {
+  width: 2.2rem;
+  height: 2.2rem;
+  filter: drop-shadow(0 4px 10px rgba(var(--accent-rgb), 0.45));
+  transition: transform var(--duration-normal) var(--ease-spring);
+}
+
+.logo:hover {
+  transform: rotate(-8deg) scale(1.06);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+fieldset {
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--border-radius-sm);
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: border-color var(--duration-normal) var(--ease-out-expo);
+}
+
+fieldset:focus-within {
+  border-color: rgba(var(--accent-rgb), 0.5);
+}
+
+legend {
+  padding: 0 0.4em;
+  font-weight: 600;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-interactive-color);
+}
+
+.form-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--text-primary-color);
+}
+
+.form-entry-line {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.form-entry-explainer {
+  margin: 0;
+  margin-left: calc(2em + 0.6rem);
+  padding: 0.2em;
+  font-size: 0.8em;
+  opacity: 0.75;
+  max-width: 42em;
+}

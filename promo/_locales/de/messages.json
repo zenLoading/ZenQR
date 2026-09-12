@@ -1,0 +1,38 @@
+{
+  "extension_short_name": {
+    "message": "QRCraft"
+  },
+  "amo_summary": {
+    "message": "👌Einfach zu bedienender, 🛡️datenschutzfreundlicher QR-Code-Generator und -Scanner."
+  },
+  "amo_description": {
+    "message": "QRCraft generiert und scannt QR-Codes, ohne auf Dienste von Drittanbietern angewiesen zu sein.\n\n\n=== Funktionen ===\n\n✅ Generieren von QR-Codes für:\n-  Aktiver Tab \n-  Links \n-  Markierter Text \n-  Benutzereingabe \n\n✅ Scannen von QR-Codes aus:\n-  Bildern \n-  Zwischenablage \n-  Jedem Teil der Webseite \n-  Webcam \n\n✅ Merken, was Sie generiert oder gescannt haben.\n✅ Alles funktioniert komplett offline, es wird nichts über das Netzwerk gesendet.\n\n\nQRCraft ist Open-Source-Software, die unter der MIT-Lizenz vertrieben wird.\nWenn Ihnen diese Erweiterung gefällt, geben Sie uns bitte eine 5-Sterne-Bewertung, vielen Dank :)"
+  },
+  "promo_banner_modifying_html": {
+    "message": "👌 Benutzerfreundlich 🛡️ Datenschutzfreundlich"
+  },
+  "promo_banner_defining_html": {
+    "message": "<span>QR-Code<br><strong>Generator</strong> und <strong>Scanner</strong></span>"
+  },
+  "promo_screenshot_generator_title_html": {
+    "message": "QR-Code<br>generieren"
+  },
+  "promo_screenshot_generator_description_html": {
+    "message": "aus Tabs, Links und Text"
+  },
+  "promo_screenshot_scanner_title_html": {
+    "message": "QR-Code<br>scannen"
+  },
+  "promo_screenshot_scanner_description_html": {
+    "message": "aus Bildern, Webcam, Zwischenablage,<br>oder überall auf der Webseite"
+  },
+  "promo_screenshot_history_title_html": {
+    "message": "Verlauf<br>verwalten"
+  },
+  "promo_screenshot_history_description_html": {
+    "message": "von kürzlich generierten und gescannten Elementen"
+  },
+  "extension_name": {
+    "message": "QRCraft - QR-Code-Generator und -Scanner"
+  }
+}

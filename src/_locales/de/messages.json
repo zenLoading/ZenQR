@@ -1,0 +1,566 @@
+{
+  "extension_name": {
+    "message": "QRCraft - QR-Code-Generator und -Scanner"
+  },
+  "extension_short_name": {
+    "message": "QRCraft",
+    "description": "[keep-original]"
+  },
+  "extension_description": {
+    "message": "QR-Codes offline generieren oder scannen."
+  },
+  "save_image_btn": {
+    "message": "Speichern"
+  },
+  "save_image_btn_title": {
+    "message": "Dieses QR-Code-Bild speichern"
+  },
+  "copy_image_btn": {
+    "message": "Kopieren"
+  },
+  "copy_image_btn_title": {
+    "message": "Dieses QR-Code-Bild in die Zwischenablage kopieren"
+  },
+  "copy_image_ok": {
+    "message": "Kopiert!"
+  },
+  "open_url_btn": {
+    "message": "URL öffnen"
+  },
+  "open_url_btn_title": {
+    "message": "Gescannte URL in einem neuen Tab öffnen"
+  },
+  "tab_generate_title": {
+    "message": "Generieren"
+  },
+  "tab_scan_title": {
+    "message": "Scannen"
+  },
+  "tab_history_title": {
+    "message": "Verlauf"
+  },
+  "clear_history_btn": {
+    "message": "Leeren"
+  },
+  "clear_history_btn_title": {
+    "message": "Verlauf leeren"
+  },
+  "disable_history_btn_title": {
+    "message": "Verlaufsaufzeichnung stoppen"
+  },
+  "disable_history_btn_label": {
+    "message": "Stoppen"
+  },
+  "enable_history_btn_title": {
+    "message": "Verlaufsaufzeichnung fortsetzen"
+  },
+  "enable_history_btn_label": {
+    "message": "Fortsetzen"
+  },
+  "remove_history_btn_title": {
+    "message": "Diesen Eintrag aus dem Verlauf entfernen"
+  },
+  "github_link_title": {
+    "message": "QRCraft-Projektseite auf Github besuchen"
+  },
+  "toggle_generator_options_btn_label": {
+    "message": "Optionen"
+  },
+  "toggle_generator_options_btn_title": {
+    "message": "QR-Code-Generatoroptionen ein-/ausblenden"
+  },
+  "error_correction_level_btn_low_title": {
+    "message": "Niedrig, 7 % der Datenbytes können wiederhergestellt werden"
+  },
+  "error_correction_level_btn_medium_title": {
+    "message": "Mittel, 15 % der Datenbytes können wiederhergestellt werden"
+  },
+  "error_correction_level_btn_quartile_title": {
+    "message": "Quartil, 25 % der Datenbytes können wiederhergestellt werden"
+  },
+  "error_correction_level_btn_high_title": {
+    "message": "Hoch, 30 % der Datenbytes können wiederhergestellt werden"
+  },
+  "error_correction_level_label": {
+    "message": "Fehlerkorrektur:"
+  },
+  "error_correction_level_label_title": {
+    "message": "Fehlerkorrekturstufe"
+  },
+  "content_length_label_title": {
+    "message": "Länge des QR-Code-Inhalts in Zeichen"
+  },
+  "finder_style_label": {
+    "message": "Finder-Stil:"
+  },
+  "finder_style_label_title": {
+    "message": "Einen Stil für die Finder-Muster (die drei Eckmarkierungen) auswählen"
+  },
+  "module_style_label": {
+    "message": "Modul-Stil:"
+  },
+  "module_style_label_title": {
+    "message": "Wählen Sie einen Stil für die Datenmodule"
+  },
+  "image_size_label": {
+    "message": "Bildgröße:"
+  },
+  "image_size_label_title": {
+    "message": "Bildgröße für den QR-Code festlegen"
+  },
+  "content_length_label": {
+    "message": "Länge:"
+  },
+  "content_title": {
+    "message": "QR-Code-Inhalt"
+  },
+  "content_placeholder": {
+    "message": "Geben Sie Text ein, um einen QR-Code zu generieren"
+  },
+  "context_menu_make_qr_code_for_link": {
+    "message": "QR-Code für diesen Link generieren"
+  },
+  "context_menu_make_qr_code_for_selected_text": {
+    "message": "QR-Code für \"%s\" generieren"
+  },
+  "context_menu_scan_qr_code_in_image": {
+    "message": "QR-Code im Bild scannen"
+  },
+  "context_menu_pick_region_to_scan": {
+    "message": "Zu scannende Region auswählen…"
+  },
+  "context_menu_scan_with_camera": {
+    "message": "Mit Kamera scannen"
+  },
+  "scan_region_picker_tips_scrollwheel": {
+    "message": "Scrollrad"
+  },
+  "scan_region_picker_tips_adjust_size": {
+    "message": "Größe anpassen"
+  },
+  "scan_region_picker_tips_leftclick": {
+    "message": "Linksklick"
+  },
+  "scan_region_picker_tips_scan": {
+    "message": "Scannen"
+  },
+  "scan_region_picker_tips_esc": {
+    "message": "Esc",
+    "description": "[keep-original]"
+  },
+  "scan_region_picker_tips_exit": {
+    "message": "Beenden"
+  },
+  "copy_btn": {
+    "message": "Kopieren"
+  },
+  "copy_btn_copied": {
+    "message": "Kopiert"
+  },
+  "decoding_failed": {
+    "message": "Dekodierung fehlgeschlagen: $MSG$",
+    "placeholders": {
+      "msg": {
+        "content": "$1",
+        "default": "Unbekannter Fehler"
+      }
+    }
+  },
+  "unable_to_decode": {
+    "message": "QR-Code konnte nicht dekodiert werden"
+  },
+  "scan_instructions_html": {
+    "message": "Rechtsklicken Sie auf ein beliebiges Bild und wählen Sie<br>\"<img class=\"icon\" src=\"../icons/qrcraft.svg\"></img> QR-Code in diesem Bild scannen\""
+  },
+  "scan_from_clipboard_instructions_html": {
+    "message": "Um ein Bild aus der Zwischenablage zu scannen, drücken Sie<br><kbd>Strg</kbd> + <kbd>V</kbd> <br> oder <kbd>⌘</kbd> + <kbd>V</kbd> auf dem Mac"
+  },
+  "pick_region_to_scan_btn": {
+    "message": "Zu scannende Region auswählen"
+  },
+  "camera_scan_btn": {
+    "message": "Mit Kamera scannen"
+  },
+  "rescan_btn_label": {
+    "message": "Neuer Scan"
+  },
+  "rescan_btn_title": {
+    "message": "Anderen Scan starten"
+  },
+  "grant_permissions_instructions_html": {
+    "message": "Diese Funktion benötigt die folgende zusätzliche Berechtigung.<br><br><strong>$PERMISSION$</strong><br>",
+    "placeholders": {
+      "permission": {
+        "content": "$1"
+      }
+    }
+  },
+  "grant_permissions_btn": {
+    "message": "Berechtigung erteilen"
+  },
+  "grant_camera_permission_name": {
+    "message": "Zugriff auf Ihre Kamera"
+  },
+  "grant_permissions_window_title": {
+    "message": "Berechtigung erteilen"
+  },
+  "grant_camera_initial_instructions_firefox_html": {
+    "message": "Du bist dabei, QRCraft Zugriff auf deine Kamera zu gewähren.<br><br>Wenn du gefragt wirst, ob QRCraft deine Kamera verwenden darf, stelle bitte sicher, dass das Kontrollkästchen <strong>\"Für alle Kameras merken\"</strong> aktiviert ist, und klicke dann auf <strong>\"Zulassen\"</strong>.<br><br>Klicke unten auf die Schaltfläche, um zu starten."
+  },
+  "grant_camera_initial_instructions_chrome_html": {
+    "message": "Du bist dabei, QRCraft Zugriff auf deine Kamera zu gewähren.<br><br>Wenn du gefragt wirst, ob QRCraft deine Kamera verwenden darf, wähle bitte <strong>\"Beim Besuch der Website zulassen\"</strong> aus.<br><br>Klicke unten auf die Schaltfläche, um zu starten."
+  },
+  "grant_camera_blocked_instructions_firefox_html": {
+    "message": "Es sieht so aus, als ob QRCraft die Kamera <strong>blockiert</strong> ist.<br><br>Um diese Einstellung zu ändern, klicke auf das Symbol <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> links in der Adressleiste und <strong>entferne</strong> den Status \"Blockiert\" in der Zeile \"Kamera verwenden\".<br><br>Nachdem du das getan hast, aktualisiere diese Seite."
+  },
+  "grant_camera_blocked_instructions_chrome_html": {
+    "message": "Es sieht so aus, als ob QRCraft die Kamera <strong>blockiert</strong> ist.<br><br>Um diese Einstellung zu ändern, klicke auf das Symbol <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> in der Adressleiste und wähle <strong>QRCraft - QR-Code-Generator und -Scanner immer den Zugriff auf deine Kamera erlauben</strong>.<br><br>Nachdem du das getan hast, aktualisiere diese Seite."
+  },
+  "grant_camera_granted_instructions_html": {
+    "message": "QRCraft hat erfolgreich Zugriff auf die Kamera erhalten.<br><br>Sie können diese Seite nun schließen."
+  },
+  "grant_page_refresh_btn": {
+    "message": "Aktualisieren"
+  },
+  "grant_page_dont_see_icon_btn_html": {
+    "message": "Ich kann das Symbol <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> nicht finden!"
+  },
+  "grant_page_dont_see_icon_instructions_html": {
+    "message": "Einige Browser blenden das Symbol nach ein paar Sekunden aus. Bitte klicken Sie auf die Schaltfläche unten, um es anzuzeigen."
+  },
+  "grant_page_dont_see_icon_instructions_reveal_icon_btn_label": {
+    "message": "Symbol anzeigen"
+  },
+  "grant_page_close_btn": {
+    "message": "Schließen"
+  },
+  "or": {
+    "message": "oder"
+  },
+  "scanning": {
+    "message": "Scanne…"
+  },
+  "unable_to_decode_qr_code": {
+    "message": "QR-Code konnte nicht dekodiert werden"
+  },
+  "browser_action_command_description": {
+    "message": "Popup anzeigen"
+  },
+  "select_region_to_scan_command_description": {
+    "message": "Zu scannende Region auswählen"
+  },
+  "scan_with_camera_command_description": {
+    "message": "Mit Kamera scannen"
+  },
+  "picker_close_btn_title": {
+    "message": "Schließen"
+  },
+  "select_region_to_scan_open_command_description": {
+    "message": "Region zum Scannen auswählen und URL öffnen"
+  },
+  "select_region_to_scan_open_new_bg_tab_command_description": {
+    "message": "Region zum Scannen auswählen und URL in neuem Hintergrundtab öffnen"
+  },
+  "select_region_to_scan_open_new_fg_tab_command_description": {
+    "message": "Region zum Scannen auswählen und URL in neuem Vordergrundtab öffnen"
+  },
+  "picker_url_mode_auto_open_no": {
+    "message": "URL nicht automatisch öffnen"
+  },
+  "picker_url_mode_auto_open_in_current_tab": {
+    "message": "URL automatisch im aktuellen Tab öffnen"
+  },
+  "picker_url_mode_auto_open_in_bg_tab": {
+    "message": "URL automatisch in neuem Hintergrundtab öffnen"
+  },
+  "picker_url_mode_auto_open_in_fg_tab": {
+    "message": "URL automatisch in neuem Vordergrundtab öffnen"
+  },
+  "copy_btn_title": {
+    "message": "In die Zwischenablage kopieren"
+  },
+  "grant_permissions_error_details_summary": {
+    "message": "Fehlerdetails"
+  },
+  "grant_camera_unusable_instructions_html": {
+    "message": "Es scheint, dass die Kamera nicht zugänglich ist. Verwendet ein anderes Programm die Kamera?<br><br>Bitte schließen Sie andere Programme, die möglicherweise die Kamera verwenden, und aktualisieren Sie diese Seite dann."
+  },
+  "grant_camera_unknow_error_instructions_html": {
+    "message": "Beim Versuch, Kamerazugriff zu erhalten, ist ein unbekannter Fehler aufgetreten.<br><br>Bitte aktualisieren Sie diese Seite und versuchen Sie es erneut."
+  },
+  "unable_to_access_camera": {
+    "message": "Kamera kann nicht zugegriffen werden. Verwendet ein anderes Programm die Kamera?"
+  },
+  "settings_window_title": {
+    "message": "QRCraft-Einstellungen"
+  },
+  "settings_scan_success_sound_enabled_label": {
+    "message": "Ton bei erfolgreichem Scan abspielen"
+  },
+  "settings_scan_success_sound_enabled_explainer": {
+    "message": "Spiele einen Piepton ab, wenn ein QR-Code erfolgreich gescannt wurde."
+  },
+  "settings_white_on_black_qr_ccode_in_dark_mode_label": {
+    "message": "Weiße QR-Codes auf schwarzem Hintergrund im Dunkelmodus generieren"
+  },
+  "settings_white_on_black_qr_ccode_in_dark_mode_explainer": {
+    "message": "Im Dunkelmodus QR-Codes mit einer hellen Vordergrundfarbe auf einem dunklen Hintergrund generieren. Einige Scanner haben möglicherweise Probleme beim Scannen solcher QR-Codes. Der QR-Code, den Sie über die Schaltflächen \"Speichern\" und \"Kopieren\" speichern oder kopieren, hat immer einen weißen Hintergrund und einen schwarzen Vordergrund."
+  },
+  "settings_scanner_legend": {
+    "message": "QR-Code-Scanner"
+  },
+  "settings_generator_legend": {
+    "message": "QR-Code-Generator"
+  },
+  "tab_settings_title": {
+    "message": "Ändern Sie die Einstellungen von QRCraft"
+  },
+  "settings_config_keyboard_shortcuts_btn_label": {
+    "message": "Tastaturkürzel konfigurieren"
+  },
+  "unable_to_access_camera_unknown_error": {
+    "message": "Kamera konnte nicht geöffnet werden. Ein unerwarteter Fehler ist aufgetreten."
+  },
+  "scan_region_picker_tips_rescan": {
+    "message": "Neuer Scan"
+  },
+  "scan_region_picker_tips_open_url_mode_title": {
+    "message": "Wählen Sie, wie URLs in Scanergebnissen behandelt werden sollen"
+  },
+  "unable_to_load_image": {
+    "message": "Bild konnte nicht geladen werden"
+  },
+  "settings_picker_pause_videos_onload_enabled_label": {
+    "message": "Alle Videos während „Zu scannenden Bereich auswählen“ pausieren"
+  },
+  "settings_picker_pause_videos_onload_enabled_explainer": {
+    "message": "Dies pausiert Videos, während Sie einen Scanbereich auswählen, damit Sie keine QR-Codes verpassen."
+  },
+  "image_scanner_failed_to_load_image": {
+    "message": "Das Bild konnte nicht geladen werden. Die Quelle ist möglicherweise unzugänglich oder eingeschränkt. Versuchen Sie stattdessen, einen Bereich des Bildschirms zu scannen."
+  },
+  "loading_image": {
+    "message": "Bild wird geladen..."
+  },
+  "batch_generator_link_label": {
+    "message": "Stapel"
+  },
+  "batch_generator_link_title": {
+    "message": "Den Stapel-QR-Code-Generator in einem neuen Tab öffnen"
+  },
+  "batch_generator_input_placeholder": {
+    "message": "Ein QR-Code pro Zeile, z. B.\nhttps://example.com/1\nhttps://example.com/2"
+  },
+  "batch_generator_instructions": {
+    "message": "Geben Sie unten mehrere Textzeilen ein oder fügen Sie sie ein. Jede nicht leere Zeile wird zu einem eigenen QR-Code."
+  },
+  "batch_generator_saving_all_btn": {
+    "message": "Wird gespeichert..."
+  },
+  "batch_generator_window_title": {
+    "message": "QRCraft Stapel-Generator"
+  },
+  "context_menu_batch_generate_from_selection": {
+    "message": "QR-Codes im Stapel erstellen (eine pro Zeile)"
+  },
+  "logo_choose_btn": {
+    "message": "Bild auswählen"
+  },
+  "logo_choose_btn_title": {
+    "message": "Ein Bild auswählen, das in der Mitte des QR-Codes eingebettet wird"
+  },
+  "logo_ec_level_hint": {
+    "message": "Tipp: Verwenden Sie die Fehlerkorrekturstufe „Hoch“ für eine zuverlässigere Erkennung mit einem Logo."
+  },
+  "logo_label": {
+    "message": "Logo:"
+  },
+  "logo_label_title": {
+    "message": "Ein kleines Logo-Bild in der Mitte des QR-Codes einbetten"
+  },
+  "logo_remove_btn_title": {
+    "message": "Logo entfernen"
+  },
+  "logo_show_checkbox_label": {
+    "message": "Anzeigen"
+  },
+  "logo_show_checkbox_title": {
+    "message": "Das Logo auf dem generierten QR-Code anzeigen"
+  },
+  "export_history_btn": {
+    "message": "Exportieren"
+  },
+  "export_history_btn_title": {
+    "message": "Verlauf in eine JSON-Datei exportieren"
+  },
+  "import_history_btn": {
+    "message": "Importieren"
+  },
+  "import_history_btn_title": {
+    "message": "Verlauf aus einer zuvor exportierten JSON-Datei importieren"
+  },
+  "import_history_error": {
+    "message": "Verlauf konnte nicht importiert werden: ungültige oder beschädigte Datei"
+  },
+  "template_apply_btn": {
+    "message": "QR-Code erstellen"
+  },
+  "template_email_body_placeholder": {
+    "message": "Nachrichtentext"
+  },
+  "template_email_subject_placeholder": {
+    "message": "Betreff"
+  },
+  "template_email_to_placeholder": {
+    "message": "E-Mail-Adresse des Empfängers"
+  },
+  "template_event_description_placeholder": {
+    "message": "Beschreibung"
+  },
+  "template_event_end_label": {
+    "message": "Ende:"
+  },
+  "template_event_location_placeholder": {
+    "message": "Ort"
+  },
+  "template_event_start_label": {
+    "message": "Beginn:"
+  },
+  "template_event_title_placeholder": {
+    "message": "Termintitel"
+  },
+  "template_phone_placeholder": {
+    "message": "Telefonnummer"
+  },
+  "template_sms_message_placeholder": {
+    "message": "Nachricht"
+  },
+  "template_sms_phone_placeholder": {
+    "message": "Telefonnummer"
+  },
+  "template_type_email": {
+    "message": "E-Mail"
+  },
+  "template_type_event": {
+    "message": "Kalendertermin"
+  },
+  "template_type_phone": {
+    "message": "Telefonnummer"
+  },
+  "template_type_sms": {
+    "message": "SMS"
+  },
+  "template_type_vcard": {
+    "message": "Kontakt (vCard)"
+  },
+  "template_type_wifi": {
+    "message": "WLAN-Netzwerk"
+  },
+  "template_vcard_email_placeholder": {
+    "message": "E-Mail-Adresse"
+  },
+  "template_vcard_first_name_placeholder": {
+    "message": "Vorname"
+  },
+  "template_vcard_last_name_placeholder": {
+    "message": "Nachname"
+  },
+  "template_vcard_org_placeholder": {
+    "message": "Organisation"
+  },
+  "template_vcard_phone_placeholder": {
+    "message": "Telefonnummer"
+  },
+  "template_vcard_url_placeholder": {
+    "message": "Website-URL"
+  },
+  "template_wifi_encryption_wep": {
+    "message": "WEP"
+  },
+  "template_wifi_encryption_wpa": {
+    "message": "WPA/WPA2/WPA3"
+  },
+  "template_wifi_hidden_label": {
+    "message": "Verstecktes Netzwerk"
+  },
+  "template_wifi_no_password": {
+    "message": "Kein Passwort"
+  },
+  "template_wifi_password_placeholder": {
+    "message": "Passwort"
+  },
+  "template_wifi_ssid_placeholder": {
+    "message": "Netzwerkname (SSID)"
+  },
+  "toggle_template_builder_btn_label": {
+    "message": "Vorlage"
+  },
+  "toggle_template_builder_btn_title": {
+    "message": "QR-Code-Vorlagen-Editor ein-/ausblenden (WLAN, Kontakt, Termin usw.)"
+  },
+  "settings_appearance_legend": {
+    "message": "Erscheinungsbild"
+  },
+  "settings_data_legend": {
+    "message": "Daten"
+  },
+  "settings_generator_defaults_explainer": {
+    "message": "Diese Standardwerte werden bei jeder Erstellung eines neuen QR-Codes verwendet. Sie können sie weiterhin pro QR-Code über das Optionen-Panel des Generators überschreiben."
+  },
+  "settings_history_legend": {
+    "message": "Verlauf"
+  },
+  "settings_history_max_items_explainer": {
+    "message": "Die ältesten Einträge werden automatisch entfernt, sobald dieses Limit erreicht ist."
+  },
+  "settings_history_max_items_label": {
+    "message": "Behalten bis zu"
+  },
+  "settings_motion_explainer": {
+    "message": "Steuert die in QRCraft verwendeten Animationen und Übergänge."
+  },
+  "settings_motion_label": {
+    "message": "Bewegung"
+  },
+  "settings_motion_option_full": {
+    "message": "Voll"
+  },
+  "settings_motion_option_reduced": {
+    "message": "Reduziert"
+  },
+  "settings_motion_option_system": {
+    "message": "System"
+  },
+  "settings_reset_btn_label": {
+    "message": "Einstellungen zurücksetzen"
+  },
+  "settings_reset_confirm_btn_label": {
+    "message": "Erneut klicken, um das Zurücksetzen zu bestätigen"
+  },
+  "settings_reset_explainer": {
+    "message": "Setzt Erscheinungsbild, Generator-Standardwerte und Scanner-Optionen auf ihre ursprünglichen Werte zurück. Ihr Scan- und Generierungsverlauf bleibt davon unberührt."
+  },
+  "settings_theme_explainer": {
+    "message": "Legen Sie fest, ob QRCraft Ihrem Systemdesign folgt oder immer ein bestimmtes Design verwendet."
+  },
+  "settings_theme_label": {
+    "message": "Design"
+  },
+  "settings_theme_option_dark": {
+    "message": "Dunkel"
+  },
+  "settings_theme_option_light": {
+    "message": "Hell"
+  },
+  "settings_theme_option_system": {
+    "message": "System"
+  },
+  "batch_generator_save_all_btn": {
+    "message": "Alle speichern ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+## [v1.0.0] - 2026-09-12
+
+### Added
+- Initial release of QRCraft.
+- Generate QR codes for the current tab, selected text/links, or free-form input, with adjustable error correction level, image size, finder/module styles, and an optional embedded logo.
+- Build QR codes from templates: WiFi network, contact card (vCard), email, SMS, phone number, and calendar event.
+- Batch-generate QR codes from multiple lines of text at once.
+- Scan QR codes from images, a selected screen region, or the camera.
+- Track generation/scan history, with import/export to a JSON file.
+- Fully offline: no network requests, no third-party services.

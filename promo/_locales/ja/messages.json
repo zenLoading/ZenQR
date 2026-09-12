@@ -1,0 +1,38 @@
+{
+  "amo_summary": {
+    "message": "👌簡単操作で🛡️プライバシーにも配慮したQRコード生成・スキャンツール。"
+  },
+  "amo_description": {
+    "message": "QRCraft は、サードパーティのサービスに依存せずにQRコードを生成およびスキャンします。\n\n\n=== 機能 ===\n\n✅ QRコードを以下に対して生成：\n-  アクティブなタブ \n-  リンク \n-  選択されたテキスト \n-  ユーザー入力 \n\n✅ QRコードを以下からスキャン：\n-  画像 \n-  クリップボード \n-  ウェブページの任意の部分 \n-  ウェブカメラ \n\n✅ 生成またはスキャンした内容を記憶。\n✅ すべてが完全にオフラインで動作し、ネットワーク経由で送信されるものはありません。\n\n\nQRCraftはMITライセンスの下で配布されるオープンソースソフトウェアです。\nこの拡張機能を楽しんでいただけたら、5つ星のレビューをお願いします。ありがとうございます！😊"
+  },
+  "promo_banner_modifying_html": {
+    "message": "👌使いやすい 🛡️プライバシーに配慮"
+  },
+  "promo_banner_defining_html": {
+    "message": "<span>QRコード<br><strong>ジェネレーター</strong>と<strong>スキャナー</strong></span>"
+  },
+  "promo_screenshot_generator_title_html": {
+    "message": "QRコードを<br>生成"
+  },
+  "promo_screenshot_generator_description_html": {
+    "message": "タブ、リンク、テキストから"
+  },
+  "promo_screenshot_scanner_title_html": {
+    "message": "QRコードを<br>スキャン"
+  },
+  "promo_screenshot_scanner_description_html": {
+    "message": "画像、ウェブカメラ、クリップボード、<br>またはウェブページのどこからでも"
+  },
+  "promo_screenshot_history_title_html": {
+    "message": "履歴を<br>管理"
+  },
+  "promo_screenshot_history_description_html": {
+    "message": "最近生成およびスキャンしたアイテムの"
+  },
+  "extension_short_name": {
+    "message": "QRCraft"
+  },
+  "extension_name": {
+    "message": "QRCraft - QRコードジェネレーター＆スキャナー"
+  }
+}

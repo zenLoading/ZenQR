@@ -1,0 +1,38 @@
+{
+  "extension_short_name": {
+    "message": "QRCraft"
+  },
+  "amo_summary": {
+    "message": "👌سهل الاستخدام، 🛡️يحافظ على الخصوصية، مولد وماسح رموز QR."
+  },
+  "amo_description": {
+    "message": "QRCraft ينشئ ويمسح رموز QR ضوئيًا دون الاعتماد على خدمات خارجية.\n\n\n=== الميزات ===\n\n✅ إنشاء رموز QR لـ:\n-  علامة التبويب النشطة \n-  الروابط \n-  النص المحدد \n-  إدخال المستخدم \n\n✅ مسح رمز QR من:\n-  الصور \n-  الحافظة \n-  أي جزء من صفحة الويب \n-  كاميرا الويب \n\n✅ تذكر ما قمت بإنشائه أو مسحه ضوئيًا.\n✅ يعمل كل شيء بشكل كامل دون اتصال بالإنترنت، ولا يتم إرسال أي شيء عبر الشبكة.\n\n\nQRCraft هو برنامج مفتوح المصدر يتم توزيعه بموجب ترخيص MIT.\nإذا أعجبك هذا الامتداد، فيرجى منحنا تقييم 5 نجوم، شكرًا لك :)"
+  },
+  "promo_banner_modifying_html": {
+    "message": "👌 سهل الاستخدام 🛡️ صديق للخصوصية"
+  },
+  "promo_banner_defining_html": {
+    "message": "<span>QR Code<br><strong>مولد</strong> و <strong>ماسح</strong>"
+  },
+  "promo_screenshot_generator_title_html": {
+    "message": "إنشاء<br>QR Code"
+  },
+  "promo_screenshot_generator_description_html": {
+    "message": "من علامات التبويب والروابط والنصوص"
+  },
+  "promo_screenshot_scanner_title_html": {
+    "message": "مسح<br>QR Code"
+  },
+  "promo_screenshot_scanner_description_html": {
+    "message": "من الصور أو كاميرا الويب أو الحافظة <br> أو أي مكان في صفحة الويب"
+  },
+  "promo_screenshot_history_title_html": {
+    "message": "إدارة<br>السجل"
+  },
+  "promo_screenshot_history_description_html": {
+    "message": "للعناصر التي تم إنشاؤها أو مسحها ضوئيًا مؤخرًا"
+  },
+  "extension_name": {
+    "message": "QRCraft - مولد وماسح رمز الاستجابة السريعة"
+  }
+}

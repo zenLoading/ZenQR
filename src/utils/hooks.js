@@ -1,0 +1,292 @@
+import { useEffect, useState, useRef, createContext, useContext } from "react";
+import {
+  addListener,
+  getDefaultSettings,
+  getSettings,
+  removeListener,
+  resetSettings as resetSettingsOnStorage,
+  saveSettings as saveSettingsOnStorage,
+} from "./settings";
+import { PropTypes } from "prop-types";
+
+export function useSettings() {
+  const [settings, setSettings] = useState(null);
+
+  useEffect(() => {
+    getSettings().then((r) => {
+      setSettings(r);
+    });
+
+    const changedListener = (newValues) => {
+      setSettings((prevSettings) => {
+        return {
+          ...prevSettings,
+          ...newValues,
+        };
+      });
+    };
+
+    addListener(changedListener);
+    return () => {
+      removeListener(changedListener);
+    };
+  }, []);
+
+  const saveSettings = (newValues) => {
+    setSettings((prevSettings) => {
+      return {
+        ...prevSettings,
+        ...newValues,
+      };
+    });
+
+    saveSettingsOnStorage(newValues);
+  };
+
+  const resetSettings = () => {
+    const defaults = getDefaultSettings();
+    setSettings(defaults);
+    resetSettingsOnStorage();
+  };
+
+  return { settings, saveSettings, resetSettings };
+}
+
+const SettingsContext = createContext(null);
+
+export function useSettingsContext() {
+  return useContext(SettingsContext);
+}
+
+export function SettingsContextProvider({ children }) {
+  const { settings, saveSettings, resetSettings } = useSettings();
+  return (
+    <SettingsContext.Provider value={{ settings, saveSettings, resetSettings }}>
+      {children}
+    </SettingsContext.Provider>
+  );
+}
+
+SettingsContextProvider.propTypes = {
+  children: PropTypes.node,
+};
+
+export function useThemePreferenceSync(settings) {
+  useEffect(() => {
+    if (!settings) {
+      return;
+    }
+    const root = document.documentElement;
+    if (settings.themePreference && settings.themePreference !== "system") {
+      root.setAttribute("data-theme", settings.themePreference);
+    } else {
+      root.removeAttribute("data-theme");
+    }
+    if (settings.motionPreference && settings.motionPreference !== "system") {
+      root.setAttribute("data-motion", settings.motionPreference);
+    } else {
+      root.removeAttribute("data-motion");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [settings?.themePreference, settings?.motionPreference]);
+}
+
+export function useEffectiveDarkMode(settings) {
+  const systemPrefersDark = useMatchMedia("(prefers-color-scheme: dark)");
+  if (settings?.themePreference === "dark") {
+    return true;
+  }
+  if (settings?.themePreference === "light") {
+    return false;
+  }
+  return systemPrefersDark;
+}
+
+export function useURLParams() {
+  const [params, setParams] = useState(null);
+  useEffect(() => {
+    setParams(new URL(location.href).searchParams);
+  }, []);
+  return params;
+}
+
+export function usePageTitle(title) {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+}
+
+export function useWindowSize() {
+  const [size, setSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+  useEffect(() => {
+    const handleResize = () => {
+      setSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return size;
+}
+
+export function useMousePosition(throttle = 0) {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const lastUpdate = useRef(0);
+  useEffect(() => {
+    const handleMouseEvent = (event) => {
+      if (throttle > 0) {
+        const now = Date.now();
+        if (now - lastUpdate.current < throttle) {
+          return;
+        }
+        lastUpdate.current = now;
+      }
+      setPosition({ x: event.clientX, y: event.clientY });
+    };
+    window.addEventListener("mouseenter", handleMouseEvent);
+    window.addEventListener("mousemove", handleMouseEvent);
+    window.addEventListener("mouseleave", handleMouseEvent);
+    return () => {
+      window.removeEventListener("mouseenter", handleMouseEvent);
+      window.removeEventListener("mousemove", handleMouseEvent);
+      window.removeEventListener("mouseleave", handleMouseEvent);
+    };
+  }, [throttle]);
+  return position;
+}
+
+/**
+ *
+ * @return {React.RefObject<{x: number, y: number}|null>}
+ */
+export function useMousePositionRef() {
+  const position = useRef(null);
+
+  useEffect(() => {
+    const handleMouseEvent = (event) => {
+      position.current = { x: event.clientX, y: event.clientY };
+    };
+    window.addEventListener("mouseenter", handleMouseEvent);
+    window.addEventListener("mousemove", handleMouseEvent);
+    window.addEventListener("mouseleave", handleMouseEvent);
+    return () => {
+      window.removeEventListener("mouseenter", handleMouseEvent);
+      window.removeEventListener("mousemove", handleMouseEvent);
+      window.removeEventListener("mouseleave", handleMouseEvent);
+    };
+  }, []);
+  return position;
+}
+
+export function useKeyPress({
+  key,
+  event,
+  el,
+  preventDefault,
+  stopPropagation,
+  callback,
+}) {
+  if (!el) {
+    el = window;
+  }
+  useEffect(() => {
+    const handleEvent = (e) => {
+      if (
+        e.key === key &&
+        !e.ctrlKey &&
+        !e.altKey &&
+        !e.shiftKey &&
+        !e.metaKey
+      ) {
+        if (preventDefault) e.preventDefault();
+        if (stopPropagation) e.stopPropagation();
+        callback();
+      }
+    };
+    el.addEventListener(event, handleEvent);
+    return () => {
+      el.removeEventListener(event, handleEvent);
+    };
+  }, [callback, el, event, key, preventDefault, stopPropagation]);
+}
+
+export function useWindowMessage(callback) {
+  useEffect(() => {
+    const handleMessage = (event) => {
+      callback(event);
+    };
+    window.addEventListener("message", handleMessage);
+    return () => window.removeEventListener("message", handleMessage);
+  }, [callback]);
+}
+
+export function useTemporaryState(value, timeout) {
+  const [state, setState] = useState(value);
+  useEffect(() => {
+    setState(value);
+  }, [value]);
+  useEffect(() => {
+    if (state !== value) {
+      const timer = setTimeout(() => {
+        setState(value);
+      }, timeout);
+      return () => clearTimeout(timer);
+    }
+  }, [state, timeout, value]);
+  return [state, setState];
+}
+
+export function useConsoleLog(...args) {
+  useEffect(() => {
+    console.log(...args);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, args);
+}
+
+export function useTimer() {
+  const handles = useRef([]);
+
+  useEffect(() => {
+    return () => {
+      handles.current.forEach(clearTimeout);
+    };
+  }, []);
+
+  const setTimer = (callback, delay) => {
+    const handle = setTimeout(callback, delay);
+    handles.current.push(handle);
+    return handle;
+  };
+
+  const clearTimer = (handle) => {
+    clearTimeout(handle);
+    handles.current = handles.current.filter((t) => t !== handle);
+  };
+
+  return { setTimer, clearTimer };
+}
+
+export function useMatchMedia(query) {
+  const [matches, setMatches] = useState(false);
+
+  useEffect(() => {
+    const list = window.matchMedia(query);
+    setMatches(list.matches);
+
+    const handleChange = (e) => {
+      setMatches(e.matches);
+    };
+    list.addEventListener("change", handleChange);
+    return () => {
+      list.removeEventListener("change", handleChange);
+    };
+  }, [query]);
+
+  return matches;
+}

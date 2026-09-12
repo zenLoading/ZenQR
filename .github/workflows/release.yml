@@ -1,0 +1,57 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*" # Trigger on pushes to tags starting with 'v'
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: corepack yarn install --frozen-lockfile
+      - run: scripts/release.sh firefox
+      - run: scripts/release.sh chrome
+      - uses: actions/upload-artifact@v4
+        with:
+          name: firefox-release
+          path: release/qrcraft-*-firefox-*.zip # Upload the generated Firefox zip files
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chrome-release
+          path: release/qrcraft-*-chrome-*.zip # Upload the generated Chrome zip files
+
+      # Create a GitHub Release
+
+      - name: Create GitHub Release
+        run: |
+          TAG="${{ github.ref_name }}"
+
+          PRERELEASE=false
+          shopt -s nocasematch
+          if [[ "$TAG" == *"rc"* || "$TAG" == *"beta"* || "$TAG" == *"alpha"* ]]; then
+            PRERELEASE=true
+          fi
+          shopt -u nocasematch
+
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release for $TAG already exists; uploading assets instead."
+            gh release upload "$TAG" \
+              --clobber \
+              release/qrcraft-*-firefox-*.zip \
+              release/qrcraft-*-chrome-*.zip
+          else
+            gh release create "$TAG" \
+              --title "$TAG" \
+              --draft=false \
+              --prerelease="$PRERELEASE" \
+              release/qrcraft-*-firefox-*.zip \
+              release/qrcraft-*-chrome-*.zip
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

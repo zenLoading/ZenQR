@@ -1,0 +1,565 @@
+{
+  "extension_name": {
+    "message": "QRCraft - QR Code 產生器與掃描器"
+  },
+  "extension_short_name": {
+    "message": "QRCraft",
+    "description": "[keep-original]"
+  },
+  "extension_description": {
+    "message": "離線產生或掃描二維碼。"
+  },
+  "save_image_btn": {
+    "message": "儲存"
+  },
+  "save_image_btn_title": {
+    "message": "儲存這張二維碼圖片"
+  },
+  "copy_image_btn": {
+    "message": "複製"
+  },
+  "copy_image_btn_title": {
+    "message": "複製這張二維碼圖片到剪貼簿"
+  },
+  "copy_image_ok": {
+    "message": "已複製！"
+  },
+  "open_url_btn": {
+    "message": "開啟網址"
+  },
+  "open_url_btn_title": {
+    "message": "在新分頁中開啟掃描到的網址"
+  },
+  "tab_generate_title": {
+    "message": "產生"
+  },
+  "tab_scan_title": {
+    "message": "掃描"
+  },
+  "tab_history_title": {
+    "message": "歷史記錄"
+  },
+  "clear_history_btn": {
+    "message": "清除"
+  },
+  "clear_history_btn_title": {
+    "message": "清除歷史記錄"
+  },
+  "github_link_title": {
+    "message": "造訪 QRCraft 在 Github 上的專案主頁"
+  },
+  "toggle_generator_options_btn_label": {
+    "message": "選項"
+  },
+  "toggle_generator_options_btn_title": {
+    "message": "顯示/隱藏 QR 碼產生器選項"
+  },
+  "error_correction_level_btn_low_title": {
+    "message": "低，可以恢復 7% 左右的資料"
+  },
+  "error_correction_level_btn_medium_title": {
+    "message": "中，可以恢復 15% 左右的資料"
+  },
+  "error_correction_level_btn_quartile_title": {
+    "message": "四分，可以恢復 25% 左右的資料"
+  },
+  "error_correction_level_btn_high_title": {
+    "message": "高，可以恢復 30% 左右的資料"
+  },
+  "error_correction_level_label": {
+    "message": "糾錯:"
+  },
+  "error_correction_level_label_title": {
+    "message": "糾錯級別"
+  },
+  "content_length_label_title": {
+    "message": "二維碼內容長度，以字元數計"
+  },
+  "finder_style_label": {
+    "message": "定位標記樣式:"
+  },
+  "finder_style_label_title": {
+    "message": "為定位標記圖案（三個角標記）選擇樣式"
+  },
+  "module_style_label": {
+    "message": "模組樣式:"
+  },
+  "module_style_label_title": {
+    "message": "為資料模組選擇樣式"
+  },
+  "image_size_label": {
+    "message": "圖片尺寸:"
+  },
+  "image_size_label_title": {
+    "message": "設定二維碼的圖片尺寸"
+  },
+  "content_length_label": {
+    "message": "長度:"
+  },
+  "content_title": {
+    "message": "二維碼內容"
+  },
+  "content_placeholder": {
+    "message": "在此輸入文字即可產生二維碼"
+  },
+  "context_menu_make_qr_code_for_link": {
+    "message": "為該連結產生二維碼"
+  },
+  "context_menu_make_qr_code_for_selected_text": {
+    "message": "產生 \"%s\" 的二維碼"
+  },
+  "context_menu_scan_qr_code_in_image": {
+    "message": "掃描圖片中的二維碼"
+  },
+  "context_menu_pick_region_to_scan": {
+    "message": "選擇掃描區域..."
+  },
+  "context_menu_scan_with_camera": {
+    "message": "用攝影機掃描"
+  },
+  "scan_region_picker_tips_scrollwheel": {
+    "message": "滾輪"
+  },
+  "scan_region_picker_tips_adjust_size": {
+    "message": "調整大小"
+  },
+  "scan_region_picker_tips_leftclick": {
+    "message": "左鍵點選"
+  },
+  "scan_region_picker_tips_scan": {
+    "message": "掃描"
+  },
+  "scan_region_picker_tips_esc": {
+    "message": "Esc",
+    "description": "[keep-original]"
+  },
+  "scan_region_picker_tips_exit": {
+    "message": "退出"
+  },
+  "copy_btn": {
+    "message": "複製"
+  },
+  "copy_btn_copied": {
+    "message": "已複製"
+  },
+  "decoding_failed": {
+    "message": "掃碼失敗：$MSG$",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      }
+    }
+  },
+  "unable_to_decode": {
+    "message": "無法讀取二維碼"
+  },
+  "scan_instructions_html": {
+    "message": "右鍵單擊任意圖片並選擇<br>「<img class=\"icon\" src=\"../icons/qrcraft.svg\"></img> 掃描圖片中的二維碼」"
+  },
+  "scan_from_clipboard_instructions_html": {
+    "message": "按 <kbd>Ctrl</kbd> + <kbd>V</kbd> <br> 或 <kbd>⌘</kbd> + <kbd>V</kbd> 來掃描剪貼簿中的圖片"
+  },
+  "pick_region_to_scan_btn": {
+    "message": "選擇掃描區域"
+  },
+  "camera_scan_btn": {
+    "message": "用攝影機掃描"
+  },
+  "rescan_btn_label": {
+    "message": "重新掃描"
+  },
+  "rescan_btn_title": {
+    "message": "開始新的掃描"
+  },
+  "grant_camera_permission_name": {
+    "message": "使用攝影機"
+  },
+  "grant_permissions_window_title": {
+    "message": "授予權限"
+  },
+  "grant_camera_initial_instructions_firefox_html": {
+    "message": "您即將授予 QRCraft 使用相機的權限。<br><br>當瀏覽器詢問您是否允許 QRCraft 使用相機時，請確保 <strong>\"對所有相機記住此設定\"</strong> 核取方塊已勾選，然後點擊 <strong>\"允許\"</strong>。<br><br>點擊下方按鈕開始。"
+  },
+  "grant_camera_initial_instructions_chrome_html": {
+    "message": "您即將授予 QRCraft 使用相機的權限。<br><br>當瀏覽器詢問您是否允許 QRCraft 使用相機時，請選擇 <strong>\"允許在造訪網站期間\"</strong>。<br><br>點擊下方按鈕開始。"
+  },
+  "grant_camera_blocked_instructions_firefox_html": {
+    "message": "QRCraft 的攝影機權限似乎已經被設定爲<strong>封鎖</strong>了。<br><br>若要改變此設定，請點擊網址列左邊的 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 圖示，然後將「使用攝影機」旁邊的「已封鎖」狀態<strong>移除</strong>。<br><br>完成此操作後，請重新載入本頁。"
+  },
+  "grant_camera_blocked_instructions_chrome_html": {
+    "message": "QRCraft 的攝影機權限似乎已經被設定爲<strong>封鎖</strong>了。<br><br>若要改變此設定，請點擊網址列上的 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 圖示，並選擇 <strong>一律允許 QRCraft - QR Code 產生器與掃描器 存取您的攝影機</strong>。<br><br>完成此操作後，請重新載入本頁。"
+  },
+  "grant_camera_granted_instructions_html": {
+    "message": "QRCraft 已经成功获得攝影機權限。<br><br>現在您可以關閉本頁了。"
+  },
+  "grant_permissions_instructions_html": {
+    "message": "此功能需要以下附加權限<br><br><strong>$PERMISSION$</strong><br>",
+    "placeholders": {
+      "permission": {
+        "content": "$1"
+      }
+    }
+  },
+  "grant_permissions_btn": {
+    "message": "授予權限"
+  },
+  "grant_page_refresh_btn": {
+    "message": "重新載入"
+  },
+  "grant_page_dont_see_icon_btn_html": {
+    "message": "我找不到 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 圖示！"
+  },
+  "grant_page_dont_see_icon_instructions_html": {
+    "message": "有些瀏覽器會在幾秒後隱藏圖示。請點擊下方按鈕將其顯示出來。"
+  },
+  "grant_page_dont_see_icon_instructions_reveal_icon_btn_label": {
+    "message": "顯示圖示"
+  },
+  "grant_page_close_btn": {
+    "message": "關閉"
+  },
+  "or": {
+    "message": "或者"
+  },
+  "scanning": {
+    "message": "掃描中..."
+  },
+  "unable_to_decode_qr_code": {
+    "message": "二維碼解碼失敗"
+  },
+  "browser_action_command_description": {
+    "message": "展開彈出視窗"
+  },
+  "select_region_to_scan_command_description": {
+    "message": "選擇掃描區域"
+  },
+  "scan_with_camera_command_description": {
+    "message": "用攝影機掃描"
+  },
+  "picker_close_btn_title": {
+    "message": "關閉"
+  },
+  "disable_history_btn_title": {
+    "message": "暫停歷史記錄"
+  },
+  "disable_history_btn_label": {
+    "message": "暫停"
+  },
+  "enable_history_btn_title": {
+    "message": "恢復歷史記錄"
+  },
+  "enable_history_btn_label": {
+    "message": "恢復"
+  },
+  "remove_history_btn_title": {
+    "message": "從歷史記錄中刪除此條目"
+  },
+  "select_region_to_scan_open_command_description": {
+    "message": "選擇區域進行掃描並開啟 URL"
+  },
+  "select_region_to_scan_open_new_bg_tab_command_description": {
+    "message": "選擇區域進行掃描並在新的背景分頁中開啟 URL"
+  },
+  "select_region_to_scan_open_new_fg_tab_command_description": {
+    "message": "選擇區域進行掃描並在新的前景分頁中開啟 URL"
+  },
+  "picker_url_mode_auto_open_no": {
+    "message": "不要自動開啟 URL"
+  },
+  "picker_url_mode_auto_open_in_current_tab": {
+    "message": "在目前分頁中自動開啟 URL"
+  },
+  "picker_url_mode_auto_open_in_bg_tab": {
+    "message": "在新的背景分頁中自動開啟 URL"
+  },
+  "picker_url_mode_auto_open_in_fg_tab": {
+    "message": "在新的前景分頁中自動開啟 URL"
+  },
+  "copy_btn_title": {
+    "message": "複製到剪貼簿"
+  },
+  "grant_permissions_error_details_summary": {
+    "message": "錯誤詳情"
+  },
+  "grant_camera_unusable_instructions_html": {
+    "message": "攝影機似乎無法存取。是否有其他程式正在使用攝影機？<br><br>請關閉可能正在使用攝影機的其他程式，然後重新整理此頁面。"
+  },
+  "grant_camera_unknow_error_instructions_html": {
+    "message": "嘗試取得攝影機存取權時發生不明錯誤。<br><br>請重新整理此頁面並重試。"
+  },
+  "unable_to_access_camera": {
+    "message": "無法存取攝影機。是否有其他程式正在使用攝影機？"
+  },
+  "settings_window_title": {
+    "message": "QRCraft 設定"
+  },
+  "settings_scan_success_sound_enabled_label": {
+    "message": "掃描成功時播放聲音"
+  },
+  "settings_scan_success_sound_enabled_explainer": {
+    "message": "成功掃描到 QR 碼時播放提示音。"
+  },
+  "settings_white_on_black_qr_ccode_in_dark_mode_label": {
+    "message": "在深色模式下產生黑色背景上的白色 QR 碼"
+  },
+  "settings_white_on_black_qr_ccode_in_dark_mode_explainer": {
+    "message": "在深色模式下，產生深色背景上的淺色前景色的 QR 碼。某些掃描器可能難以掃描此類 QR 碼。您透過「儲存」和「複製」按鈕儲存或複製的 QR 碼將始終具有白色背景和黑色前景色。"
+  },
+  "settings_scanner_legend": {
+    "message": "QR 碼掃描"
+  },
+  "settings_generator_legend": {
+    "message": "QR 碼產生"
+  },
+  "tab_settings_title": {
+    "message": "變更 QRCraft 的設定"
+  },
+  "settings_config_keyboard_shortcuts_btn_label": {
+    "message": "設定鍵盤快速鍵"
+  },
+  "unable_to_access_camera_unknown_error": {
+    "message": "無法存取相機。發生了非預期的錯誤。"
+  },
+  "scan_region_picker_tips_rescan": {
+    "message": "重新掃描"
+  },
+  "scan_region_picker_tips_open_url_mode_title": {
+    "message": "選擇如何在掃描結果中處理網址"
+  },
+  "unable_to_load_image": {
+    "message": "無法載入圖片"
+  },
+  "settings_picker_pause_videos_onload_enabled_label": {
+    "message": "在「選取要掃描的區域」期間暫停所有影片"
+  },
+  "settings_picker_pause_videos_onload_enabled_explainer": {
+    "message": "在您選取掃描區域時暫停影片，以免您錯過任何 QR 圖碼。"
+  },
+  "image_scanner_failed_to_load_image": {
+    "message": "圖片載入失敗。其來源可能無法存取或受到限制。請嘗試掃描螢幕區域。"
+  },
+  "loading_image": {
+    "message": "正在載入圖片..."
+  },
+  "batch_generator_link_label": {
+    "message": "批次"
+  },
+  "batch_generator_link_title": {
+    "message": "在新分頁中開啟批次 QR 碼產生器"
+  },
+  "batch_generator_input_placeholder": {
+    "message": "每行一個 QR 碼，例如：\nhttps://example.com/1\nhttps://example.com/2"
+  },
+  "batch_generator_instructions": {
+    "message": "在下方輸入或貼上多行文字，每個非空白行都會產生各自的 QR 碼。"
+  },
+  "batch_generator_saving_all_btn": {
+    "message": "儲存中..."
+  },
+  "batch_generator_window_title": {
+    "message": "QRCraft 批次產生器"
+  },
+  "context_menu_batch_generate_from_selection": {
+    "message": "批次產生 QR 碼（每行一個）"
+  },
+  "logo_choose_btn": {
+    "message": "選擇圖片"
+  },
+  "logo_choose_btn_title": {
+    "message": "選擇要嵌入 QR 碼中央的圖片"
+  },
+  "logo_ec_level_hint": {
+    "message": "提示：搭配標誌使用時，建議將糾錯等級設為「高」以提升掃描辨識度。"
+  },
+  "logo_label": {
+    "message": "標誌："
+  },
+  "logo_label_title": {
+    "message": "在 QR 碼中央嵌入一個小標誌圖片"
+  },
+  "logo_remove_btn_title": {
+    "message": "移除標誌"
+  },
+  "logo_show_checkbox_label": {
+    "message": "顯示"
+  },
+  "logo_show_checkbox_title": {
+    "message": "在產生的 QR 碼上顯示標誌"
+  },
+  "export_history_btn": {
+    "message": "匯出"
+  },
+  "export_history_btn_title": {
+    "message": "將歷史記錄匯出為 JSON 檔案"
+  },
+  "import_history_btn": {
+    "message": "匯入"
+  },
+  "import_history_btn_title": {
+    "message": "從先前匯出的 JSON 檔案匯入歷史記錄"
+  },
+  "import_history_error": {
+    "message": "匯入歷史記錄失敗：檔案無效或已損毀"
+  },
+  "template_apply_btn": {
+    "message": "產生 QR 碼"
+  },
+  "template_email_body_placeholder": {
+    "message": "郵件內容"
+  },
+  "template_email_subject_placeholder": {
+    "message": "主旨"
+  },
+  "template_email_to_placeholder": {
+    "message": "收件人電子郵件地址"
+  },
+  "template_event_description_placeholder": {
+    "message": "說明"
+  },
+  "template_event_end_label": {
+    "message": "結束："
+  },
+  "template_event_location_placeholder": {
+    "message": "地點"
+  },
+  "template_event_start_label": {
+    "message": "開始："
+  },
+  "template_event_title_placeholder": {
+    "message": "活動標題"
+  },
+  "template_phone_placeholder": {
+    "message": "電話號碼"
+  },
+  "template_sms_message_placeholder": {
+    "message": "訊息內容"
+  },
+  "template_sms_phone_placeholder": {
+    "message": "電話號碼"
+  },
+  "template_type_email": {
+    "message": "電子郵件"
+  },
+  "template_type_event": {
+    "message": "行事曆活動"
+  },
+  "template_type_phone": {
+    "message": "電話號碼"
+  },
+  "template_type_sms": {
+    "message": "簡訊"
+  },
+  "template_type_vcard": {
+    "message": "聯絡人（vCard）"
+  },
+  "template_type_wifi": {
+    "message": "WiFi 網路"
+  },
+  "template_vcard_email_placeholder": {
+    "message": "電子郵件地址"
+  },
+  "template_vcard_first_name_placeholder": {
+    "message": "名字"
+  },
+  "template_vcard_last_name_placeholder": {
+    "message": "姓氏"
+  },
+  "template_vcard_org_placeholder": {
+    "message": "公司/組織"
+  },
+  "template_vcard_phone_placeholder": {
+    "message": "電話號碼"
+  },
+  "template_vcard_url_placeholder": {
+    "message": "網站網址"
+  },
+  "template_wifi_encryption_wep": {
+    "message": "WEP"
+  },
+  "template_wifi_encryption_wpa": {
+    "message": "WPA/WPA2/WPA3"
+  },
+  "template_wifi_hidden_label": {
+    "message": "隱藏網路"
+  },
+  "template_wifi_no_password": {
+    "message": "無密碼"
+  },
+  "template_wifi_password_placeholder": {
+    "message": "密碼"
+  },
+  "template_wifi_ssid_placeholder": {
+    "message": "網路名稱（SSID）"
+  },
+  "toggle_template_builder_btn_label": {
+    "message": "範本"
+  },
+  "toggle_template_builder_btn_title": {
+    "message": "顯示/隱藏 QR 碼範本產生器（WiFi、聯絡人、活動等）"
+  },
+  "settings_appearance_legend": {
+    "message": "外觀"
+  },
+  "settings_data_legend": {
+    "message": "資料"
+  },
+  "settings_generator_defaults_explainer": {
+    "message": "這些預設值會在您每次建立新的 QR 碼時套用。您仍可以在產生器的「選項」面板中，針對個別 QR 碼覆寫這些設定。"
+  },
+  "settings_history_legend": {
+    "message": "歷史記錄"
+  },
+  "settings_history_max_items_explainer": {
+    "message": "達到此上限後，最舊的記錄會自動移除。"
+  },
+  "settings_history_max_items_label": {
+    "message": "最多保留"
+  },
+  "settings_motion_explainer": {
+    "message": "控制 QRCraft 中使用的動畫與過場效果。"
+  },
+  "settings_motion_label": {
+    "message": "動態效果"
+  },
+  "settings_motion_option_full": {
+    "message": "完整"
+  },
+  "settings_motion_option_reduced": {
+    "message": "減少"
+  },
+  "settings_motion_option_system": {
+    "message": "跟隨系統"
+  },
+  "settings_reset_btn_label": {
+    "message": "重設為預設值"
+  },
+  "settings_reset_confirm_btn_label": {
+    "message": "再次點擊以確認重設"
+  },
+  "settings_reset_explainer": {
+    "message": "將外觀、產生器預設值與掃描器選項還原為初始值，不會影響您的掃描與產生歷史記錄。"
+  },
+  "settings_theme_explainer": {
+    "message": "選擇 QRCraft 要跟隨系統主題，還是永遠使用指定的主題。"
+  },
+  "settings_theme_label": {
+    "message": "主題"
+  },
+  "settings_theme_option_dark": {
+    "message": "深色"
+  },
+  "settings_theme_option_light": {
+    "message": "淺色"
+  },
+  "settings_theme_option_system": {
+    "message": "跟隨系統"
+  },
+  "batch_generator_save_all_btn": {
+    "message": "全部儲存 ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  }
+}

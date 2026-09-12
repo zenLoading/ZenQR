@@ -1,0 +1,565 @@
+{
+  "extension_name": {
+    "message": "QRCraft - 二维码生成器和扫描器"
+  },
+  "extension_short_name": {
+    "message": "QRCraft",
+    "description": "[keep-original]"
+  },
+  "extension_description": {
+    "message": "离线生成或扫描二维码。"
+  },
+  "save_image_btn": {
+    "message": "保存"
+  },
+  "save_image_btn_title": {
+    "message": "保存这张二维码图片"
+  },
+  "copy_image_btn": {
+    "message": "复制"
+  },
+  "copy_image_btn_title": {
+    "message": "复制这张二维码图片到剪贴板"
+  },
+  "copy_image_ok": {
+    "message": "已复制！"
+  },
+  "open_url_btn": {
+    "message": "打开网址"
+  },
+  "open_url_btn_title": {
+    "message": "在新标签页中打开扫描到的网址"
+  },
+  "tab_generate_title": {
+    "message": "生成"
+  },
+  "tab_scan_title": {
+    "message": "扫描"
+  },
+  "tab_history_title": {
+    "message": "历史记录"
+  },
+  "clear_history_btn": {
+    "message": "清除"
+  },
+  "clear_history_btn_title": {
+    "message": "清除历史记录"
+  },
+  "github_link_title": {
+    "message": "访问 QRCraft 在 Github 上的项目主页"
+  },
+  "toggle_generator_options_btn_label": {
+    "message": "选项"
+  },
+  "toggle_generator_options_btn_title": {
+    "message": "显示/隐藏二维码生成器选项"
+  },
+  "error_correction_level_btn_low_title": {
+    "message": "低，可以恢复 7% 左右的数据"
+  },
+  "error_correction_level_btn_medium_title": {
+    "message": "中，可以恢复 15% 左右的数据"
+  },
+  "error_correction_level_btn_quartile_title": {
+    "message": "四分级，可以恢复 25% 左右的数据"
+  },
+  "error_correction_level_btn_high_title": {
+    "message": "高，可以恢复 30% 左右的数据"
+  },
+  "error_correction_level_label": {
+    "message": "纠错:"
+  },
+  "error_correction_level_label_title": {
+    "message": "纠错等级"
+  },
+  "content_length_label_title": {
+    "message": "二维码内容长度，以字符数计"
+  },
+  "finder_style_label": {
+    "message": "定位标记样式:"
+  },
+  "finder_style_label_title": {
+    "message": "为定位标记图案（三个角标记）选择样式"
+  },
+  "module_style_label": {
+    "message": "模块样式:"
+  },
+  "module_style_label_title": {
+    "message": "为数据模块选择样式"
+  },
+  "image_size_label": {
+    "message": "图像尺寸:"
+  },
+  "image_size_label_title": {
+    "message": "设置二维码的图像尺寸"
+  },
+  "content_length_label": {
+    "message": "长度:"
+  },
+  "content_title": {
+    "message": "二维码内容"
+  },
+  "content_placeholder": {
+    "message": "在此输入文字即可生成二维码"
+  },
+  "context_menu_make_qr_code_for_link": {
+    "message": "为该链接生成二维码"
+  },
+  "context_menu_make_qr_code_for_selected_text": {
+    "message": "生成 \"%s\" 的二维码"
+  },
+  "context_menu_scan_qr_code_in_image": {
+    "message": "扫描图片中的二维码"
+  },
+  "context_menu_pick_region_to_scan": {
+    "message": "选择扫描区域..."
+  },
+  "context_menu_scan_with_camera": {
+    "message": "用摄像头扫描"
+  },
+  "scan_region_picker_tips_scrollwheel": {
+    "message": "滚轮"
+  },
+  "scan_region_picker_tips_adjust_size": {
+    "message": "调整大小"
+  },
+  "scan_region_picker_tips_leftclick": {
+    "message": "左键单击"
+  },
+  "scan_region_picker_tips_scan": {
+    "message": "扫描"
+  },
+  "scan_region_picker_tips_esc": {
+    "message": "Esc",
+    "description": "[keep-original]"
+  },
+  "scan_region_picker_tips_exit": {
+    "message": "退出"
+  },
+  "copy_btn": {
+    "message": "复制"
+  },
+  "copy_btn_copied": {
+    "message": "已复制"
+  },
+  "decoding_failed": {
+    "message": "扫码失败：$MSG$",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      }
+    }
+  },
+  "unable_to_decode": {
+    "message": "无法读取二维码"
+  },
+  "scan_instructions_html": {
+    "message": "右键单击任意图片并选择<br>“<img class=\"icon\" src=\"../icons/qrcraft.svg\"></img> 扫描此图片中的二维码”"
+  },
+  "scan_from_clipboard_instructions_html": {
+    "message": "按 <kbd>Ctrl</kbd> + <kbd>V</kbd> <br> 或 <kbd>⌘</kbd> + <kbd>V</kbd> 来扫描剪贴板中的图片"
+  },
+  "pick_region_to_scan_btn": {
+    "message": "选择扫描区域"
+  },
+  "camera_scan_btn": {
+    "message": "用摄像头扫描"
+  },
+  "rescan_btn_label": {
+    "message": "重新扫描"
+  },
+  "rescan_btn_title": {
+    "message": "开始新的扫描"
+  },
+  "grant_camera_permission_name": {
+    "message": "使用摄像头"
+  },
+  "grant_permissions_window_title": {
+    "message": "授予权限"
+  },
+  "grant_camera_initial_instructions_firefox_html": {
+    "message": "您即将授予 QRCraft 使用摄像头的权限。<br><br>当浏览器询问您是否允许 QRCraft 使用摄像头时，请确保 <strong>\"对所有摄像头记住此设置\"</strong> 复选框已勾选，然后点击 <strong>\"允许\"</strong>。<br><br>点击下方按钮开始。"
+  },
+  "grant_camera_initial_instructions_chrome_html": {
+    "message": "您即将授予 QRCraft 使用摄像头的权限。<br><br>当浏览器询问您是否允许 QRCraft 使用摄像头时，请选择 <strong>\"允许在访问网站期间\"</strong>。<br><br>点击下方按钮开始。"
+  },
+  "grant_camera_blocked_instructions_firefox_html": {
+    "message": "QRCraft 的摄像头权限似乎已经被设定为<strong>阻止</strong>了。<br><br>如要修改该设定，请点击地址栏左边的 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 图标，然后将“使用摄像头”一栏的“已阻止”状态<strong>移除</strong>。<br><br>完成该操作后，请刷新本页面。"
+  },
+  "grant_camera_blocked_instructions_chrome_html": {
+    "message": "QRCraft 的摄像头权限似乎已经被设定为<strong>阻止</strong>了。<br><br>如要修改该设定，请点击地址栏上的 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 图标，并选择 <strong>始终允许 QRCraft - 二维码生成器和扫描器 访问您的摄像头</strong>。<br><br>完成该操作后，请刷新本页面。"
+  },
+  "grant_camera_granted_instructions_html": {
+    "message": "QRCraft 已经成功获得摄像头权限。<br><br>您现在可以关闭本页面了。"
+  },
+  "grant_page_refresh_btn": {
+    "message": "刷新"
+  },
+  "grant_page_dont_see_icon_btn_html": {
+    "message": "我找不到 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 图标！"
+  },
+  "grant_page_dont_see_icon_instructions_html": {
+    "message": "有些浏览器会在几秒后隐藏该图标。请点击下面的按钮将其显示出来。"
+  },
+  "grant_page_dont_see_icon_instructions_reveal_icon_btn_label": {
+    "message": "显示图标"
+  },
+  "grant_page_close_btn": {
+    "message": "关闭"
+  },
+  "grant_permissions_instructions_html": {
+    "message": "此功能需要以下附加权限。<br><br><strong>$PERMISSION$</strong><br>",
+    "placeholders": {
+      "permission": {
+        "content": "$1"
+      }
+    }
+  },
+  "grant_permissions_btn": {
+    "message": "授予权限"
+  },
+  "or": {
+    "message": "或者"
+  },
+  "scanning": {
+    "message": "扫描中..."
+  },
+  "unable_to_decode_qr_code": {
+    "message": "二维码解码失败"
+  },
+  "browser_action_command_description": {
+    "message": "显示弹出框"
+  },
+  "select_region_to_scan_command_description": {
+    "message": "选择扫描区域"
+  },
+  "scan_with_camera_command_description": {
+    "message": "用摄像头扫描"
+  },
+  "picker_close_btn_title": {
+    "message": "关闭"
+  },
+  "disable_history_btn_title": {
+    "message": "暂停历史记录"
+  },
+  "disable_history_btn_label": {
+    "message": "暂停"
+  },
+  "enable_history_btn_title": {
+    "message": "恢复历史记录"
+  },
+  "enable_history_btn_label": {
+    "message": "恢复"
+  },
+  "remove_history_btn_title": {
+    "message": "从历史记录中删除此条目"
+  },
+  "select_region_to_scan_open_command_description": {
+    "message": "选择区域进行扫描并打开 URL"
+  },
+  "select_region_to_scan_open_new_bg_tab_command_description": {
+    "message": "选择区域进行扫描并在新的后台标签页中打开 URL"
+  },
+  "select_region_to_scan_open_new_fg_tab_command_description": {
+    "message": "选择区域进行扫描并在新的前台标签页中打开 URL"
+  },
+  "picker_url_mode_auto_open_no": {
+    "message": "不自动打开 URL"
+  },
+  "picker_url_mode_auto_open_in_current_tab": {
+    "message": "在当前标签页中自动打开 URL"
+  },
+  "picker_url_mode_auto_open_in_bg_tab": {
+    "message": "在新的后台标签页中自动打开 URL"
+  },
+  "picker_url_mode_auto_open_in_fg_tab": {
+    "message": "在新的前台标签页中自动打开 URL"
+  },
+  "copy_btn_title": {
+    "message": "复制到剪贴板"
+  },
+  "grant_permissions_error_details_summary": {
+    "message": "错误详情"
+  },
+  "grant_camera_unusable_instructions_html": {
+    "message": "摄像头似乎无法访问。是否有其他程序正在使用摄像头？<br><br>请关闭可能正在使用摄像头的其他程序，然后刷新此页面。"
+  },
+  "grant_camera_unknow_error_instructions_html": {
+    "message": "尝试获取摄像头访问权限时发生未知错误。<br><br>请刷新此页面并重试。"
+  },
+  "unable_to_access_camera": {
+    "message": "无法访问摄像头。是否有其他程序正在使用摄像头？"
+  },
+  "settings_window_title": {
+    "message": "QRCraft 设置"
+  },
+  "settings_scan_success_sound_enabled_label": {
+    "message": "扫描成功时播放声音"
+  },
+  "settings_scan_success_sound_enabled_explainer": {
+    "message": "成功扫描到二维码时播放提示音。"
+  },
+  "settings_white_on_black_qr_ccode_in_dark_mode_label": {
+    "message": "在深色模式下生成黑色背景上的白色二维码"
+  },
+  "settings_white_on_black_qr_ccode_in_dark_mode_explainer": {
+    "message": "在深色模式下，生成深色背景上的浅色前景色的二维码。某些扫描仪可能难以扫描此类二维码。您通过“保存”和“复制”按钮保存或复制的二维码将始终具有白色背景和黑色前景色。"
+  },
+  "settings_scanner_legend": {
+    "message": "二维码扫描"
+  },
+  "settings_generator_legend": {
+    "message": "二维码生成"
+  },
+  "settings_generator_defaults_explainer": {
+    "message": "这些默认值将用于每次创建新的二维码。您仍然可以在生成器的“选项”面板中为单个二维码单独设置。"
+  },
+  "settings_appearance_legend": {
+    "message": "外观"
+  },
+  "settings_theme_label": {
+    "message": "主题"
+  },
+  "settings_theme_explainer": {
+    "message": "选择 QRCraft 跟随系统主题，还是始终使用指定的主题。"
+  },
+  "settings_theme_option_system": {
+    "message": "跟随系统"
+  },
+  "settings_theme_option_light": {
+    "message": "浅色"
+  },
+  "settings_theme_option_dark": {
+    "message": "深色"
+  },
+  "settings_motion_label": {
+    "message": "动效"
+  },
+  "settings_motion_explainer": {
+    "message": "控制 QRCraft 中使用的动画和过渡效果。"
+  },
+  "settings_motion_option_system": {
+    "message": "跟随系统"
+  },
+  "settings_motion_option_reduced": {
+    "message": "减弱"
+  },
+  "settings_motion_option_full": {
+    "message": "完整"
+  },
+  "settings_history_legend": {
+    "message": "历史记录"
+  },
+  "settings_history_max_items_label": {
+    "message": "最多保留"
+  },
+  "settings_history_max_items_explainer": {
+    "message": "达到此上限后，最早的记录会被自动删除。"
+  },
+  "settings_data_legend": {
+    "message": "数据"
+  },
+  "settings_reset_btn_label": {
+    "message": "恢复默认设置"
+  },
+  "settings_reset_confirm_btn_label": {
+    "message": "再次点击以确认重置"
+  },
+  "settings_reset_explainer": {
+    "message": "将外观、生成器默认值和扫描器选项恢复为初始值，不会影响您的扫描和生成历史记录。"
+  },
+  "tab_settings_title": {
+    "message": "更改 QRCraft 的设置"
+  },
+  "settings_config_keyboard_shortcuts_btn_label": {
+    "message": "配置键盘快捷键"
+  },
+  "unable_to_access_camera_unknown_error": {
+    "message": "无法访问摄像头。发生了一个意外错误。"
+  },
+  "scan_region_picker_tips_rescan": {
+    "message": "重新扫描"
+  },
+  "scan_region_picker_tips_open_url_mode_title": {
+    "message": "选择如何在扫描结果中处理网址"
+  },
+  "unable_to_load_image": {
+    "message": "无法加载图片"
+  },
+  "settings_picker_pause_videos_onload_enabled_label": {
+    "message": "在“选择要扫描的区域”期间暂停所有视频"
+  },
+  "settings_picker_pause_videos_onload_enabled_explainer": {
+    "message": "在选择扫描区域时暂停视频，以免您错过任何二维码。"
+  },
+  "image_scanner_failed_to_load_image": {
+    "message": "图片加载失败。其来源可能无法访问或受到限制。请尝试扫描屏幕区域。"
+  },
+  "loading_image": {
+    "message": "正在加载图片..."
+  },
+  "logo_label": {
+    "message": "Logo："
+  },
+  "logo_label_title": {
+    "message": "在二维码中央嵌入一个小图标"
+  },
+  "logo_choose_btn": {
+    "message": "选择图片"
+  },
+  "logo_choose_btn_title": {
+    "message": "选择要嵌入到二维码中央的图片"
+  },
+  "logo_show_checkbox_label": {
+    "message": "显示"
+  },
+  "logo_show_checkbox_title": {
+    "message": "在生成的二维码上显示 Logo"
+  },
+  "logo_remove_btn_title": {
+    "message": "移除 Logo"
+  },
+  "logo_ec_level_hint": {
+    "message": "提示：添加 Logo 后建议将纠错等级设为“高”，以提升扫描成功率。"
+  },
+  "batch_generator_link_label": {
+    "message": "批量生成"
+  },
+  "batch_generator_link_title": {
+    "message": "在新标签页中打开批量二维码生成器"
+  },
+  "toggle_template_builder_btn_label": {
+    "message": "模板"
+  },
+  "toggle_template_builder_btn_title": {
+    "message": "显示/隐藏二维码模板生成器（WiFi、联系人、日程等）"
+  },
+  "template_type_wifi": {
+    "message": "WiFi 网络"
+  },
+  "template_type_vcard": {
+    "message": "联系人名片（vCard）"
+  },
+  "template_type_email": {
+    "message": "邮件"
+  },
+  "template_type_sms": {
+    "message": "短信"
+  },
+  "template_type_phone": {
+    "message": "电话号码"
+  },
+  "template_type_event": {
+    "message": "日历事件"
+  },
+  "template_wifi_ssid_placeholder": {
+    "message": "网络名称（SSID）"
+  },
+  "template_wifi_encryption_wpa": {
+    "message": "WPA/WPA2/WPA3"
+  },
+  "template_wifi_encryption_wep": {
+    "message": "WEP"
+  },
+  "template_wifi_no_password": {
+    "message": "无密码"
+  },
+  "template_wifi_password_placeholder": {
+    "message": "密码"
+  },
+  "template_wifi_hidden_label": {
+    "message": "隐藏网络"
+  },
+  "template_vcard_first_name_placeholder": {
+    "message": "名"
+  },
+  "template_vcard_last_name_placeholder": {
+    "message": "姓"
+  },
+  "template_vcard_phone_placeholder": {
+    "message": "电话号码"
+  },
+  "template_vcard_email_placeholder": {
+    "message": "电子邮箱"
+  },
+  "template_vcard_org_placeholder": {
+    "message": "公司/组织"
+  },
+  "template_vcard_url_placeholder": {
+    "message": "网站地址"
+  },
+  "template_email_to_placeholder": {
+    "message": "收件人邮箱地址"
+  },
+  "template_email_subject_placeholder": {
+    "message": "主题"
+  },
+  "template_email_body_placeholder": {
+    "message": "正文内容"
+  },
+  "template_sms_phone_placeholder": {
+    "message": "电话号码"
+  },
+  "template_sms_message_placeholder": {
+    "message": "短信内容"
+  },
+  "template_phone_placeholder": {
+    "message": "电话号码"
+  },
+  "template_event_title_placeholder": {
+    "message": "事件标题"
+  },
+  "template_event_start_label": {
+    "message": "开始："
+  },
+  "template_event_end_label": {
+    "message": "结束："
+  },
+  "template_event_location_placeholder": {
+    "message": "地点"
+  },
+  "template_event_description_placeholder": {
+    "message": "描述"
+  },
+  "template_apply_btn": {
+    "message": "生成二维码"
+  },
+  "import_history_btn": {
+    "message": "导入"
+  },
+  "import_history_btn_title": {
+    "message": "从之前导出的 JSON 文件导入历史记录"
+  },
+  "export_history_btn": {
+    "message": "导出"
+  },
+  "export_history_btn_title": {
+    "message": "将历史记录导出为 JSON 文件"
+  },
+  "import_history_error": {
+    "message": "导入历史记录失败：文件无效或已损坏"
+  },
+  "batch_generator_window_title": {
+    "message": "QRCraft 批量生成器"
+  },
+  "batch_generator_instructions": {
+    "message": "在下方输入或粘贴多行文本，每一个非空行都会生成一个独立的二维码。"
+  },
+  "batch_generator_input_placeholder": {
+    "message": "每行一个二维码内容，例如：\nhttps://example.com/1\nhttps://example.com/2"
+  },
+  "batch_generator_save_all_btn": {
+    "message": "全部保存（$COUNT$）",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "batch_generator_saving_all_btn": {
+    "message": "正在保存..."
+  },
+  "context_menu_batch_generate_from_selection": {
+    "message": "批量生成二维码（每行一个）"
+  }
+}
