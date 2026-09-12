@@ -155,21 +155,29 @@ analytics/telemetry. Non-English locale strings were machine-translated
 (see README.md "Localization").
 ```
 
-## Assets checklist — gap found, not yet automated
+## Assets checklist
 
-`promo/generate-images.mjs` currently only renders Chrome/Edge-sized
-marketing images (440x280 promo tile, 1400x560 marquee, 1280x800
-screenshots). AMO's listing wants:
+- [x] Icon: `src/icons/qrcraft-128.png` (128x128 PNG, already built for the
+      Chrome manifest) covers AMO's store-listing icon upload — AMO only
+      requires a single icon, minimum 64x64, recommended 128x128.
+- [x] Screenshots: generated via `node promo/generate-images.mjs` (requires
+      `yarn` deps installed) — produces 1280x800 PNGs per locale under
+      `promo/generated-images/<locale>/`. Use the `en-US` set for the
+      primary listing: `promo-screenshot-1280x800-{generator,scanner,history}.png`.
+      This is below AMO's 2400x1800 max but within its accepted range, so no
+      further upscaling is needed. `promo/generated-images/` is gitignored
+      (regenerate before each submission pass, don't commit it).
 
-- [ ] Icon: 32x32 / 64x64 / 128x128 PNG (the manifest itself only ships a
-      16/48 SVG for the toolbar button — the *store listing* icon is a
-      separate upload and needs a raster version; `src/icons/qrlite-128.png`
-      used for Chrome may already work at 128, but 32/64 aren't generated)
-- [ ] Screenshots: 2400x1800 (AMO's recommended/max size) — the existing
-      `promo/image-source/promo-screenshot-1280x800.html` template renders at
-      1280x800 for Chrome; either upscale that template's puppeteer viewport
-      config for a Firefox-sized pass, or accept a smaller size (AMO accepts
-      screenshots below 2400x1800, just not above).
+## Release build verification (last run 2026-09-12)
 
-This wasn't built out here since it's a separate image-pipeline change, not
-a text/doc gap — flagging so it doesn't get missed before upload.
+- `yarn eslint src` — clean
+- `yarn webpack --mode production --env browser=firefox` — clean build,
+  only expected bundle-size warnings (popup.js/batch.js/opencv assets)
+- `npx web-ext lint --source-dir=dist/firefox` — 0 errors, 7 warnings, all
+  matching the two categories pre-cleared above (version-gating note +
+  the 5 static-i18n `innerHTML` warnings)
+- `node scripts/locale-tools.mjs check` — 0 missing keys across all 9
+  non-English locales (a handful of untranslated WPA/WEP acronyms only)
+- `scripts/release.sh firefox` — produces
+  `release/qrcraft-v1.0.0-firefox-{release,source}.zip` from the current
+  `git HEAD`; re-run this after any source change before uploading.
