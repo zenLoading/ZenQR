@@ -234,7 +234,7 @@ const Generator = forwardRef(function Generator(props, ref) {
           <a
             class="clickable"
             target="_blank"
-            href="https://github.com/zenLoading/QRCraft"
+            href="https://github.com/zenLoading/ZenQR"
             rel="noreferrer"
             title={T("github_link_title")}
           >

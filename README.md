@@ -1,7 +1,5 @@
 # ZenQR
 
-![Promo Banner](promo/chrome-webstore-promo.png)
-
 ZenQR is a browser extension for generating and scanning QR codes offline.
 
 > This extension is not currently published on any browser's add-on store. You'll need to build and install it from source yourself.

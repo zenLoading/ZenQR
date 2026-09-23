@@ -35,9 +35,9 @@ current AMO category list at submission time, since it varies by locale.
 
 ## Support
 
-- Support site: `https://github.com/zenLoading/QRCraft/issues`
+- Support site: `https://github.com/zenLoading/ZenQR/issues`
 - License: MIT (already in `LICENSE`)
-- Homepage/URL: `https://github.com/zenLoading/QRCraft`
+- Homepage/URL: `https://github.com/zenLoading/ZenQR`
 
 ## Privacy policy
 

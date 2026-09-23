@@ -40,7 +40,7 @@ ZenQR generates and scans QR codes right in your browser. Your data is never sen
 <li>Available in 10 languages</li>
 </ul>
 
-Open source (MIT license): <a href="https://github.com/zenLoading/QRCraft">github.com/zenLoading/QRCraft</a>
+Open source (MIT license): <a href="https://github.com/zenLoading/ZenQR">github.com/zenLoading/ZenQR</a>
 
 Note: AMO's description field only allows this HTML subset —
 <a href title> <abbr title> <acronym title> <b> <blockquote> <code> <em> <i> <li> <ol> <strong> <ul>

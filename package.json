@@ -1,7 +1,7 @@
 {
   "name": "zenqr",
   "version": "1.0.0",
-  "repository": "https://github.com/zenLoading/QRCraft",
+  "repository": "https://github.com/zenLoading/ZenQR",
   "author": "zenLoading",
   "license": "MIT",
   "sideEffects": false,
