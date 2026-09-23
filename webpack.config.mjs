@@ -83,8 +83,8 @@ function generateConfig(browser, debug) {
         patterns: copyPatterns,
       }),
       new webpack.DefinePlugin({
-        QRLITE_BROWSER: JSON.stringify(browser),
-        QRLITE_DEBUG: JSON.stringify(debug),
+        ZENQR_BROWSER: JSON.stringify(browser),
+        ZENQR_DEBUG: JSON.stringify(debug),
         // A couple of bundled dependencies feature-detect a Node-style bare
         // `global` identifier. Left alone, webpack emits a small runtime shim to
         // provide it that falls back to `new Function("return this")()` when it

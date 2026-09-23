@@ -225,7 +225,7 @@ async function injectImageRetriever(options) {
     args: [
       options || {},
       // eslint-disable-next-line no-undef
-      QRLITE_DEBUG,
+      ZENQR_DEBUG,
     ],
     target: {
       tabId: options.tabId,

@@ -141,7 +141,7 @@ export class FpsCounter {
 
 export function debugLog(...args) {
   // eslint-disable-next-line no-undef
-  if (QRLITE_DEBUG) {
+  if (ZENQR_DEBUG) {
     console.log(...args);
   }
 }

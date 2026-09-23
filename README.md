@@ -54,9 +54,10 @@ As of now, translations for most of the languages are done by AI. You're welcome
 
 ## Credits
 
+- [QR Lite](https://github.com/monyxie/qr-lite) (MIT) by monyxie, the project ZenQR is based on.
 - [ZXing for JS](https://github.com/zxing-js/library) for generating QR code.
 - [OpenCV + wechat_qrcode](https://docs.opencv.org/4.9.0/dd/d63/group__wechat__qrcode.html) for decoding QR code.
-- [Javascript QR Code](https://addons.mozilla.org/zh-CN/firefox/addon/javascript-qr-code/) for the initial code base.
+- [Javascript QR Code](https://addons.mozilla.org/zh-CN/firefox/addon/javascript-qr-code/) for QR Lite's initial code base.
 
 ## License
 

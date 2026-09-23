@@ -9,5 +9,5 @@ pushd "$(dirname `dirname "$0"`)" || exit
 
 for SIZE in 16 32 48 128
 do
-  inkscape -w "$SIZE" -h "$SIZE" "src/icons/qrlite.svg" -o "src/icons/qrlite-$SIZE.png"
+  inkscape -w "$SIZE" -h "$SIZE" "src/icons/zenqr.svg" -o "src/icons/zenqr-$SIZE.png"
 done

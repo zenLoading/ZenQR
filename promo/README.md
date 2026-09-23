@@ -1,5 +1,7 @@
 Promo materials or related stuff.
 
+Run `node capture-screenshots.mjs` to re-capture the UI screenshots in `screenshots/` and `../docs/assets/screenshots/` from the current build (build `dist/chrome` first; see the script header for the Chromium requirement).
+
 Run `node generate-images.mjs` to generate images.
 
 Run `node generate-images.mjs --serve` to serve project in HTTP server (for script development or translation work).

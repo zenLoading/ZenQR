@@ -36,7 +36,7 @@ function GrantCamera() {
   if (err) {
     switch (err?.name) {
       case "NotAllowedError":
-        errorText = QRLITE_BROWSER === 'firefox' ? TT("grant_camera_blocked_instructions_firefox_html") : TT("grant_camera_blocked_instructions_chrome_html");
+        errorText = ZENQR_BROWSER === 'firefox' ? TT("grant_camera_blocked_instructions_firefox_html") : TT("grant_camera_blocked_instructions_chrome_html");
         break;
       case "AbortError":
       case "NotReadableError":
@@ -53,7 +53,7 @@ function GrantCamera() {
       {state === "initial" && (
         <p>
           <span class="grant-camera ">
-            {QRLITE_BROWSER === 'firefox' ? TT("grant_camera_initial_instructions_firefox_html") : TT("grant_camera_initial_instructions_chrome_html")}
+            {ZENQR_BROWSER === 'firefox' ? TT("grant_camera_initial_instructions_firefox_html") : TT("grant_camera_initial_instructions_chrome_html")}
           </span>
           <br />
           <br />

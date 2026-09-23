@@ -1,9 +1,9 @@
 import { createCanvasFromDataUri } from "./misc";
 
 // eslint-disable-next-line no-undef
-export const apiNs = QRLITE_BROWSER === "firefox" ? browser : chrome;
+export const apiNs = ZENQR_BROWSER === "firefox" ? browser : chrome;
 export const tabs =
-  QRLITE_BROWSER === "firefox"
+  ZENQR_BROWSER === "firefox"
     ? {
         query: (options) => {
           return apiNs.tabs.query(options);
@@ -35,7 +35,7 @@ export const tabs =
         },
       };
 export const storage =
-  QRLITE_BROWSER === "firefox"
+  ZENQR_BROWSER === "firefox"
     ? (area) => ({
         get: (keys) => {
           return apiNs.storage[area].get(keys);
@@ -82,7 +82,7 @@ export const openPopup = (options) => {
  * @return Promise<OffscreenCanvas>
  */
 export const capturePartialScreen =
-  QRLITE_BROWSER === "firefox"
+  ZENQR_BROWSER === "firefox"
     ? async (rect, scroll) => {
         return apiNs.tabs
           .captureVisibleTab({
@@ -108,7 +108,7 @@ export const capturePartialScreen =
       };
 
 export const clipboard =
-  QRLITE_BROWSER === "firefox"
+  ZENQR_BROWSER === "firefox"
     ? {
         copyPng: (canvas) => {
           // https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/clipboard/setImageData
@@ -136,12 +136,12 @@ export const clipboard =
       };
 
 export const canOpenShortcutSettings =
-  QRLITE_BROWSER === "firefox"
+  ZENQR_BROWSER === "firefox"
     ? () => typeof apiNs.commands.openShortcutSettings === "function"
     : () => true;
 
 export const openShortcutSettings =
-  QRLITE_BROWSER === "firefox"
+  ZENQR_BROWSER === "firefox"
     ? async () => {
         if (typeof apiNs.commands.openShortcutSettings === "function") {
           return apiNs.commands.openShortcutSettings();

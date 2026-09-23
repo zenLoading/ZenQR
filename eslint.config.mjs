@@ -28,7 +28,7 @@ export default defineConfig([
     languageOptions: {
       globals: {
         ...globals.browser,
-        QRLITE_BROWSER: true,
+        ZENQR_BROWSER: true,
       },
 
       ecmaVersion: 12,

@@ -206,7 +206,7 @@ function Popup() {
   );
 }
 
-if (QRLITE_BROWSER === "chrome") {
+if (ZENQR_BROWSER === "chrome") {
   // this, in combination with hard-coded body width and height (in popup.css)
   // prevents the UI being zoomed in chrome if the browser's default zoom level is >100%
   // this has to be done as fast as possible or it will cause visible flicker
