@@ -7,4 +7,4 @@
 - Batch-generate QR codes from multiple lines of text at once.
 - Scan QR codes from images, a selected screen region, or the camera.
 - Track generation/scan history, with import/export to a JSON file.
-- Fully offline: no network requests, no third-party services.
+- Works offline, with no accounts, analytics, or third-party services. Nothing you generate or scan is sent anywhere.

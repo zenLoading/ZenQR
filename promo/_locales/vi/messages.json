@@ -3,10 +3,10 @@
     "message": "QRCraft"
   },
   "amo_summary": {
-    "message": "👌Trình tạo và quét mã QR dễ sử dụng, 🛡️thân thiện với quyền riêng tư."
+    "message": "Tạo và quét mã QR ngay trong trình duyệt. Không cần tài khoản, không theo dõi, dữ liệu không bao giờ gửi đến máy chủ nào. Hỗ trợ liên kết, văn bản, WiFi, danh bạ...; quét ảnh, vùng trang web hoặc camera."
   },
   "amo_description": {
-    "message": "QRCraft tạo và quét mã QR mà không cần dựa vào các dịch vụ của bên thứ ba.\n\n\n=== Tính năng ===\n\n✅ Tạo mã QR cho:\n-  Tab đang hoạt động \n-  Liên kết \n-  Văn bản đã chọn \n-  Nhập liệu của người dùng \n\n✅ Quét mã QR từ:\n-  Hình ảnh \n-  Bảng tạm \n-  Bất kỳ phần nào của trang web \n-  Webcam \n\n✅ Ghi nhớ những gì bạn đã tạo hoặc quét.\n✅ Mọi thứ đều hoạt động hoàn toàn ngoại tuyến, không có gì được gửi qua mạng.\n\n\nQRCraft là phần mềm mã nguồn mở được phân phối theo giấy phép MIT.\nNếu bạn thích tiện ích mở rộng này, vui lòng cho chúng tôi đánh giá 5 sao, cảm ơn bạn :)"
+    "message": "QRCraft tạo và quét mã QR ngay trong trình duyệt của bạn. Dữ liệu của bạn không bao giờ được gửi đến nhà phát triển hay bất kỳ dịch vụ bên thứ ba nào.\n\n<b>Tạo mã</b>\n<ul>\n<li>Mã QR cho thẻ hiện tại, liên kết hoặc văn bản đã chọn, hoặc bất cứ nội dung nào bạn nhập</li>\n<li>Mẫu cho mạng WiFi, danh thiếp (vCard), email, SMS, số điện thoại và sự kiện lịch</li>\n<li>Tạo hàng loạt: mỗi dòng văn bản một mã QR</li>\n<li>Tùy chỉnh mức sửa lỗi, kích thước ảnh, kiểu mẫu định vị và điểm mã, kèm tùy chọn chèn logo</li>\n</ul>\n\n<b>Quét mã</b>\n<ul>\n<li>Quét mã QR trong bất kỳ ảnh nào từ menu chuột phải</li>\n<li>Chọn bất kỳ vùng nào trên trang để quét</li>\n<li>Dán ảnh từ bộ nhớ tạm để quét</li>\n<li>Quét bằng camera (chỉ yêu cầu quyền camera khi bạn dùng tính năng này)</li>\n</ul>\n\n<b>Quyền riêng tư và hơn thế</b>\n<ul>\n<li>Lịch sử mọi mã đã tạo hoặc quét, chỉ lưu trong trình duyệt của bạn, có thể nhập/xuất ra tệp JSON</li>\n<li>Không tài khoản, không phân tích, không theo dõi. Tạo và quét mã hoạt động ngoại tuyến; yêu cầu mạng duy nhất mà QRCraft có thể thực hiện là tải lại ảnh bạn chọn để quét từ địa chỉ gốc của nó</li>\n<li>Hỗ trợ 10 ngôn ngữ</li>\n</ul>\n\nMã nguồn mở (giấy phép MIT): <a href=\"https://github.com/zenLoading/QRCraft\">github.com/zenLoading/QRCraft</a>"
   },
   "promo_banner_modifying_html": {
     "message": "👌 Dễ sử dụng 🛡️ Thân thiện với quyền riêng tư"

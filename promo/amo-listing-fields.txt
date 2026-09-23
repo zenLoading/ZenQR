@@ -1,5 +1,6 @@
 AMO submission form — ready-to-paste fields
-(Full context, reviewer notes, privacy policy, etc. are in firefox-submission.md)
+(Full context, reviewer notes, privacy policy, etc. are in firefox-submission.md.
+Same text as promo/_locales/en-US/messages.json amo_summary / amo_description.)
 
 ===============================================================
 Name
@@ -7,48 +8,41 @@ Name
 QRCraft - QR Code Generator and Scanner
 
 ===============================================================
-Summary (short, ~250 chars max)
+Summary (short, 250 chars max — this one is 205, keep it on one line)
 ===============================================================
-Generate and scan QR codes entirely offline — no accounts, no tracking, no
-network requests. Create codes for links, text, WiFi, contacts, and more;
-scan from images, a screen region, or your camera.
+Generate and scan QR codes right in your browser. No accounts, no tracking, and your data never goes to any server. Codes for links, text, WiFi, contacts and more; scan images, page regions or your camera.
 
 ===============================================================
 Describe Add-on / Description
 ===============================================================
-QRCraft generates and scans QR codes without ever sending your data
-anywhere — everything runs locally in your browser.
+QRCraft generates and scans QR codes right in your browser. Your data is never sent to the developer or to any third-party service.
 
 <b>Generate</b>
 <ul>
-  <li>QR code for the current tab, a selected link, or any text you type</li>
-  <li>Templates for WiFi networks, contact cards (vCard), email, SMS, phone
-  numbers, and calendar events</li>
-  <li>Batch-generate many QR codes at once, one per line of text</li>
-  <li>Adjustable error correction level, image size, finder/module style,
-  and an optional embedded logo</li>
+<li>QR code for the current tab, a selected link or text, or anything you type</li>
+<li>Templates for WiFi networks, contact cards (vCard), email, SMS, phone numbers, and calendar events</li>
+<li>Batch-generate many QR codes at once, one per line of text</li>
+<li>Adjustable error correction level, image size, finder/module style, and an optional embedded logo</li>
 </ul>
 
 <b>Scan</b>
 <ul>
-  <li>Scan a QR code in any image via the right-click context menu</li>
-  <li>Select a region of the page to scan</li>
-  <li>Scan with your camera (optional permission, only requested if you use
-  this feature)</li>
+<li>Scan a QR code in any image from the right-click menu</li>
+<li>Select any region of the page to scan</li>
+<li>Paste an image from the clipboard to scan it</li>
+<li>Scan with your camera (camera access is only requested if you use this feature)</li>
 </ul>
 
-<b>Other features</b>
+<b>Privacy and more</b>
 <ul>
-  <li>History of everything you've generated or scanned, with import/export
-  to a JSON file</li>
-  <li>Fully offline: no network requests, no third-party services, no
-  analytics</li>
-  <li>Available in 17 languages</li>
+<li>History of everything you've generated or scanned, stored only in your browser, with import/export to a JSON file</li>
+<li>No accounts, no analytics, no tracking. Generating and scanning work offline; the only network request QRCraft may make is reloading an image you chose to scan from its original web address</li>
+<li>Available in 10 languages</li>
 </ul>
 
-Source code: <a href="https://github.com/zenLoading/QRCraft">github.com/zenLoading/QRCraft</a>
+Open source (MIT license): <a href="https://github.com/zenLoading/QRCraft">github.com/zenLoading/QRCraft</a>
 
 Note: AMO's description field only allows this HTML subset —
 <a href title> <abbr title> <acronym title> <b> <blockquote> <code> <em> <i> <li> <ol> <strong> <ul>
-(no <p>, no <br>). The text above already respects that.
-</content>
+(no <p>, no <br>). AMO turns line breaks inside text into <br>, so each <li>
+is kept on a single line on purpose — don't re-wrap it.

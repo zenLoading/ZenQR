@@ -80,6 +80,10 @@ code.
   against `self`/`data:`/local extension resources (see
   `src/utils/qrcode.js` and `src/utils/misc.js`); nothing is ever sent to a
   remote server.
+- The one outgoing request: when "Scan QR Code in This Image" can't read a
+  cross-origin page image directly, `src/pages/components/ImageScanner.js`
+  loads the same image URL again in a new `<img crossOrigin="anonymous">`
+  so it can decode it locally. No data is attached to that request.
 - Permission usage is documented in `README.md` under "Permissions".
 - Locale strings under `src/_locales/*` other than `en` are machine
   translated; see `README.md` under "Localization".

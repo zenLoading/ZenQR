@@ -41,12 +41,14 @@ Use the script in `/opencv` to update the pre-built OpenCV library and wasm.
 
 ## Building
 
-Build steps on Linux:
+Build steps (Linux or macOS):
 
 1. Make sure you have `node`, `yarn`, and the `zip` command installed.
 1. Open terminal and cd to project root.
-1. Run `node scripts/release.sh {firefox,chrome}`, which will generate 2 files in the `release` directory: `qrcraft-<version>-<browser>-release.zip`
+1. Run `yarn release:firefox` or `yarn release:chrome` (which call `scripts/release.sh`). This will generate 2 files in the `release` directory: `qrcraft-<version>-<browser>-release.zip`
    is the installable extension, and `qrcraft-<version>-<browser>-source.zip` is the zipped source code.
+
+The source zip is built from the committed `git HEAD`, so commit your changes before running the release script.
 
 ## Localization
 

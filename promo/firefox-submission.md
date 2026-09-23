@@ -1,7 +1,7 @@
 # AMO Listing Content — Draft
 
-Copy-paste source for the addons.mozilla.org submission form. Fill in the
-`[ ]` placeholders before submitting; everything else is ready to paste as-is.
+Copy-paste source for the addons.mozilla.org submission form. Everything here is
+ready to paste as-is.
 Firefox listing description only allows this HTML subset:
 `<a href title> <abbr title> <acronym title> <b> <blockquote> <code> <em> <i> <li> <ol> <strong> <ul>`
 (no `<p>`, no `<br>`) — the draft below only uses tags from that list.
@@ -10,47 +10,22 @@ Firefox listing description only allows this HTML subset:
 
 QRCraft - QR Code Generator and Scanner
 
-## Summary (short, ~250 chars max)
+## Summary and Description
 
-Generate and scan QR codes entirely offline — no accounts, no tracking, no
-network requests. Create codes for links, text, WiFi, contacts, and more;
-scan from images, a screen region, or your camera.
+The paste-ready text lives in `promo/amo-listing-fields.txt` (same wording as
+`promo/_locales/en-US/messages.json`, which `yarn update-listings` pushes for
+the other locales). Keep them in sync — edit the locale JSON files, then copy
+en-US into the fields file.
 
-## Description
-
-```html
-QRCraft generates and scans QR codes without ever sending your data
-anywhere — everything runs locally in your browser.
-
-<b>Generate</b>
-<ul>
-  <li>QR code for the current tab, a selected link, or any text you type</li>
-  <li>Templates for WiFi networks, contact cards (vCard), email, SMS, phone
-  numbers, and calendar events</li>
-  <li>Batch-generate many QR codes at once, one per line of text</li>
-  <li>Adjustable error correction level, image size, finder/module style,
-  and an optional embedded logo</li>
-</ul>
-
-<b>Scan</b>
-<ul>
-  <li>Scan a QR code in any image via the right-click context menu</li>
-  <li>Select a region of the page to scan</li>
-  <li>Scan with your camera (optional permission, only requested if you use
-  this feature)</li>
-</ul>
-
-<b>Other features</b>
-<ul>
-  <li>History of everything you've generated or scanned, with import/export
-  to a JSON file</li>
-  <li>Fully offline: no network requests, no third-party services, no
-  analytics</li>
-  <li>Available in 17 languages</li>
-</ul>
-
-Source code: <a href="https://github.com/zenLoading/QRCraft">github.com/zenLoading/QRCraft</a>
-```
+Wording rules the copy follows:
+- Don't claim "no network requests". When a page image can't be read
+  directly, `ImageScanner.js` reloads it from its original URL
+  (`crossOrigin="anonymous"`, no cookies). Say "never sent to the developer
+  or any third-party service" instead.
+- The extension UI ships 10 locales (`src/_locales`). The 17 folders under
+  `promo/_locales` are store-listing translations only.
+- AMO turns line breaks inside text into `<br>`, so each `<li>` stays on one
+  line.
 
 ## Categories
 
@@ -66,8 +41,8 @@ current AMO category list at submission time, since it varies by locale.
 
 ## Privacy policy
 
-QRCraft does not collect, transmit, or store any data outside your own
-browser.
+QRCraft does not collect any data, and nothing you generate or scan is sent
+to the developer or to any third party.
 
 ```
 QRCraft Privacy Policy
@@ -83,8 +58,12 @@ has no servers of its own.
 - Camera access is optional and only requested when you choose to scan with
   your camera. Camera frames are processed locally and are never recorded,
   stored, or transmitted.
-- QRCraft makes no network requests to any server, first-party or
-  third-party, and includes no analytics or tracking of any kind.
+- When you scan an image on a web page and the extension can't read it
+  directly, QRCraft reloads that image from the same web address the page
+  uses, without cookies. This is the only network request QRCraft ever
+  makes. It sends no data about you, and the decoded result stays in your
+  browser.
+- QRCraft has no analytics, telemetry, or tracking of any kind.
 ```
 
 ## Known validator warnings (not fixed, and not worth fixing)
@@ -150,8 +129,11 @@ Permissions used and why (also documented in README.md "Permissions"):
   "Scan QR Code in Image"
 - camera (optional, requested at runtime): QR scanning via webcam
 
-No network requests are made anywhere in the extension; there is no
-analytics/telemetry. Non-English locale strings were machine-translated
+The extension sends no data anywhere and has no analytics/telemetry. The
+only request it can make is in "Scan QR Code in This Image": if the page's
+image can't be read directly (cross-origin, no CORS), ImageScanner.js loads
+the same image URL again in a new <img crossOrigin="anonymous"> so it can
+decode it locally. Non-English locale strings were machine-translated
 (see README.md "Localization").
 ```
 

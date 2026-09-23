@@ -3,10 +3,10 @@
     "message": "QRCraft"
   },
   "amo_summary": {
-    "message": "👌Mudah digunakan, 🛡️mesra privasi, penjana dan pengimbas kod QR."
+    "message": "Jana dan imbas kod QR terus dalam pelayar. Tiada akaun, tiada penjejakan, dan data anda tidak dihantar ke mana-mana pelayan. Pautan, teks, WiFi, kenalan dan banyak lagi; imbas imej, kawasan halaman atau kamera."
   },
   "amo_description": {
-    "message": "QRCraft menjana dan mengimbas kod QR tanpa bergantung pada perkhidmatan pihak ketiga.\n\n\n=== Ciri-ciri ===\n\n✅ Jana kod QR untuk:\n-  Tab aktif \n-  Pautan \n-  Teks terpilih \n-  Input pengguna \n\n✅ Imbas kod QR daripada:\n-  Imej \n-  Papan keratan \n-  Mana-mana bahagian halaman web \n-  Kamera web \n\n✅ Ingat apa yang anda jana atau imbas.\n✅ Semuanya berfungsi sepenuhnya di luar talian, tiada apa-apa yang dihantar melalui rangkaian.\n\n\nQRCraft ialah perisian sumber terbuka yang diedarkan di bawah lesen MIT.\nJika anda menikmati sambungan ini, sila berikan kami ulasan 5 bintang, terima kasih :)"
+    "message": "QRCraft menjana dan mengimbas kod QR terus dalam pelayar anda. Data anda tidak pernah dihantar kepada pembangun atau mana-mana perkhidmatan pihak ketiga.\n\n<b>Jana</b>\n<ul>\n<li>Kod QR untuk tab semasa, pautan atau teks yang dipilih, atau apa sahaja yang anda taip</li>\n<li>Templat untuk rangkaian WiFi, kad kenalan (vCard), e-mel, SMS, nombor telefon dan acara kalendar</li>\n<li>Jana banyak kod QR serentak, satu bagi setiap baris teks</li>\n<li>Tahap pembetulan ralat, saiz imej, gaya corak dan modul boleh dilaraskan, serta logo pilihan</li>\n</ul>\n\n<b>Imbas</b>\n<ul>\n<li>Imbas kod QR dalam mana-mana imej melalui menu klik kanan</li>\n<li>Pilih mana-mana kawasan halaman untuk diimbas</li>\n<li>Tampal imej dari papan keratan untuk diimbas</li>\n<li>Imbas dengan kamera (akses kamera hanya diminta jika anda menggunakan ciri ini)</li>\n</ul>\n\n<b>Privasi dan lain-lain</b>\n<ul>\n<li>Sejarah semua yang anda jana atau imbas, disimpan hanya dalam pelayar anda, dengan import/eksport ke fail JSON</li>\n<li>Tiada akaun, tiada analitik, tiada penjejakan. Penjanaan dan pengimbasan berfungsi di luar talian; satu-satunya permintaan rangkaian yang mungkin dibuat oleh QRCraft ialah memuat semula imej yang anda pilih untuk diimbas dari alamat asalnya</li>\n<li>Tersedia dalam 10 bahasa</li>\n</ul>\n\nSumber terbuka (lesen MIT): <a href=\"https://github.com/zenLoading/QRCraft\">github.com/zenLoading/QRCraft</a>"
   },
   "promo_banner_modifying_html": {
     "message": "👌 Mudah digunakan 🛡️ Mesra privasi"
