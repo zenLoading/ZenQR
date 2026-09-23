@@ -1,9 +1,9 @@
 {
   "extension_name": {
-    "message": "QRCraft - Generador y Escáner de Códigos QR"
+    "message": "ZenQR - Generador y Escáner de Códigos QR"
   },
   "extension_short_name": {
-    "message": "QRCraft",
+    "message": "ZenQR",
     "description": "[keep-original]"
   },
   "extension_description": {
@@ -61,7 +61,7 @@
     "message": "Eliminar esta entrada del historial"
   },
   "github_link_title": {
-    "message": "Visitar la página del proyecto QRCraft en Github"
+    "message": "Visitar la página del proyecto ZenQR en Github"
   },
   "toggle_generator_options_btn_label": {
     "message": "Opciones"
@@ -170,7 +170,7 @@
     "message": "No se puede decodificar el código QR"
   },
   "scan_instructions_html": {
-    "message": "Haz clic derecho en cualquier imagen y selecciona<br>\"<img class=\"icon\" src=\"../icons/qrcraft.svg\"></img> Escanear código QR en esta imagen\""
+    "message": "Haz clic derecho en cualquier imagen y selecciona<br>\"<img class=\"icon\" src=\"../icons/zenqr.svg\"></img> Escanear código QR en esta imagen\""
   },
   "scan_from_clipboard_instructions_html": {
     "message": "Para escanear la imagen del portapapeles, presiona<br><kbd>Ctrl</kbd> + <kbd>V</kbd> <br> o <kbd>⌘</kbd> + <kbd>V</kbd> en Mac"
@@ -205,19 +205,19 @@
     "message": "Conceder permiso"
   },
   "grant_camera_initial_instructions_firefox_html": {
-    "message": "Estás a punto de conceder a QRCraft acceso a tu cámara.<br><br>Cuando se te pregunte si permites a QRCraft usar tu cámara, asegúrate de que la casilla <strong>\"Recordar para todas las cámaras\"</strong> esté marcada y luego haz clic en <strong>\"Permitir\"</strong>.<br><br>Haz clic en el botón de abajo para empezar."
+    "message": "Estás a punto de conceder a ZenQR acceso a tu cámara.<br><br>Cuando se te pregunte si permites a ZenQR usar tu cámara, asegúrate de que la casilla <strong>\"Recordar para todas las cámaras\"</strong> esté marcada y luego haz clic en <strong>\"Permitir\"</strong>.<br><br>Haz clic en el botón de abajo para empezar."
   },
   "grant_camera_initial_instructions_chrome_html": {
-    "message": "Estás a punto de conceder a QRCraft acceso a tu cámara.<br><br>Cuando se te pregunte si permites a QRCraft usar tu cámara, elige <strong>\"Permitir mientras visitas el sitio\"</strong>.<br><br>Haz clic en el botón de abajo para empezar."
+    "message": "Estás a punto de conceder a ZenQR acceso a tu cámara.<br><br>Cuando se te pregunte si permites a ZenQR usar tu cámara, elige <strong>\"Permitir mientras visitas el sitio\"</strong>.<br><br>Haz clic en el botón de abajo para empezar."
   },
   "grant_camera_blocked_instructions_firefox_html": {
-    "message": "Parece que QRCraft está <strong>bloqueado</strong> para usar la cámara.<br><br>Para cambiar esta configuración, haz clic en el icono <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> a la izquierda de la barra de direcciones y <strong>elimina</strong> el estado \"Bloqueado\" en la fila \"Usar la cámara\".<br><br>Después de hacer esto, actualiza esta página."
+    "message": "Parece que ZenQR está <strong>bloqueado</strong> para usar la cámara.<br><br>Para cambiar esta configuración, haz clic en el icono <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> a la izquierda de la barra de direcciones y <strong>elimina</strong> el estado \"Bloqueado\" en la fila \"Usar la cámara\".<br><br>Después de hacer esto, actualiza esta página."
   },
   "grant_camera_blocked_instructions_chrome_html": {
-    "message": "Parece que QRCraft está <strong>bloqueado</strong> para usar la cámara.<br><br>Para cambiar esta configuración, haz clic en el icono <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> en la barra de direcciones y elige <strong>Permitir siempre que QRCraft - Generador y Escáner de Códigos QR acceda a tu cámara</strong>.<br><br>Después de hacer esto, actualiza esta página."
+    "message": "Parece que ZenQR está <strong>bloqueado</strong> para usar la cámara.<br><br>Para cambiar esta configuración, haz clic en el icono <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> en la barra de direcciones y elige <strong>Permitir siempre que ZenQR - Generador y Escáner de Códigos QR acceda a tu cámara</strong>.<br><br>Después de hacer esto, actualiza esta página."
   },
   "grant_camera_granted_instructions_html": {
-    "message": "QRCraft ha recibido acceso a la cámara correctamente.<br><br>Ahora puedes cerrar esta página."
+    "message": "ZenQR ha recibido acceso a la cámara correctamente.<br><br>Ahora puedes cerrar esta página."
   },
   "grant_page_refresh_btn": {
     "message": "Actualizar"
@@ -292,7 +292,7 @@
     "message": "No se puede acceder a la cámara. ¿Hay otro programa usando la cámara?"
   },
   "settings_window_title": {
-    "message": "Configuración de QRCraft"
+    "message": "Configuración de ZenQR"
   },
   "settings_scan_success_sound_enabled_label": {
     "message": "Reproducir sonido al escanear con éxito"
@@ -313,7 +313,7 @@
     "message": "Generador de códigos QR"
   },
   "tab_settings_title": {
-    "message": "Cambiar la configuración de QRCraft"
+    "message": "Cambiar la configuración de ZenQR"
   },
   "settings_config_keyboard_shortcuts_btn_label": {
     "message": "Configurar atajos de teclado"
@@ -358,7 +358,7 @@
     "message": "Guardando..."
   },
   "batch_generator_window_title": {
-    "message": "Generador por lotes de QRCraft"
+    "message": "Generador por lotes de ZenQR"
   },
   "context_menu_batch_generate_from_selection": {
     "message": "Generar códigos QR por lotes (uno por línea)"
@@ -517,7 +517,7 @@
     "message": "Conservar hasta"
   },
   "settings_motion_explainer": {
-    "message": "Controla las animaciones y transiciones utilizadas en QRCraft."
+    "message": "Controla las animaciones y transiciones utilizadas en ZenQR."
   },
   "settings_motion_label": {
     "message": "Movimiento"
@@ -541,7 +541,7 @@
     "message": "Restaura la apariencia, los valores predeterminados del generador y las opciones del escáner a sus valores originales. Tu historial de escaneo y generación no se ve afectado."
   },
   "settings_theme_explainer": {
-    "message": "Elige si QRCraft sigue el tema de tu sistema o usa siempre uno específico."
+    "message": "Elige si ZenQR sigue el tema de tu sistema o usa siempre uno específico."
   },
   "settings_theme_label": {
     "message": "Tema"

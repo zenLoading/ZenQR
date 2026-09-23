@@ -1,9 +1,9 @@
 {
   "extension_name": {
-    "message": "QRCraft - QR Code Generator and Scanner"
+    "message": "ZenQR - QR Code Generator and Scanner"
   },
   "extension_short_name": {
-    "message": "QRCraft"
+    "message": "ZenQR"
   },
   "extension_description": {
     "message": "Generate or scan QR codes offline."
@@ -60,7 +60,7 @@
     "message": "Remove this entry from history"
   },
   "github_link_title": {
-    "message": "Visit QRCraft's project page on Github"
+    "message": "Visit ZenQR's project page on Github"
   },
   "toggle_generator_options_btn_label": {
     "message": "Options"
@@ -186,7 +186,7 @@
     "message": "The image failed to load. Its source might be inaccessible or restricted. Try scanning a region of the screen instead."
   },
   "scan_instructions_html": {
-    "message": "Right-click on any image and choose<br>\"<img class=\"icon\" src=\"../icons/qrcraft.svg\"></img> Scan QR Code in This Image\""
+    "message": "Right-click on any image and choose<br>\"<img class=\"icon\" src=\"../icons/zenqr.svg\"></img> Scan QR Code in This Image\""
   },
   "scan_from_clipboard_instructions_html": {
     "message": "Scan clipboard image by pressing<br><kbd>Ctrl</kbd> + <kbd>V</kbd> <br> or <kbd>⌘</kbd> + <kbd>V</kbd> on Mac"
@@ -224,16 +224,16 @@
     "message": "Error details"
   },
   "grant_camera_initial_instructions_firefox_html": {
-    "message": "You're about to grant QRCraft access to your camera.<br><br>When asked whether to allow QRCraft to use your camera, please make sure the <strong>\"Remember for all cameras\"</strong> checkbox is checked, then click <strong>\"Allow\"</strong>.<br><br>Click the button below to start."
+    "message": "You're about to grant ZenQR access to your camera.<br><br>When asked whether to allow ZenQR to use your camera, please make sure the <strong>\"Remember for all cameras\"</strong> checkbox is checked, then click <strong>\"Allow\"</strong>.<br><br>Click the button below to start."
   },
   "grant_camera_initial_instructions_chrome_html": {
-    "message": "You're about to grant QRCraft access to your camera.<br><br>When asked whether to allow QRCraft to use your camera, please choose <strong>\"Allow while visiting the site\"</strong>.<br><br>Click the button below to start."
+    "message": "You're about to grant ZenQR access to your camera.<br><br>When asked whether to allow ZenQR to use your camera, please choose <strong>\"Allow while visiting the site\"</strong>.<br><br>Click the button below to start."
   },
   "grant_camera_blocked_instructions_firefox_html": {
-    "message": "It looks like QRCraft is <strong>blocked</strong> from using the camera.<br><br>To change this setting, click the <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> icon on the left of the address bar, and <strong>remove</strong> the \"Blocked\" status on the \"Use the camera\" row.<br><br>After you've done that, refresh this page."
+    "message": "It looks like ZenQR is <strong>blocked</strong> from using the camera.<br><br>To change this setting, click the <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> icon on the left of the address bar, and <strong>remove</strong> the \"Blocked\" status on the \"Use the camera\" row.<br><br>After you've done that, refresh this page."
   },
   "grant_camera_blocked_instructions_chrome_html": {
-    "message": "It looks like QRCraft is <strong>blocked</strong> from using the camera.<br><br>To change this setting, click the <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> icon on the address bar, and choose <strong>Always allow QRCraft - QR Code Generator and Scanner to access your camera</strong>.<br><br>After you've done that, refresh this page."
+    "message": "It looks like ZenQR is <strong>blocked</strong> from using the camera.<br><br>To change this setting, click the <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> icon on the address bar, and choose <strong>Always allow ZenQR - QR Code Generator and Scanner to access your camera</strong>.<br><br>After you've done that, refresh this page."
   },
   "grant_camera_unusable_instructions_html": {
     "message": "It looks like the camera is inaccessible. Is there another program using the camera?<br><br>Please close other programs that might be using the camera, then refresh this page."
@@ -242,7 +242,7 @@
     "message": "An unknown error occurred when trying to acquire camera access.<br><br>Please refresh this page and try again."
   },
   "grant_camera_granted_instructions_html": {
-    "message": "QRCraft has been successfully granted permission to use the camera.<br><br>You may close this page now."
+    "message": "ZenQR has been successfully granted permission to use the camera.<br><br>You may close this page now."
   },
   "grant_page_refresh_btn": {
     "message": "Refresh"
@@ -308,7 +308,7 @@
     "message": "Auto open URL in new foreground tab"
   },
   "settings_window_title": {
-    "message": "QRCraft Settings"
+    "message": "ZenQR Settings"
   },
   "settings_scan_success_sound_enabled_label": {
     "message": "Play sound on successful scan"
@@ -344,7 +344,7 @@
     "message": "Theme"
   },
   "settings_theme_explainer": {
-    "message": "Choose whether QRCraft follows your system theme or always uses a specific one."
+    "message": "Choose whether ZenQR follows your system theme or always uses a specific one."
   },
   "settings_theme_option_system": {
     "message": "System"
@@ -359,7 +359,7 @@
     "message": "Motion"
   },
   "settings_motion_explainer": {
-    "message": "Control the animations and transitions used throughout QRCraft."
+    "message": "Control the animations and transitions used throughout ZenQR."
   },
   "settings_motion_option_system": {
     "message": "System"
@@ -392,7 +392,7 @@
     "message": "Restores appearance, generator defaults, and scanner options to their original values. Your scan and generate history is not affected."
   },
   "tab_settings_title": {
-    "message": "Change QRCraft's settings"
+    "message": "Change ZenQR's settings"
   },
   "settings_config_keyboard_shortcuts_btn_label": {
     "message": "Configure Keyboard Shortcuts"
@@ -539,7 +539,7 @@
     "message": "Failed to import history: invalid or corrupted file"
   },
   "batch_generator_window_title": {
-    "message": "QRCraft Batch Generator"
+    "message": "ZenQR Batch Generator"
   },
   "batch_generator_instructions": {
     "message": "Type or paste multiple lines of text below. Each non-empty line will become its own QR code."

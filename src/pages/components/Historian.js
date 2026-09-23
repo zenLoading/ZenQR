@@ -36,7 +36,7 @@ export default function Historian(props) {
         const blob = new Blob([json], { type: "application/json" });
         const a = document.createElement("a");
         a.href = URL.createObjectURL(blob);
-        a.download = "qrcraft-history.json";
+        a.download = "zenqr-history.json";
         a.click();
         URL.revokeObjectURL(a.href);
       })

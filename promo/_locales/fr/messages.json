@@ -1,12 +1,12 @@
 {
   "extension_short_name": {
-    "message": "QRCraft"
+    "message": "ZenQR"
   },
   "amo_summary": {
     "message": "Créez et scannez des QR codes directement dans votre navigateur. Sans compte, sans pistage, vos données ne partent vers aucun serveur. Liens, texte, WiFi, contacts… ; scannez images, zones de page ou caméra."
   },
   "amo_description": {
-    "message": "QRCraft crée et scanne des QR codes directement dans votre navigateur. Vos données ne sont jamais envoyées au développeur ni à un service tiers.\n\n<b>Créer</b>\n<ul>\n<li>QR code de l'onglet actuel, d'un lien ou texte sélectionné, ou de tout ce que vous saisissez</li>\n<li>Modèles pour réseaux WiFi, fiches contact (vCard), e-mail, SMS, numéros de téléphone et événements d'agenda</li>\n<li>Création par lots : un QR code par ligne de texte</li>\n<li>Niveau de correction d'erreur, taille d'image, style des repères et des modules réglables, avec logo intégré en option</li>\n</ul>\n\n<b>Scanner</b>\n<ul>\n<li>Scanner le QR code d'une image depuis le menu contextuel</li>\n<li>Sélectionner n'importe quelle zone de la page à scanner</li>\n<li>Coller une image depuis le presse-papiers pour la scanner</li>\n<li>Scanner avec votre caméra (l'accès n'est demandé que si vous utilisez cette fonction)</li>\n</ul>\n\n<b>Confidentialité et plus</b>\n<ul>\n<li>Historique de tout ce que vous avez créé ou scanné, stocké uniquement dans votre navigateur, avec import/export en fichier JSON</li>\n<li>Aucun compte, aucune statistique, aucun pistage. La création et le scan fonctionnent hors ligne ; la seule requête réseau que QRCraft peut faire est de recharger, depuis son adresse d'origine, une image que vous avez choisi de scanner</li>\n<li>Disponible en 10 langues</li>\n</ul>\n\nOpen source (licence MIT): <a href=\"https://github.com/zenLoading/QRCraft\">github.com/zenLoading/QRCraft</a>"
+    "message": "ZenQR crée et scanne des QR codes directement dans votre navigateur. Vos données ne sont jamais envoyées au développeur ni à un service tiers.\n\n<b>Créer</b>\n<ul>\n<li>QR code de l'onglet actuel, d'un lien ou texte sélectionné, ou de tout ce que vous saisissez</li>\n<li>Modèles pour réseaux WiFi, fiches contact (vCard), e-mail, SMS, numéros de téléphone et événements d'agenda</li>\n<li>Création par lots : un QR code par ligne de texte</li>\n<li>Niveau de correction d'erreur, taille d'image, style des repères et des modules réglables, avec logo intégré en option</li>\n</ul>\n\n<b>Scanner</b>\n<ul>\n<li>Scanner le QR code d'une image depuis le menu contextuel</li>\n<li>Sélectionner n'importe quelle zone de la page à scanner</li>\n<li>Coller une image depuis le presse-papiers pour la scanner</li>\n<li>Scanner avec votre caméra (l'accès n'est demandé que si vous utilisez cette fonction)</li>\n</ul>\n\n<b>Confidentialité et plus</b>\n<ul>\n<li>Historique de tout ce que vous avez créé ou scanné, stocké uniquement dans votre navigateur, avec import/export en fichier JSON</li>\n<li>Aucun compte, aucune statistique, aucun pistage. La création et le scan fonctionnent hors ligne ; la seule requête réseau que ZenQR peut faire est de recharger, depuis son adresse d'origine, une image que vous avez choisi de scanner</li>\n<li>Disponible en 10 langues</li>\n</ul>\n\nOpen source (licence MIT): <a href=\"https://github.com/zenLoading/QRCraft\">github.com/zenLoading/QRCraft</a>"
   },
   "promo_banner_modifying_html": {
     "message": "👌 Facile à utiliser 🛡️ Respectueux de la vie privée"
@@ -33,6 +33,6 @@
     "message": "des éléments récemment générés et numérisés"
   },
   "extension_name": {
-    "message": "QRCraft - Générateur et Scanner de Codes QR"
+    "message": "ZenQR - Générateur et Scanner de Codes QR"
   }
 }

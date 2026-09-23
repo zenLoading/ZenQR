@@ -454,7 +454,7 @@ function Scanner({
       <div class="tips" id="tips" ref={tipsNode} style={tipsStyles}>
         <img
           class="logo"
-          src="../icons/qrcraft.svg"
+          src="../icons/zenqr.svg"
           title={T("extension_name")}
         />
         {stage === "picking" && (

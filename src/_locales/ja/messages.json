@@ -1,9 +1,9 @@
 {
   "extension_name": {
-    "message": "QRCraft - QRコードジェネレーター＆スキャナー"
+    "message": "ZenQR - QRコードジェネレーター＆スキャナー"
   },
   "extension_short_name": {
-    "message": "QRCraft",
+    "message": "ZenQR",
     "description": "[keep-original]"
   },
   "extension_description": {
@@ -46,7 +46,7 @@
     "message": "履歴をクリアする"
   },
   "github_link_title": {
-    "message": "QRCraftのGithub上のプロジェクトページを訪問する"
+    "message": "ZenQRのGithub上のプロジェクトページを訪問する"
   },
   "toggle_generator_options_btn_label": {
     "message": "オプション"
@@ -154,7 +154,7 @@
     "message": "QRコードをデコードできません"
   },
   "scan_instructions_html": {
-    "message": "画像を右クリックし、<br>「<img class=\"icon\" src=\"../icons/qrcraft.svg\"></img> この画像のQRコードをスキャン」を選択"
+    "message": "画像を右クリックし、<br>「<img class=\"icon\" src=\"../icons/zenqr.svg\"></img> この画像のQRコードをスキャン」を選択"
   },
   "scan_from_clipboard_instructions_html": {
     "message": "クリップボードの画像をスキャンするには、<br><kbd>Ctrl</kbd> + <kbd>V</kbd> <br> Mac の場合は <kbd>⌘</kbd> + <kbd>V</kbd> を押し"
@@ -189,19 +189,19 @@
     "message": "許可を付与"
   },
   "grant_camera_initial_instructions_firefox_html": {
-    "message": "これから QRCraft にカメラへのアクセスを許可します。<br><br>QRCraft にカメラの使用を許可するか尋ねられたら、<strong>\"すべてのカメラでこの設定を記憶する\"</strong> のチェックボックスがオンになっていることを確認してから、<strong>\"許可\"</strong> をクリックしてください。<br><br>下のボタンをクリックして開始します。"
+    "message": "これから ZenQR にカメラへのアクセスを許可します。<br><br>ZenQR にカメラの使用を許可するか尋ねられたら、<strong>\"すべてのカメラでこの設定を記憶する\"</strong> のチェックボックスがオンになっていることを確認してから、<strong>\"許可\"</strong> をクリックしてください。<br><br>下のボタンをクリックして開始します。"
   },
   "grant_camera_initial_instructions_chrome_html": {
-    "message": "これから QRCraft にカメラへのアクセスを許可します。<br><br>QRCraft にカメラの使用を許可するか尋ねられたら、<strong>\"サイトの閲覧中は許可\"</strong> を選択してください。<br><br>下のボタンをクリックして開始します。"
+    "message": "これから ZenQR にカメラへのアクセスを許可します。<br><br>ZenQR にカメラの使用を許可するか尋ねられたら、<strong>\"サイトの閲覧中は許可\"</strong> を選択してください。<br><br>下のボタンをクリックして開始します。"
   },
   "grant_camera_blocked_instructions_firefox_html": {
-    "message": "QRCraftがカメラを使用することが<strong>ブロック</strong>されているようです。<br><br>これを変更するには、アドレスバーの左側にある <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> アイコンをクリックし、「カメラの使用」行の「ブロック」のステータスを<strong>削除</strong>してください。<br><br>その後、このページを再読み込みしてください。"
+    "message": "ZenQRがカメラを使用することが<strong>ブロック</strong>されているようです。<br><br>これを変更するには、アドレスバーの左側にある <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> アイコンをクリックし、「カメラの使用」行の「ブロック」のステータスを<strong>削除</strong>してください。<br><br>その後、このページを再読み込みしてください。"
   },
   "grant_camera_blocked_instructions_chrome_html": {
-    "message": "QRCraftがカメラを使用することが<strong>ブロック</strong>されているようです。<br><br>これを変更するには、アドレスバーの <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> アイコンをクリックし、<strong>QRCraft - QRコードジェネレーター＆スキャナー がカメラにアクセスすることを常に許可</strong> を選択してください。<br><br>その後、このページを再読み込みしてください。"
+    "message": "ZenQRがカメラを使用することが<strong>ブロック</strong>されているようです。<br><br>これを変更するには、アドレスバーの <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> アイコンをクリックし、<strong>ZenQR - QRコードジェネレーター＆スキャナー がカメラにアクセスすることを常に許可</strong> を選択してください。<br><br>その後、このページを再読み込みしてください。"
   },
   "grant_camera_granted_instructions_html": {
-    "message": "QRCraftはカメラを使用する権限を付与されました。<br><br>このページは今閉じても構いません。"
+    "message": "ZenQRはカメラを使用する権限を付与されました。<br><br>このページは今閉じても構いません。"
   },
   "grant_page_refresh_btn": {
     "message": "再読み込み"
@@ -291,7 +291,7 @@
     "message": "カメラにアクセスできません。他にカメラを使用しているプログラムはありますか？"
   },
   "settings_window_title": {
-    "message": "QRCraftの設定"
+    "message": "ZenQRの設定"
   },
   "settings_scan_success_sound_enabled_label": {
     "message": "スキャン成功時に音を再生"
@@ -312,7 +312,7 @@
     "message": "QRコードジェネレーター"
   },
   "tab_settings_title": {
-    "message": "QRCraftの設定を変更する"
+    "message": "ZenQRの設定を変更する"
   },
   "settings_config_keyboard_shortcuts_btn_label": {
     "message": "キーボードショートカットを設定する"
@@ -357,7 +357,7 @@
     "message": "保存中..."
   },
   "batch_generator_window_title": {
-    "message": "QRCraft 一括生成"
+    "message": "ZenQR 一括生成"
   },
   "context_menu_batch_generate_from_selection": {
     "message": "QRコードを一括生成（1行につき1つ）"
@@ -516,7 +516,7 @@
     "message": "保持件数"
   },
   "settings_motion_explainer": {
-    "message": "QRCraft全体で使用されるアニメーションとトランジションを制御します。"
+    "message": "ZenQR全体で使用されるアニメーションとトランジションを制御します。"
   },
   "settings_motion_label": {
     "message": "モーション"
@@ -540,7 +540,7 @@
     "message": "外観、生成のデフォルト設定、スキャナーのオプションを初期値に戻します。スキャン・生成の履歴には影響しません。"
   },
   "settings_theme_explainer": {
-    "message": "QRCraftをシステムのテーマに合わせるか、常に特定のテーマを使用するかを選択します。"
+    "message": "ZenQRをシステムのテーマに合わせるか、常に特定のテーマを使用するかを選択します。"
   },
   "settings_theme_label": {
     "message": "テーマ"

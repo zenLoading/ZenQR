@@ -1,9 +1,9 @@
 {
   "extension_name": {
-    "message": "QRCraft - QR 코드 생성기 및 스캐너"
+    "message": "ZenQR - QR 코드 생성기 및 스캐너"
   },
   "extension_short_name": {
-    "message": "QRCraft",
+    "message": "ZenQR",
     "description": "[keep-original]"
   },
   "extension_description": {
@@ -61,7 +61,7 @@
     "message": "기록에서 이 항목 삭제"
   },
   "github_link_title": {
-    "message": "QRCraft의 Github 프로젝트 페이지 방문"
+    "message": "ZenQR의 Github 프로젝트 페이지 방문"
   },
   "toggle_generator_options_btn_label": {
     "message": "옵션"
@@ -170,7 +170,7 @@
     "message": "QR 코드를 디코딩할 수 없습니다."
   },
   "scan_instructions_html": {
-    "message": "이미지를 마우스 오른쪽 버튼으로 클릭하고 <br>\"<img class=\"icon\" src=\"../icons/qrcraft.svg\"></img> 이 이미지에서 QR 코드 스캔\"을 선택하세요."
+    "message": "이미지를 마우스 오른쪽 버튼으로 클릭하고 <br>\"<img class=\"icon\" src=\"../icons/zenqr.svg\"></img> 이 이미지에서 QR 코드 스캔\"을 선택하세요."
   },
   "scan_from_clipboard_instructions_html": {
     "message": "클립보드의 이미지를 스캔하려면 <br><kbd>Ctrl</kbd> + <kbd>V</kbd> <br> 또는 Mac에서는 <kbd>⌘</kbd> + <kbd>V</kbd> 를 누르세요"
@@ -205,19 +205,19 @@
     "message": "권한 부여"
   },
   "grant_camera_initial_instructions_firefox_html": {
-    "message": "QRCraft가 카메라에 접근하도록 허용하려고 합니다.<br><br>QRCraft가 카메라를 사용하도록 허용할지 묻는 경우 <strong>\"모든 카메라에 대해 기억\"</strong> 확인란이 선택되어 있는지 확인한 다음 <strong>\"허용\"</strong>을 클릭하세요.<br><br>아래 버튼을 클릭하여 시작하세요."
+    "message": "ZenQR가 카메라에 접근하도록 허용하려고 합니다.<br><br>ZenQR가 카메라를 사용하도록 허용할지 묻는 경우 <strong>\"모든 카메라에 대해 기억\"</strong> 확인란이 선택되어 있는지 확인한 다음 <strong>\"허용\"</strong>을 클릭하세요.<br><br>아래 버튼을 클릭하여 시작하세요."
   },
   "grant_camera_initial_instructions_chrome_html": {
-    "message": "QRCraft가 카메라에 접근하도록 허용하려고 합니다.<br><br>QRCraft가 카메라를 사용하도록 허용할지 묻는 경우 <strong>\"사이트를 방문하는 동안 허용\"</strong>을 선택하세요.<br><br>아래 버튼을 클릭하여 시작하세요."
+    "message": "ZenQR가 카메라에 접근하도록 허용하려고 합니다.<br><br>ZenQR가 카메라를 사용하도록 허용할지 묻는 경우 <strong>\"사이트를 방문하는 동안 허용\"</strong>을 선택하세요.<br><br>아래 버튼을 클릭하여 시작하세요."
   },
   "grant_camera_blocked_instructions_firefox_html": {
-    "message": "QRCraft에 대한 카메라 사용이 <strong>차단</strong>된 것 같습니다.<br><br>이 설정을 변경하려면 주소 표시줄 왼쪽에 있는 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 아이콘을 클릭하고 \"카메라 사용\" 행에서 \"차단됨\" 상태를 <strong>제거</strong>하십시오.<br><br>그런 다음 이 페이지를 새로 고치십시오."
+    "message": "ZenQR에 대한 카메라 사용이 <strong>차단</strong>된 것 같습니다.<br><br>이 설정을 변경하려면 주소 표시줄 왼쪽에 있는 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 아이콘을 클릭하고 \"카메라 사용\" 행에서 \"차단됨\" 상태를 <strong>제거</strong>하십시오.<br><br>그런 다음 이 페이지를 새로 고치십시오."
   },
   "grant_camera_blocked_instructions_chrome_html": {
-    "message": "QRCraft에 대한 카메라 사용이 <strong>차단</strong>된 것 같습니다.<br><br>이 설정을 변경하려면 주소 표시줄의 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 아이콘을 클릭하고, <strong>QRCraft - QR 코드 생성기 및 스캐너가 카메라에 액세스하도록 항상 허용</strong>을 선택하세요.<br><br>그런 다음 이 페이지를 새로 고치십시오."
+    "message": "ZenQR에 대한 카메라 사용이 <strong>차단</strong>된 것 같습니다.<br><br>이 설정을 변경하려면 주소 표시줄의 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 아이콘을 클릭하고, <strong>ZenQR - QR 코드 생성기 및 스캐너가 카메라에 액세스하도록 항상 허용</strong>을 선택하세요.<br><br>그런 다음 이 페이지를 새로 고치십시오."
   },
   "grant_camera_granted_instructions_html": {
-    "message": "QRCraft가 카메라에 대한 접근을 성공적으로 받았습니다.<br><br>이제 이 페이지를 닫을 수 있습니다."
+    "message": "ZenQR가 카메라에 대한 접근을 성공적으로 받았습니다.<br><br>이제 이 페이지를 닫을 수 있습니다."
   },
   "grant_page_refresh_btn": {
     "message": "새로고침"
@@ -292,7 +292,7 @@
     "message": "카메라에 접근할 수 없습니다. 다른 프로그램에서 카메라를 사용 중인가요?"
   },
   "settings_window_title": {
-    "message": "QRCraft 설정"
+    "message": "ZenQR 설정"
   },
   "settings_scan_success_sound_enabled_label": {
     "message": "스캔 성공 시 소리 재생"
@@ -313,7 +313,7 @@
     "message": "QR 코드 생성기"
   },
   "tab_settings_title": {
-    "message": "QRCraft 설정 변경"
+    "message": "ZenQR 설정 변경"
   },
   "settings_config_keyboard_shortcuts_btn_label": {
     "message": "키보드 단축키 구성"
@@ -358,7 +358,7 @@
     "message": "저장 중..."
   },
   "batch_generator_window_title": {
-    "message": "QRCraft 일괄 생성기"
+    "message": "ZenQR 일괄 생성기"
   },
   "context_menu_batch_generate_from_selection": {
     "message": "QR 코드 일괄 생성 (줄당 하나)"
@@ -517,7 +517,7 @@
     "message": "최대 보관 개수"
   },
   "settings_motion_explainer": {
-    "message": "QRCraft 전반에서 사용되는 애니메이션과 전환 효과를 제어합니다."
+    "message": "ZenQR 전반에서 사용되는 애니메이션과 전환 효과를 제어합니다."
   },
   "settings_motion_label": {
     "message": "모션"
@@ -541,7 +541,7 @@
     "message": "화면, 생성기 기본값, 스캐너 옵션을 원래 값으로 되돌립니다. 스캔 및 생성 기록에는 영향을 주지 않습니다."
   },
   "settings_theme_explainer": {
-    "message": "QRCraft가 시스템 테마를 따를지, 항상 특정 테마를 사용할지 선택하세요."
+    "message": "ZenQR가 시스템 테마를 따를지, 항상 특정 테마를 사용할지 선택하세요."
   },
   "settings_theme_label": {
     "message": "테마"

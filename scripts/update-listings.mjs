@@ -195,7 +195,7 @@ class AmoUpdater {
   }
 
   getExtensionId() {
-    return "qrcraft";
+    return "zenqr";
   }
 
   getSupportedLocales() {

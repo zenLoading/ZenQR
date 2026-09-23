@@ -79,7 +79,7 @@ function SettingsPage() {
     <div class="container">
       <div class="box">
         <div class="header">
-          <img src="../icons/qrcraft.svg" class="logo" />
+          <img src="../icons/zenqr.svg" class="logo" />
           <h1>{TT("settings_window_title")}</h1>
         </div>
         <form>

@@ -1,6 +1,6 @@
-# Building QRCraft from Source
+# Building ZenQR from Source
 
-QRCraft's shipped code goes through Babel transpilation and webpack module
+ZenQR's shipped code goes through Babel transpilation and webpack module
 bundling, which Mozilla's add-on policies classify as "machine-generated"
 code. This file is the build documentation required by AMO's
 [source code submission](https://extensionworkshop.com/documentation/publish/source-code-submission/)
@@ -39,7 +39,7 @@ uploaded release package.
 
 These two files are not hand-written and not meant to be read as this
 extension's own logic — they are a WebAssembly build of OpenCV, produced by
-the open-source Emscripten toolchain, not an obfuscated bundle of QRCraft
+the open-source Emscripten toolchain, not an obfuscated bundle of ZenQR
 code.
 
 - Upstream source: [opencv/opencv](https://github.com/opencv/opencv) and

@@ -1,12 +1,12 @@
 {
   "extension_short_name": {
-    "message": "QRCraft"
+    "message": "ZenQR"
   },
   "amo_summary": {
     "message": "QR-Codes direkt im Browser erstellen und scannen. Kein Konto, kein Tracking, deine Daten gehen an keinen Server. Codes für Links, Text, WLAN, Kontakte und mehr; scanne Bilder, Seitenbereiche oder per Kamera."
   },
   "amo_description": {
-    "message": "QRCraft erstellt und scannt QR-Codes direkt in deinem Browser. Deine Daten werden nie an den Entwickler oder an Dienste Dritter gesendet.\n\n<b>Erstellen</b>\n<ul>\n<li>QR-Code für den aktuellen Tab, einen markierten Link oder Text oder beliebige Eingaben</li>\n<li>Vorlagen für WLAN-Netzwerke, Kontakte (vCard), E-Mail, SMS, Telefonnummern und Kalendertermine</li>\n<li>Viele QR-Codes auf einmal erstellen, einen pro Textzeile</li>\n<li>Einstellbare Fehlerkorrektur, Bildgröße, Stil der Positions- und Datenmuster sowie optional ein eingebettetes Logo</li>\n</ul>\n\n<b>Scannen</b>\n<ul>\n<li>QR-Codes in beliebigen Bildern über das Kontextmenü scannen</li>\n<li>Beliebigen Bereich der Seite zum Scannen auswählen</li>\n<li>Bild aus der Zwischenablage einfügen und scannen</li>\n<li>Mit der Kamera scannen (Kamerazugriff wird nur angefragt, wenn du diese Funktion nutzt)</li>\n</ul>\n\n<b>Datenschutz und mehr</b>\n<ul>\n<li>Verlauf aller erstellten und gescannten Codes, nur in deinem Browser gespeichert, mit Import/Export als JSON-Datei</li>\n<li>Keine Konten, keine Analysen, kein Tracking. Erstellen und Scannen funktionieren offline; die einzige Netzwerkanfrage, die QRCraft stellen kann, ist das erneute Laden eines Bildes, das du scannen möchtest, von seiner ursprünglichen Adresse</li>\n<li>In 10 Sprachen verfügbar</li>\n</ul>\n\nOpen Source (MIT-Lizenz): <a href=\"https://github.com/zenLoading/QRCraft\">github.com/zenLoading/QRCraft</a>"
+    "message": "ZenQR erstellt und scannt QR-Codes direkt in deinem Browser. Deine Daten werden nie an den Entwickler oder an Dienste Dritter gesendet.\n\n<b>Erstellen</b>\n<ul>\n<li>QR-Code für den aktuellen Tab, einen markierten Link oder Text oder beliebige Eingaben</li>\n<li>Vorlagen für WLAN-Netzwerke, Kontakte (vCard), E-Mail, SMS, Telefonnummern und Kalendertermine</li>\n<li>Viele QR-Codes auf einmal erstellen, einen pro Textzeile</li>\n<li>Einstellbare Fehlerkorrektur, Bildgröße, Stil der Positions- und Datenmuster sowie optional ein eingebettetes Logo</li>\n</ul>\n\n<b>Scannen</b>\n<ul>\n<li>QR-Codes in beliebigen Bildern über das Kontextmenü scannen</li>\n<li>Beliebigen Bereich der Seite zum Scannen auswählen</li>\n<li>Bild aus der Zwischenablage einfügen und scannen</li>\n<li>Mit der Kamera scannen (Kamerazugriff wird nur angefragt, wenn du diese Funktion nutzt)</li>\n</ul>\n\n<b>Datenschutz und mehr</b>\n<ul>\n<li>Verlauf aller erstellten und gescannten Codes, nur in deinem Browser gespeichert, mit Import/Export als JSON-Datei</li>\n<li>Keine Konten, keine Analysen, kein Tracking. Erstellen und Scannen funktionieren offline; die einzige Netzwerkanfrage, die ZenQR stellen kann, ist das erneute Laden eines Bildes, das du scannen möchtest, von seiner ursprünglichen Adresse</li>\n<li>In 10 Sprachen verfügbar</li>\n</ul>\n\nOpen Source (MIT-Lizenz): <a href=\"https://github.com/zenLoading/QRCraft\">github.com/zenLoading/QRCraft</a>"
   },
   "promo_banner_modifying_html": {
     "message": "👌 Benutzerfreundlich 🛡️ Datenschutzfreundlich"
@@ -33,6 +33,6 @@
     "message": "von kürzlich generierten und gescannten Elementen"
   },
   "extension_name": {
-    "message": "QRCraft - QR-Code-Generator und -Scanner"
+    "message": "ZenQR - QR-Code-Generator und -Scanner"
   }
 }

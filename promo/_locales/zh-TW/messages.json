@@ -3,7 +3,7 @@
     "message": "在瀏覽器本機產生和掃描 QR 碼。無需帳號、無追蹤，資料絕不傳送到任何伺服器。支援連結、文字、WiFi、聯絡人等；可掃描圖片、網頁區域或攝影機畫面。"
   },
   "amo_description": {
-    "message": "QRCraft 直接在瀏覽器中產生和掃描 QR 碼，你的資料絕不會傳送給開發者或任何第三方服務。\n\n<b>產生</b>\n<ul>\n<li>為目前分頁、選取的連結或文字，或任何輸入內容產生 QR 碼</li>\n<li>範本：WiFi 網路、聯絡人名片（vCard）、電子郵件、簡訊、電話號碼和行事曆活動</li>\n<li>批次產生：每行文字產生一個 QR 碼</li>\n<li>可調整容錯等級、圖片尺寸、定位點/碼點樣式，並可嵌入 Logo</li>\n</ul>\n\n<b>掃描</b>\n<ul>\n<li>透過右鍵選單掃描任何圖片中的 QR 碼</li>\n<li>框選網頁上的任意區域進行掃描</li>\n<li>從剪貼簿貼上圖片進行掃描</li>\n<li>使用攝影機掃描（僅在使用此功能時才會要求攝影機權限）</li>\n</ul>\n\n<b>隱私及其他</b>\n<ul>\n<li>產生和掃描記錄僅儲存在你的瀏覽器中，支援匯入/匯出 JSON 檔案</li>\n<li>無帳號、無統計、無追蹤。產生和掃描皆可離線使用；QRCraft 唯一可能發出的網路請求，是從原始網址重新載入你選擇掃描的圖片</li>\n<li>支援 10 種語言</li>\n</ul>\n\n開放原始碼（MIT 授權）: <a href=\"https://github.com/zenLoading/QRCraft\">github.com/zenLoading/QRCraft</a>"
+    "message": "ZenQR 直接在瀏覽器中產生和掃描 QR 碼，你的資料絕不會傳送給開發者或任何第三方服務。\n\n<b>產生</b>\n<ul>\n<li>為目前分頁、選取的連結或文字，或任何輸入內容產生 QR 碼</li>\n<li>範本：WiFi 網路、聯絡人名片（vCard）、電子郵件、簡訊、電話號碼和行事曆活動</li>\n<li>批次產生：每行文字產生一個 QR 碼</li>\n<li>可調整容錯等級、圖片尺寸、定位點/碼點樣式，並可嵌入 Logo</li>\n</ul>\n\n<b>掃描</b>\n<ul>\n<li>透過右鍵選單掃描任何圖片中的 QR 碼</li>\n<li>框選網頁上的任意區域進行掃描</li>\n<li>從剪貼簿貼上圖片進行掃描</li>\n<li>使用攝影機掃描（僅在使用此功能時才會要求攝影機權限）</li>\n</ul>\n\n<b>隱私及其他</b>\n<ul>\n<li>產生和掃描記錄僅儲存在你的瀏覽器中，支援匯入/匯出 JSON 檔案</li>\n<li>無帳號、無統計、無追蹤。產生和掃描皆可離線使用；ZenQR 唯一可能發出的網路請求，是從原始網址重新載入你選擇掃描的圖片</li>\n<li>支援 10 種語言</li>\n</ul>\n\n開放原始碼（MIT 授權）: <a href=\"https://github.com/zenLoading/QRCraft\">github.com/zenLoading/QRCraft</a>"
   },
   "promo_banner_modifying_html": {
     "message": "👌簡單易用 🛡️隱私友好"
@@ -30,9 +30,9 @@
     "message": "隨時查看最近產生和掃描的內容"
   },
   "extension_short_name": {
-    "message": "QRCraft"
+    "message": "ZenQR"
   },
   "extension_name": {
-    "message": "QRCraft - QR Code 產生器與掃描器"
+    "message": "ZenQR - QR Code 產生器與掃描器"
   }
 }

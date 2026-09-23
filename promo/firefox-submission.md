@@ -8,7 +8,7 @@ Firefox listing description only allows this HTML subset:
 
 ## Name
 
-QRCraft - QR Code Generator and Scanner
+ZenQR - QR Code Generator and Scanner
 
 ## Summary and Description
 
@@ -41,13 +41,13 @@ current AMO category list at submission time, since it varies by locale.
 
 ## Privacy policy
 
-QRCraft does not collect any data, and nothing you generate or scan is sent
+ZenQR does not collect any data, and nothing you generate or scan is sent
 to the developer or to any third party.
 
 ```
-QRCraft Privacy Policy
+ZenQR Privacy Policy
 
-QRCraft does not collect, transmit, sell, or share any personal data, and
+ZenQR does not collect, transmit, sell, or share any personal data, and
 has no servers of its own.
 
 - All QR code generation and scanning happens locally in your browser.
@@ -59,11 +59,11 @@ has no servers of its own.
   your camera. Camera frames are processed locally and are never recorded,
   stored, or transmitted.
 - When you scan an image on a web page and the extension can't read it
-  directly, QRCraft reloads that image from the same web address the page
-  uses, without cookies. This is the only network request QRCraft ever
+  directly, ZenQR reloads that image from the same web address the page
+  uses, without cookies. This is the only network request ZenQR ever
   makes. It sends no data about you, and the decoded result stays in your
   browser.
-- QRCraft has no analytics, telemetry, or tracking of any kind.
+- ZenQR has no analytics, telemetry, or tracking of any kind.
 ```
 
 ## Known validator warnings (not fixed, and not worth fixing)
@@ -139,7 +139,7 @@ decode it locally. Non-English locale strings were machine-translated
 
 ## Assets checklist
 
-- [x] Icon: `src/icons/qrcraft-128.png` (128x128 PNG, already built for the
+- [x] Icon: `src/icons/zenqr-128.png` (128x128 PNG, already built for the
       Chrome manifest) covers AMO's store-listing icon upload — AMO only
       requires a single icon, minimum 64x64, recommended 128x128.
 - [x] Screenshots: generated via `node promo/generate-images.mjs` (requires
@@ -161,5 +161,5 @@ decode it locally. Non-English locale strings were machine-translated
 - `node scripts/locale-tools.mjs check` — 0 missing keys across all 9
   non-English locales (a handful of untranslated WPA/WEP acronyms only)
 - `scripts/release.sh firefox` — produces
-  `release/qrcraft-v1.0.0-firefox-{release,source}.zip` from the current
+  `release/zenqr-v1.0.0-firefox-{release,source}.zip` from the current
   `git HEAD`; re-run this after any source change before uploading.

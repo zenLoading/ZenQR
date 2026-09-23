@@ -15,20 +15,20 @@ const manifest = {
   icons:
     browser === "firefox"
       ? {
-        16: "icons/qrcraft.svg",
-        48: "icons/qrcraft.svg",
+        16: "icons/zenqr.svg",
+        48: "icons/zenqr.svg",
       }
       : {
-        16: "icons/qrcraft-16.png",
-        32: "icons/qrcraft-32.png",
-        48: "icons/qrcraft-48.png",
-        128: "icons/qrcraft-128.png",
+        16: "icons/zenqr-16.png",
+        32: "icons/zenqr-32.png",
+        48: "icons/zenqr-48.png",
+        128: "icons/zenqr-128.png",
       },
   browser_specific_settings: {
     gecko: {
-      id: "@qrcraft",
+      id: "zenqr@zenloading",
       strict_min_version: "126.0",
-      // QRCraft makes no network requests and collects no personal data.
+      // ZenQR makes no network requests and collects no personal data.
       // Required by AMO for all new extension listings since 2025-11-03.
       data_collection_permissions: {
         required: ["none"],
@@ -48,12 +48,12 @@ const manifest = {
   action: {
     default_icon:
       browser === "firefox"
-        ? "icons/qrcraft.svg"
+        ? "icons/zenqr.svg"
         : {
-          16: "icons/qrcraft-16.png",
-          32: "icons/qrcraft-32.png",
-          48: "icons/qrcraft-48.png",
-          128: "icons/qrcraft-128.png",
+          16: "icons/zenqr-16.png",
+          32: "icons/zenqr-32.png",
+          48: "icons/zenqr-48.png",
+          128: "icons/zenqr-128.png",
         },
     default_popup: "pages/popup.html",
   },

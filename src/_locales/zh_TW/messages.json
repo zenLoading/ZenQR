@@ -1,9 +1,9 @@
 {
   "extension_name": {
-    "message": "QRCraft - QR Code 產生器與掃描器"
+    "message": "ZenQR - QR Code 產生器與掃描器"
   },
   "extension_short_name": {
-    "message": "QRCraft",
+    "message": "ZenQR",
     "description": "[keep-original]"
   },
   "extension_description": {
@@ -46,7 +46,7 @@
     "message": "清除歷史記錄"
   },
   "github_link_title": {
-    "message": "造訪 QRCraft 在 Github 上的專案主頁"
+    "message": "造訪 ZenQR 在 Github 上的專案主頁"
   },
   "toggle_generator_options_btn_label": {
     "message": "選項"
@@ -154,7 +154,7 @@
     "message": "無法讀取二維碼"
   },
   "scan_instructions_html": {
-    "message": "右鍵單擊任意圖片並選擇<br>「<img class=\"icon\" src=\"../icons/qrcraft.svg\"></img> 掃描圖片中的二維碼」"
+    "message": "右鍵單擊任意圖片並選擇<br>「<img class=\"icon\" src=\"../icons/zenqr.svg\"></img> 掃描圖片中的二維碼」"
   },
   "scan_from_clipboard_instructions_html": {
     "message": "按 <kbd>Ctrl</kbd> + <kbd>V</kbd> <br> 或 <kbd>⌘</kbd> + <kbd>V</kbd> 來掃描剪貼簿中的圖片"
@@ -178,19 +178,19 @@
     "message": "授予權限"
   },
   "grant_camera_initial_instructions_firefox_html": {
-    "message": "您即將授予 QRCraft 使用相機的權限。<br><br>當瀏覽器詢問您是否允許 QRCraft 使用相機時，請確保 <strong>\"對所有相機記住此設定\"</strong> 核取方塊已勾選，然後點擊 <strong>\"允許\"</strong>。<br><br>點擊下方按鈕開始。"
+    "message": "您即將授予 ZenQR 使用相機的權限。<br><br>當瀏覽器詢問您是否允許 ZenQR 使用相機時，請確保 <strong>\"對所有相機記住此設定\"</strong> 核取方塊已勾選，然後點擊 <strong>\"允許\"</strong>。<br><br>點擊下方按鈕開始。"
   },
   "grant_camera_initial_instructions_chrome_html": {
-    "message": "您即將授予 QRCraft 使用相機的權限。<br><br>當瀏覽器詢問您是否允許 QRCraft 使用相機時，請選擇 <strong>\"允許在造訪網站期間\"</strong>。<br><br>點擊下方按鈕開始。"
+    "message": "您即將授予 ZenQR 使用相機的權限。<br><br>當瀏覽器詢問您是否允許 ZenQR 使用相機時，請選擇 <strong>\"允許在造訪網站期間\"</strong>。<br><br>點擊下方按鈕開始。"
   },
   "grant_camera_blocked_instructions_firefox_html": {
-    "message": "QRCraft 的攝影機權限似乎已經被設定爲<strong>封鎖</strong>了。<br><br>若要改變此設定，請點擊網址列左邊的 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 圖示，然後將「使用攝影機」旁邊的「已封鎖」狀態<strong>移除</strong>。<br><br>完成此操作後，請重新載入本頁。"
+    "message": "ZenQR 的攝影機權限似乎已經被設定爲<strong>封鎖</strong>了。<br><br>若要改變此設定，請點擊網址列左邊的 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 圖示，然後將「使用攝影機」旁邊的「已封鎖」狀態<strong>移除</strong>。<br><br>完成此操作後，請重新載入本頁。"
   },
   "grant_camera_blocked_instructions_chrome_html": {
-    "message": "QRCraft 的攝影機權限似乎已經被設定爲<strong>封鎖</strong>了。<br><br>若要改變此設定，請點擊網址列上的 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 圖示，並選擇 <strong>一律允許 QRCraft - QR Code 產生器與掃描器 存取您的攝影機</strong>。<br><br>完成此操作後，請重新載入本頁。"
+    "message": "ZenQR 的攝影機權限似乎已經被設定爲<strong>封鎖</strong>了。<br><br>若要改變此設定，請點擊網址列上的 <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> 圖示，並選擇 <strong>一律允許 ZenQR - QR Code 產生器與掃描器 存取您的攝影機</strong>。<br><br>完成此操作後，請重新載入本頁。"
   },
   "grant_camera_granted_instructions_html": {
-    "message": "QRCraft 已经成功获得攝影機權限。<br><br>現在您可以關閉本頁了。"
+    "message": "ZenQR 已经成功获得攝影機權限。<br><br>現在您可以關閉本頁了。"
   },
   "grant_permissions_instructions_html": {
     "message": "此功能需要以下附加權限<br><br><strong>$PERMISSION$</strong><br>",
@@ -291,7 +291,7 @@
     "message": "無法存取攝影機。是否有其他程式正在使用攝影機？"
   },
   "settings_window_title": {
-    "message": "QRCraft 設定"
+    "message": "ZenQR 設定"
   },
   "settings_scan_success_sound_enabled_label": {
     "message": "掃描成功時播放聲音"
@@ -312,7 +312,7 @@
     "message": "QR 碼產生"
   },
   "tab_settings_title": {
-    "message": "變更 QRCraft 的設定"
+    "message": "變更 ZenQR 的設定"
   },
   "settings_config_keyboard_shortcuts_btn_label": {
     "message": "設定鍵盤快速鍵"
@@ -357,7 +357,7 @@
     "message": "儲存中..."
   },
   "batch_generator_window_title": {
-    "message": "QRCraft 批次產生器"
+    "message": "ZenQR 批次產生器"
   },
   "context_menu_batch_generate_from_selection": {
     "message": "批次產生 QR 碼（每行一個）"
@@ -516,7 +516,7 @@
     "message": "最多保留"
   },
   "settings_motion_explainer": {
-    "message": "控制 QRCraft 中使用的動畫與過場效果。"
+    "message": "控制 ZenQR 中使用的動畫與過場效果。"
   },
   "settings_motion_label": {
     "message": "動態效果"
@@ -540,7 +540,7 @@
     "message": "將外觀、產生器預設值與掃描器選項還原為初始值，不會影響您的掃描與產生歷史記錄。"
   },
   "settings_theme_explainer": {
-    "message": "選擇 QRCraft 要跟隨系統主題，還是永遠使用指定的主題。"
+    "message": "選擇 ZenQR 要跟隨系統主題，還是永遠使用指定的主題。"
   },
   "settings_theme_label": {
     "message": "主題"

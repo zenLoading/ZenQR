@@ -1,9 +1,9 @@
 {
   "extension_name": {
-    "message": "QRCraft - Генератор и сканер QR-кодов"
+    "message": "ZenQR - Генератор и сканер QR-кодов"
   },
   "extension_short_name": {
-    "message": "QRCraft",
+    "message": "ZenQR",
     "description": "[keep-original]"
   },
   "extension_description": {
@@ -61,7 +61,7 @@
     "message": "Удалить эту запись из истории"
   },
   "github_link_title": {
-    "message": "Посетить страницу проекта QRCraft на Github"
+    "message": "Посетить страницу проекта ZenQR на Github"
   },
   "toggle_generator_options_btn_label": {
     "message": "Опции"
@@ -170,7 +170,7 @@
     "message": "Невозможно декодировать QR-код"
   },
   "scan_instructions_html": {
-    "message": "Щелкните правой кнопкой мыши любое изображение и выберите<br>\"<img class=\"icon\" src=\"../icons/qrcraft.svg\"></img> Сканировать QR-код на этом изображении\""
+    "message": "Щелкните правой кнопкой мыши любое изображение и выберите<br>\"<img class=\"icon\" src=\"../icons/zenqr.svg\"></img> Сканировать QR-код на этом изображении\""
   },
   "scan_from_clipboard_instructions_html": {
     "message": "Чтобы сканировать изображение из буфера обмена, нажмите<br><kbd>Ctrl</kbd> + <kbd>V</kbd> <br> или <kbd>⌘</kbd> + <kbd>V</kbd> на Mac"
@@ -205,19 +205,19 @@
     "message": "Предоставить разрешение"
   },
   "grant_camera_initial_instructions_firefox_html": {
-    "message": "Вы собираетесь предоставить QRCraft доступ к вашей камере.<br><br>Когда вас спросят, разрешить ли QRCraft использовать вашу камеру, пожалуйста, убедитесь, что установлен флажок <strong>\"Запомнить для всех камер\"</strong>, затем нажмите <strong>\"Разрешить\"</strong>.<br><br>Нажмите кнопку ниже, чтобы начать."
+    "message": "Вы собираетесь предоставить ZenQR доступ к вашей камере.<br><br>Когда вас спросят, разрешить ли ZenQR использовать вашу камеру, пожалуйста, убедитесь, что установлен флажок <strong>\"Запомнить для всех камер\"</strong>, затем нажмите <strong>\"Разрешить\"</strong>.<br><br>Нажмите кнопку ниже, чтобы начать."
   },
   "grant_camera_initial_instructions_chrome_html": {
-    "message": "Вы собираетесь предоставить QRCraft доступ к вашей камере.<br><br>Когда вас спросят, разрешить ли QRCraft использовать вашу камеру, пожалуйста, выберите <strong>\"Разрешить при посещении сайта\"</strong>.<br><br>Нажмите кнопку ниже, чтобы начать."
+    "message": "Вы собираетесь предоставить ZenQR доступ к вашей камере.<br><br>Когда вас спросят, разрешить ли ZenQR использовать вашу камеру, пожалуйста, выберите <strong>\"Разрешить при посещении сайта\"</strong>.<br><br>Нажмите кнопку ниже, чтобы начать."
   },
   "grant_camera_blocked_instructions_firefox_html": {
-    "message": "Похоже, что QRCraft <strong>заблокирован</strong> для использования камеры.<br><br>Чтобы изменить этот параметр, нажмите на значок <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> слева от адресной строки и <strong>удалите</strong> статус \"Заблокировано\" в строке \"Использовать камеру\".<br><br>После этого обновите эту страницу."
+    "message": "Похоже, что ZenQR <strong>заблокирован</strong> для использования камеры.<br><br>Чтобы изменить этот параметр, нажмите на значок <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> слева от адресной строки и <strong>удалите</strong> статус \"Заблокировано\" в строке \"Использовать камеру\".<br><br>После этого обновите эту страницу."
   },
   "grant_camera_blocked_instructions_chrome_html": {
-    "message": "Похоже, что QRCraft <strong>заблокирован</strong> для использования камеры.<br><br>Чтобы изменить этот параметр, нажмите на значок <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> в адресной строке и выберите <strong>Всегда разрешать QRCraft - Генератор и сканер QR-кодов доступ к вашей камере</strong>.<br><br>После этого обновите эту страницу."
+    "message": "Похоже, что ZenQR <strong>заблокирован</strong> для использования камеры.<br><br>Чтобы изменить этот параметр, нажмите на значок <img class=\"icon icon-invert\" src=\"../icons/no-camera.svg\"></img> в адресной строке и выберите <strong>Всегда разрешать ZenQR - Генератор и сканер QR-кодов доступ к вашей камере</strong>.<br><br>После этого обновите эту страницу."
   },
   "grant_camera_granted_instructions_html": {
-    "message": "QRCraft успешно получил доступ к камере.<br><br>Теперь вы можете закрыть эту страницу."
+    "message": "ZenQR успешно получил доступ к камере.<br><br>Теперь вы можете закрыть эту страницу."
   },
   "grant_page_refresh_btn": {
     "message": "Обновить"
@@ -292,7 +292,7 @@
     "message": "Невозможно получить доступ к камере. Использует ли камеру другая программа?"
   },
   "settings_window_title": {
-    "message": "Настройки QRCraft"
+    "message": "Настройки ZenQR"
   },
   "settings_scan_success_sound_enabled_label": {
     "message": "Воспроизводить звук при успешном сканировании"
@@ -313,7 +313,7 @@
     "message": "Генератор QR-кодов"
   },
   "tab_settings_title": {
-    "message": "Изменить настройки QRCraft"
+    "message": "Изменить настройки ZenQR"
   },
   "settings_config_keyboard_shortcuts_btn_label": {
     "message": "Настроить сочетания клавиш"
@@ -358,7 +358,7 @@
     "message": "Сохранение..."
   },
   "batch_generator_window_title": {
-    "message": "Пакетный генератор QRCraft"
+    "message": "Пакетный генератор ZenQR"
   },
   "context_menu_batch_generate_from_selection": {
     "message": "Пакетное создание QR-кодов (по одному на строку)"
@@ -517,7 +517,7 @@
     "message": "Хранить до"
   },
   "settings_motion_explainer": {
-    "message": "Управляет анимациями и переходами, используемыми в QRCraft."
+    "message": "Управляет анимациями и переходами, используемыми в ZenQR."
   },
   "settings_motion_label": {
     "message": "Анимация"
@@ -541,7 +541,7 @@
     "message": "Восстанавливает исходные значения внешнего вида, настроек генератора по умолчанию и параметров сканера. На историю сканирования и создания это не влияет."
   },
   "settings_theme_explainer": {
-    "message": "Выберите, будет ли QRCraft следовать теме системы или всегда использовать определённую тему."
+    "message": "Выберите, будет ли ZenQR следовать теме системы или всегда использовать определённую тему."
   },
   "settings_theme_label": {
     "message": "Тема"

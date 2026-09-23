@@ -120,7 +120,7 @@ function GrantPage() {
   return (
     <div class="container">
       <div class="box">
-        <img src="../icons/qrcraft.svg" class="logo" />
+        <img src="../icons/zenqr.svg" class="logo" />
         {grantComponent}
       </div>
     </div>

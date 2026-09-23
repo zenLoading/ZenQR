@@ -81,7 +81,7 @@ function BatchGenerator() {
     <div class="batch-generator">
       <div class="box">
         <div class="header">
-          <img src="../icons/qrcraft.svg" class="logo" />
+          <img src="../icons/zenqr.svg" class="logo" />
           <h1>{TT("batch_generator_window_title")}</h1>
         </div>
         <p class="batch-generator-instructions">

@@ -44,8 +44,8 @@ if [ -z "$TAG" ]; then
   TAG="v$VERSION"
 fi
 
-RELEASE_FILE="$RELEASE_DIR/qrcraft-$TAG-$BROWSER-release.zip"
-SOURCE_FILE="$RELEASE_DIR/qrcraft-$TAG-$BROWSER-source.zip"
+RELEASE_FILE="$RELEASE_DIR/zenqr-$TAG-$BROWSER-release.zip"
+SOURCE_FILE="$RELEASE_DIR/zenqr-$TAG-$BROWSER-source.zip"
 
 yarn install && yarn run eslint src && yarn run webpack --mode production --env browser="$BROWSER"
 

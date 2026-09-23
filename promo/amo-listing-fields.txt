@@ -5,7 +5,7 @@ Same text as promo/_locales/en-US/messages.json amo_summary / amo_description.)
 ===============================================================
 Name
 ===============================================================
-QRCraft - QR Code Generator and Scanner
+ZenQR - QR Code Generator and Scanner
 
 ===============================================================
 Summary (short, 250 chars max — this one is 205, keep it on one line)
@@ -15,7 +15,7 @@ Generate and scan QR codes right in your browser. No accounts, no tracking, and 
 ===============================================================
 Describe Add-on / Description
 ===============================================================
-QRCraft generates and scans QR codes right in your browser. Your data is never sent to the developer or to any third-party service.
+ZenQR generates and scans QR codes right in your browser. Your data is never sent to the developer or to any third-party service.
 
 <b>Generate</b>
 <ul>
@@ -36,7 +36,7 @@ QRCraft generates and scans QR codes right in your browser. Your data is never s
 <b>Privacy and more</b>
 <ul>
 <li>History of everything you've generated or scanned, stored only in your browser, with import/export to a JSON file</li>
-<li>No accounts, no analytics, no tracking. Generating and scanning work offline; the only network request QRCraft may make is reloading an image you chose to scan from its original web address</li>
+<li>No accounts, no analytics, no tracking. Generating and scanning work offline; the only network request ZenQR may make is reloading an image you chose to scan from its original web address</li>
 <li>Available in 10 languages</li>
 </ul>
 

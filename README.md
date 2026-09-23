@@ -1,8 +1,8 @@
-# QRCraft
+# ZenQR
 
 ![Promo Banner](promo/chrome-webstore-promo.png)
 
-QRCraft is a browser extension for generating and scanning QR codes offline.
+ZenQR is a browser extension for generating and scanning QR codes offline.
 
 > This extension is not currently published on any browser's add-on store. You'll need to build and install it from source yourself.
 
@@ -16,7 +16,7 @@ QRCraft is a browser extension for generating and scanning QR codes offline.
 
 ## Permissions
 
-QRCraft requires the following permissions:
+ZenQR requires the following permissions:
 
 - Access to the active tab (`activeTab`): mandatory, enables capturing image of the active page for scanning
 - Context menus (`menus`/`contextMenus`): mandatory, enables the context menu items
@@ -45,8 +45,8 @@ Build steps (Linux or macOS):
 
 1. Make sure you have `node`, `yarn`, and the `zip` command installed.
 1. Open terminal and cd to project root.
-1. Run `yarn release:firefox` or `yarn release:chrome` (which call `scripts/release.sh`). This will generate 2 files in the `release` directory: `qrcraft-<version>-<browser>-release.zip`
-   is the installable extension, and `qrcraft-<version>-<browser>-source.zip` is the zipped source code.
+1. Run `yarn release:firefox` or `yarn release:chrome` (which call `scripts/release.sh`). This will generate 2 files in the `release` directory: `zenqr-<version>-<browser>-release.zip`
+   is the installable extension, and `zenqr-<version>-<browser>-source.zip` is the zipped source code.
 
 The source zip is built from the committed `git HEAD`, so commit your changes before running the release script.
 

@@ -1,12 +1,12 @@
 {
   "extension_short_name": {
-    "message": "QRCraft"
+    "message": "ZenQR"
   },
   "amo_summary": {
     "message": "Gere e leia QR codes direto no seu navegador. Sem conta, sem rastreamento, e seus dados nunca vão para nenhum servidor. Links, texto, WiFi, contatos e mais; leia imagens, áreas da página ou pela câmera."
   },
   "amo_description": {
-    "message": "O QRCraft gera e lê QR codes direto no seu navegador. Seus dados nunca são enviados ao desenvolvedor nem a serviços de terceiros.\n\n<b>Gerar</b>\n<ul>\n<li>QR code da aba atual, de um link ou texto selecionado, ou de qualquer coisa que você digitar</li>\n<li>Modelos para redes WiFi, cartões de contato (vCard), e-mail, SMS, números de telefone e eventos de agenda</li>\n<li>Geração em lote: um QR code por linha de texto</li>\n<li>Nível de correção de erros, tamanho da imagem e estilo dos padrões e módulos ajustáveis, com logotipo opcional</li>\n</ul>\n\n<b>Ler</b>\n<ul>\n<li>Leia o QR code de qualquer imagem pelo menu de contexto</li>\n<li>Selecione qualquer área da página para ler</li>\n<li>Cole uma imagem da área de transferência para lê-la</li>\n<li>Leia com a câmera (o acesso só é solicitado se você usar este recurso)</li>\n</ul>\n\n<b>Privacidade e mais</b>\n<ul>\n<li>Histórico de tudo que você gerou ou leu, salvo apenas no seu navegador, com importação/exportação em arquivo JSON</li>\n<li>Sem contas, sem análises, sem rastreamento. Gerar e ler funciona offline; a única requisição de rede que o QRCraft pode fazer é recarregar, do endereço original, uma imagem que você escolheu ler</li>\n<li>Disponível em 10 idiomas</li>\n</ul>\n\nCódigo aberto (licença MIT): <a href=\"https://github.com/zenLoading/QRCraft\">github.com/zenLoading/QRCraft</a>"
+    "message": "O ZenQR gera e lê QR codes direto no seu navegador. Seus dados nunca são enviados ao desenvolvedor nem a serviços de terceiros.\n\n<b>Gerar</b>\n<ul>\n<li>QR code da aba atual, de um link ou texto selecionado, ou de qualquer coisa que você digitar</li>\n<li>Modelos para redes WiFi, cartões de contato (vCard), e-mail, SMS, números de telefone e eventos de agenda</li>\n<li>Geração em lote: um QR code por linha de texto</li>\n<li>Nível de correção de erros, tamanho da imagem e estilo dos padrões e módulos ajustáveis, com logotipo opcional</li>\n</ul>\n\n<b>Ler</b>\n<ul>\n<li>Leia o QR code de qualquer imagem pelo menu de contexto</li>\n<li>Selecione qualquer área da página para ler</li>\n<li>Cole uma imagem da área de transferência para lê-la</li>\n<li>Leia com a câmera (o acesso só é solicitado se você usar este recurso)</li>\n</ul>\n\n<b>Privacidade e mais</b>\n<ul>\n<li>Histórico de tudo que você gerou ou leu, salvo apenas no seu navegador, com importação/exportação em arquivo JSON</li>\n<li>Sem contas, sem análises, sem rastreamento. Gerar e ler funciona offline; a única requisição de rede que o ZenQR pode fazer é recarregar, do endereço original, uma imagem que você escolheu ler</li>\n<li>Disponível em 10 idiomas</li>\n</ul>\n\nCódigo aberto (licença MIT): <a href=\"https://github.com/zenLoading/QRCraft\">github.com/zenLoading/QRCraft</a>"
   },
   "promo_banner_modifying_html": {
     "message": "👌 Fácil de usar 🛡️ Focado na privacidade"
@@ -33,6 +33,6 @@
     "message": "de itens gerados e escaneados recentemente"
   },
   "extension_name": {
-    "message": "QRCraft - Gerador e Leitor de Código QR"
+    "message": "ZenQR - Gerador e Leitor de Código QR"
   }
 }
