@@ -161,5 +161,5 @@ decode it locally. Non-English locale strings were machine-translated
 - `node scripts/locale-tools.mjs check` — 0 missing keys across all 9
   non-English locales (a handful of untranslated WPA/WEP acronyms only)
 - `scripts/release.sh firefox` — produces
-  `release/zenqr-v1.0.0-firefox-{release,source}.zip` from the current
+  `release/zenqr-v1.0.1-firefox-{release,source}.zip` from the current
   `git HEAD`; re-run this after any source change before uploading.
