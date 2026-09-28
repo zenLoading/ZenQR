@@ -42,6 +42,7 @@
     "dev": "webpack watch --mode development",
     "build": "webpack build --mode development",
     "lint": "eslint src",
+    "test:chrome": "webpack build --mode production --env browser=chrome && node tests/chrome-smoke.mjs",
     "release:firefox": "scripts/release.sh firefox",
     "release:chrome": "scripts/release.sh chrome",
     "check-locales": "node scripts/locale-tools.mjs check",

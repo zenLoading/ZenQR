@@ -37,6 +37,10 @@ Prerequisites: yarn
 
 Use the script in `/opencv` to update the pre-built OpenCV library and wasm.
 
+### Chrome smoke test
+
+`yarn test:chrome` builds `dist/chrome` and runs `tests/chrome-smoke.mjs` in Chrome for Testing via puppeteer. It checks that background state survives the service worker being stopped, and that region scanning decodes a QR code end to end. Before the first run, install the browser with `npx puppeteer browsers install chrome`.
+
 ## Building
 
 Build steps (Linux or macOS):
