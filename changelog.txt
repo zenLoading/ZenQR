@@ -1,3 +1,13 @@
+## [v1.0.2] - 2026-09-28
+
+### Added
+- Chrome support: the extension now builds and runs as a Chrome Manifest V3 extension (Chrome 127+).
+
+### Fixed
+- Context-menu actions and region scanning no longer lose their state when the browser suspends the background script.
+- Region scanning decodes in the scan overlay, so the first scan after the background wakes up is faster.
+- Portuguese translation now uses the pt_BR locale code, so Chrome recognizes it.
+
 ## [v1.0.1] - 2026-09-23
 
 ### Changed
