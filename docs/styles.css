@@ -515,3 +515,73 @@ footer a:hover {
   color: var(--accent);
   text-decoration-color: var(--accent);
 }
+
+/* ---------- privacy policy page ---------- */
+
+.policy {
+  max-width: calc(var(--measure) + 2 * var(--edge));
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 4.5rem) var(--edge) var(--section-gap);
+}
+
+.policy-head {
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.policy-head h1 {
+  font-size: clamp(2.2rem, 1.6rem + 3vw, 3.4rem);
+}
+
+.policy-meta {
+  margin-top: 0.75rem;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.policy-summary {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--accent);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Override the landing page's full-bleed band padding on generic sections. */
+.policy section {
+  padding: 0;
+}
+
+.policy section + section {
+  margin-top: 2.25rem;
+}
+
+.policy h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.policy p + p {
+  margin-top: 0.75rem;
+}
+
+.policy ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  max-width: var(--measure);
+}
+
+.policy li + li {
+  margin-top: 0.5rem;
+}
+
+.policy code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  color: var(--accent-deep);
+}
+
+.policy a {
+  color: var(--accent);
+}

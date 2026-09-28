@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZenQR Privacy Policy</title>
+  <meta name="description" content="ZenQR privacy policy: the extension collects no personal data. QR codes are generated and scanned entirely on your device." />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/icons/favicon-128.png" />
+
+  <!-- No web fonts here on purpose: this page makes no third-party requests. -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="finder-mark" viewBox="0 0 24 24">
+      <rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="none" stroke="currentColor" stroke-width="3" />
+      <rect x="9.5" y="9.5" width="5" height="5" rx="1.4" fill="currentColor" />
+    </symbol>
+  </svg>
+
+  <nav class="site-nav">
+    <a class="wordmark" href="./">
+      <svg class="mark" aria-hidden="true"><use href="#finder-mark" /></svg>
+      ZenQR
+    </a>
+    <a class="nav-link" href="https://github.com/zenLoading/ZenQR">GitHub</a>
+  </nav>
+
+  <main class="policy">
+    <header class="policy-head">
+      <h1>Privacy Policy</h1>
+      <p class="policy-meta">Effective September 28, 2026 · applies to the ZenQR browser extension for Chrome, Edge and Firefox</p>
+      <p class="policy-summary">ZenQR does not collect, store on any server, sell, or share any personal data. Everything the extension does happens locally in your browser.</p>
+    </header>
+
+    <section aria-labelledby="collect">
+      <h2 id="collect">Data we collect</h2>
+      <p>None. ZenQR has no account system, no analytics, no telemetry, no crash reporting and no advertising. The developer operates no server that the extension talks to.</p>
+    </section>
+
+    <section aria-labelledby="local">
+      <h2 id="local">Data processed on your device</h2>
+      <ul>
+        <li><strong>Generating QR codes.</strong> The text, links or template fields you enter are encoded into a QR code locally.</li>
+        <li><strong>Scanning QR codes.</strong> Images you choose, the page region you select, and camera frames are decoded locally with a bundled decoder. They are never uploaded.</li>
+        <li><strong>Screen capture.</strong> When you start a region scan, the extension captures the visible part of the current tab only to decode the area you selected. The capture is discarded afterwards.</li>
+        <li><strong>Camera.</strong> Camera access is optional and requested only when you choose to scan with the camera. Video is processed frame by frame in memory and is never recorded or transmitted.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="stored">
+      <h2 id="stored">Data stored in your browser</h2>
+      <p>Your settings and, if enabled, a history of the QR codes you generated or scanned are saved in your browser's extension storage on your device. You can turn history off, clear it, or export it to a file from the extension at any time. Uninstalling the extension removes this data.</p>
+    </section>
+
+    <section aria-labelledby="network">
+      <h2 id="network">Network requests</h2>
+      <p>ZenQR makes no network requests of its own. The only exceptions are actions you explicitly take: when you scan an image from a web page, the browser may load that image from the website that hosts it, and when you open a URL found in a QR code, your browser navigates to that address.</p>
+    </section>
+
+    <section aria-labelledby="permissions">
+      <h2 id="permissions">Browser permissions</h2>
+      <ul>
+        <li><code>activeTab</code>: capture the current tab when you start a region scan.</li>
+        <li><code>scripting</code>: show the region-selection overlay, and read an image you right-clicked to scan.</li>
+        <li><code>contextMenus</code>: right-click actions for scanning images and creating QR codes.</li>
+        <li><code>storage</code>: save your settings and local history.</li>
+        <li><code>clipboardWrite</code>: copy a result or QR code image when you click “Copy”.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">Sharing and sale of data</h2>
+      <p>Because no data is collected, none is sold, transferred to third parties, or used for advertising, creditworthiness or lending purposes.</p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">Changes and contact</h2>
+      <p>If this policy changes, the updated version will be published on this page with a new effective date. Questions can be raised as an issue at <a href="https://github.com/zenLoading/ZenQR/issues">github.com/zenLoading/ZenQR/issues</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>MIT licensed. Generation by ZXing for JS. Scanning by OpenCV and WeChat QRCode.</span>
+    <a href="https://github.com/zenLoading/ZenQR">github.com/zenLoading/ZenQR</a>
+  </footer>
+
+</body>
+</html>
