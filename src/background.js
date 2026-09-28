@@ -5,27 +5,45 @@ import {
   tabs,
   storage,
 } from "./utils/compat";
-import { addHistory } from "./utils/history";
-import { initDecoder, scan } from "./utils/qrcode";
 import { convertBlobToDataUri, randomStr } from "./utils/misc";
 import { getSettingValueFromStorage } from "./utils/settings";
 
 const menusApi = apiNs.menus || apiNs.contextMenus;
 
-/**
- * @type {{action:string}}
- */
-let openPopupOptions = null;
-/**
- * @type {string[]}
- */
-let pickerSecrets = [];
+// The background runs as a non-persistent script (a service worker in Chrome,
+// an event page in Firefox) and can be torn down whenever it goes idle, so any
+// state that has to outlive a single event lives in session storage.
+const POPUP_OPTIONS_KEY = "bgPopupOptions";
+const PICKER_SECRETS_KEY = "bgPickerSecrets";
+const MAX_PICKER_SECRETS = 10;
 
-initDecoder();
+/**
+ * Resolves once the latest popup options write has landed, so a popup opened
+ * right after `openPopupWithOptions()` never reads stale options.
+ * @type {Promise<void>}
+ */
+let popupOptionsWrite = Promise.resolve();
+/**
+ * Serializes read-modify-write cycles on the picker secrets list.
+ * @type {Promise<unknown>}
+ */
+let pickerSecretsQueue = Promise.resolve();
 
+/**
+ * @param {{action:string}} options
+ */
 function openPopupWithOptions(options) {
-  openPopupOptions = options;
+  popupOptionsWrite = storage("session").set({ [POPUP_OPTIONS_KEY]: options });
+  // Firefox only honors `action.openPopup()` while still handling the user
+  // gesture, so it must not wait for the storage write above.
   openPopup();
+}
+
+async function takePopupOptions() {
+  await popupOptionsWrite;
+  const data = await storage("session").get(POPUP_OPTIONS_KEY);
+  await storage("session").set({ [POPUP_OPTIONS_KEY]: null });
+  return data[POPUP_OPTIONS_KEY] || null;
 }
 
 /**
@@ -38,66 +56,21 @@ function openPickerWithOptions(options) {
     .then((tab) => injectPickerLoader(tab, options));
 }
 
+/**
+ * @return {Promise<{image:string}|{err:string}>}
+ */
 async function capture(request) {
-  let canvas = null;
   try {
-    canvas = await capturePartialScreen(
+    const canvas = await capturePartialScreen(
       request.rect,
       request.scroll,
       request.devicePixelRatio
     );
+    const blob = await canvas.convertToBlob({ type: "image/png" });
+    return { image: await convertBlobToDataUri(blob) };
   } catch (err) {
-    console.error("err", err);
-    return {
-      err,
-    };
-  }
-
-  const dataUri = canvas
-    .convertToBlob({ type: "image/png" })
-    .then(convertBlobToDataUri);
-  return dataUri;
-}
-
-async function captureScan(request) {
-  let canvas = null;
-  try {
-    canvas = await capturePartialScreen(
-      request.rect,
-      request.scroll,
-      request.devicePixelRatio
-    );
-  } catch (err) {
-    console.error("err", err);
-    return {
-      err,
-    };
-  }
-
-  const dataUri = canvas
-    .convertToBlob({ type: "image/png" })
-    .then(convertBlobToDataUri);
-
-  try {
-    const ctx = canvas.getContext("2d");
-    const result = await scan(
-      ctx.getImageData(0, 0, canvas.width, canvas.height)
-    );
-    if (result.length) {
-      await addHistory("decode", result[0].content);
-    }
-    return {
-      image: await dataUri,
-      imageSize: { width: canvas.width, height: canvas.height },
-      result,
-    };
-  } catch (err) {
-    console.error("err", err);
-    return {
-      image: await dataUri,
-      imageSize: { width: canvas.width, height: canvas.height },
-      err,
-    };
+    console.error("capture failed", err);
+    return { err: err?.message || String(err) };
   }
 }
 
@@ -257,23 +230,36 @@ apiNs.commands.onCommand.addListener((command) => {
   }
 });
 
+/**
+ * @param {(secrets:string[]) => {secrets:string[], result:any}} update
+ */
+function updatePickerSecrets(update) {
+  const run = pickerSecretsQueue.then(async () => {
+    const data = await storage("session").get(PICKER_SECRETS_KEY);
+    const { secrets, result } = update(data[PICKER_SECRETS_KEY] || []);
+    await storage("session").set({ [PICKER_SECRETS_KEY]: secrets });
+    return result;
+  });
+  pickerSecretsQueue = run.catch(() => {});
+  return run;
+}
+
 function createPickerSecret() {
   const secret = randomStr(16);
-  // only keep the latest 10
-  pickerSecrets = [...pickerSecrets.slice(-10), secret];
-  return secret;
+  return updatePickerSecrets((secrets) => ({
+    secrets: [...secrets.slice(-MAX_PICKER_SECRETS), secret],
+    result: secret,
+  }));
 }
 
 function validatePickerSecret(secret) {
-  const pos = pickerSecrets.indexOf(secret);
-  if (pos !== -1) {
-    pickerSecrets = [
-      ...pickerSecrets.slice(0, pos),
-      ...pickerSecrets.slice(pos + 1),
-    ];
-    return true;
-  }
-  return false;
+  return updatePickerSecrets((secrets) => {
+    const isValid = secrets.includes(secret);
+    return {
+      secrets: isValid ? secrets.filter((s) => s !== secret) : secrets,
+      result: isValid,
+    };
+  });
 }
 
 apiNs.runtime.onMessage.addListener((request, sender, sendResponse) => {
@@ -284,11 +270,7 @@ apiNs.runtime.onMessage.addListener((request, sender, sendResponse) => {
       break;
     // capture image
     case "BG_CAPTURE":
-      capture(request).then((image) => sendResponse({ image }));
-      return true;
-    // capture image and scan
-    case "BG_CAPTURE_SCAN":
-      captureScan(request).then(sendResponse);
+      capture(request).then(sendResponse);
       return true;
     case "BG_CREATE_TAB":
       tabs
@@ -301,17 +283,17 @@ apiNs.runtime.onMessage.addListener((request, sender, sendResponse) => {
       return true;
     // get popup options
     case "POPUP_GET_OPTIONS":
-      sendResponse(openPopupOptions);
-      openPopupOptions = null;
+      takePopupOptions().then(sendResponse);
       return true;
-    case "BG_GET_PICKER_URL": {
-      const url = new URL(apiNs.runtime.getURL("pages/picker.html"));
-      url.searchParams.set("secret", createPickerSecret());
-      sendResponse(url.href);
+    case "BG_GET_PICKER_URL":
+      createPickerSecret().then((secret) => {
+        const url = new URL(apiNs.runtime.getURL("pages/picker.html"));
+        url.searchParams.set("secret", secret);
+        sendResponse(url.href);
+      });
       return true;
-    }
     case "BG_VALIDATE_PICKER_SECRET":
-      sendResponse(validatePickerSecret(request.secret));
+      validatePickerSecret(request.secret).then(sendResponse);
       return true;
     case "BG_APPLY_CSS":
       if (sender.tab?.id) {

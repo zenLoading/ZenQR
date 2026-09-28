@@ -14,7 +14,13 @@ import { useEffect, useState, useCallback, useRef } from "react";
 import { apiNs } from "../utils/compat";
 import { PropTypes } from "prop-types";
 import { useTemporaryState } from "../utils/hooks";
-import { isQrCodeContentLink, playScanSuccessAudio } from "../utils/misc";
+import {
+  createCanvasFromDataUri,
+  isQrCodeContentLink,
+  playScanSuccessAudio,
+} from "../utils/misc";
+import { addHistory } from "../utils/history";
+import { initDecoder, scan as decodeQrCodes } from "../utils/qrcode";
 import QRPositionMarker from "./components/QRPositionMarker";
 
 const minScaleFactor = 0.2;
@@ -23,6 +29,43 @@ const maxScaleLevel = 30;
 const distance = (maxScaleFactor - minScaleFactor) / maxScaleLevel;
 const defaultScaleLevel = 10;
 const baseScanSize = 100;
+
+// Start loading the decoder while the user is still positioning the scan
+// region, so the first scan doesn't wait on the wasm module.
+initDecoder();
+
+/**
+ * Captures the given region of the visible tab (only the background can call
+ * `tabs.captureVisibleTab`) and decodes it here in the page, which keeps the
+ * heavy OpenCV runtime out of the non-persistent background script.
+ * @param {{rect, scroll, devicePixelRatio:number}} params
+ * @return {Promise<{image?:string, imageSize?:{width,height}, result?:Array, err?:Error}>}
+ */
+async function captureAndDecode(params) {
+  const captured = await apiNs.runtime.sendMessage({
+    action: "BG_CAPTURE",
+    ...params,
+  });
+  if (!captured?.image) {
+    return { err: new Error(captured?.err || "capture failed") };
+  }
+
+  const canvas = await createCanvasFromDataUri(captured.image);
+  const imageSize = { width: canvas.width, height: canvas.height };
+  try {
+    const ctx = canvas.getContext("2d");
+    const result = await decodeQrCodes(
+      ctx.getImageData(0, 0, canvas.width, canvas.height)
+    );
+    if (result.length) {
+      await addHistory("decode", result[0].content);
+    }
+    return { image: captured.image, imageSize, result };
+  } catch (err) {
+    console.error("decode failed", err);
+    return { image: captured.image, imageSize, err };
+  }
+}
 
 /**
  * collision detection
@@ -339,8 +382,7 @@ function Scanner({
     const rect = { x, y, width, height };
     let nextStage = "result";
     try {
-      const res = await apiNs.runtime.sendMessage({
-        action: "BG_CAPTURE_SCAN",
+      const res = await captureAndDecode({
         rect,
         scroll: scroll.current,
         devicePixelRatio: window.devicePixelRatio,

@@ -281,6 +281,9 @@ export default function ImageScanner(props) {
               apiNs.runtime
                 .sendMessage({ action: "BG_CAPTURE", ...request.captureParams })
                 .then((r) => {
+                  if (!r?.image) {
+                    throw new Error(r?.err || "capture failed");
+                  }
                   setImgSrc(r.image);
                   setLoadingStatus(STATUS.SUCCESS);
                 })

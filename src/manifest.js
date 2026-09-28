@@ -24,17 +24,24 @@ const manifest = {
         48: "icons/zenqr-48.png",
         128: "icons/zenqr-128.png",
       },
-  browser_specific_settings: {
-    gecko: {
-      id: "zenqr@zenloading",
-      strict_min_version: "126.0",
-      // ZenQR makes no network requests and collects no personal data.
-      // Required by AMO for all new extension listings since 2025-11-03.
-      data_collection_permissions: {
-        required: ["none"],
+  ...(browser === "firefox"
+    ? {
+      browser_specific_settings: {
+        gecko: {
+          id: "zenqr@zenloading",
+          strict_min_version: "126.0",
+          // ZenQR makes no network requests and collects no personal data.
+          // Required by AMO for all new extension listings since 2025-11-03.
+          data_collection_permissions: {
+            required: ["none"],
+          },
+        },
       },
-    },
-  },
+    }
+    : {
+      // `action.openPopup()` became generally available in Chrome 127.
+      minimum_chrome_version: "127",
+    }),
   permissions: [
     "activeTab",
     // MDN states that "contextMenus"  is an alias for "menus"
