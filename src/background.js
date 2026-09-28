@@ -5,7 +5,7 @@ import {
   tabs,
   storage,
 } from "./utils/compat";
-import { convertBlobToDataUri, randomStr } from "./utils/misc";
+import { convertBlobToDataUri, debugLog, randomStr } from "./utils/misc";
 import { getSettingValueFromStorage } from "./utils/settings";
 
 const menusApi = apiNs.menus || apiNs.contextMenus;
@@ -52,8 +52,8 @@ async function takePopupOptions() {
 function openPickerWithOptions(options) {
   tabs
     .query({ active: true, currentWindow: true })
-    .then((tabs) => tabs[0])
-    .then((tab) => injectPickerLoader(tab, options));
+    .then((tabs) => injectPickerLoader(tabs[0], options))
+    .catch((err) => console.error("failed to open region picker", err));
 }
 
 /**
@@ -75,12 +75,23 @@ async function capture(request) {
 }
 
 async function injectPickerLoader(tab, options) {
-  await apiNs.scripting.executeScript({
-    files: ["content_scripts/picker-loader.js"],
-    target: {
-      tabId: tab.id,
-    },
-  });
+  if (!tab?.id) {
+    return;
+  }
+  try {
+    await apiNs.scripting.executeScript({
+      files: ["content_scripts/picker-loader.js"],
+      target: {
+        tabId: tab.id,
+      },
+    });
+  } catch (err) {
+    // Browsers forbid scripting their own pages (chrome://, about:, the web
+    // store, other extensions' pages), so region scanning isn't available
+    // there. This is expected, not an error worth surfacing.
+    debugLog("region scan unavailable on this page:", err?.message);
+    return;
+  }
   if (!options) {
     options = {};
   }
@@ -109,8 +120,10 @@ const menuItems = {
   context_menu_pick_region_to_scan: {
     title: apiNs.i18n.getMessage("context_menu_pick_region_to_scan"),
     contexts: ["page", "action", "image", "video", "audio"],
-    onclick: async function (info, tab) {
-      await injectPickerLoader(tab);
+    onclick: function (info, tab) {
+      injectPickerLoader(tab).catch((err) =>
+        console.error("failed to open region picker", err)
+      );
     },
   },
   context_menu_make_qr_code_for_selected_text: {

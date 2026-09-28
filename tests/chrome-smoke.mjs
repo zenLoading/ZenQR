@@ -24,6 +24,8 @@ const QR_OFFSET_PX = 100;
 const WORKER_STOP_SETTLE_MS = 500;
 const DECODER_WARMUP_MS = 1500;
 const SCAN_TIMEOUT_MS = 15000;
+// Time for the background to attempt (and fail) injecting into the page.
+const RESTRICTED_PAGE_SETTLE_MS = 1000;
 
 const results = [];
 function check(name, isOk, detail = "") {
@@ -209,6 +211,44 @@ async function testRegionScan(browser, qrPage, workerErrors) {
   }
 }
 
+/**
+ * Browsers forbid scripting their own pages (chrome://, the Web Store, other
+ * extensions), so asking for a region scan there must fail quietly instead of
+ * leaving an uncaught rejection on the extension's error page.
+ */
+async function testRegionScanOnRestrictedPage(browser, extId) {
+  const workerTarget = await browser.waitForTarget(isBackgroundWorker);
+  const cdp = await workerTarget.createCDPSession();
+  const exceptions = [];
+  cdp.on("Runtime.exceptionThrown", ({ exceptionDetails }) => {
+    exceptions.push(
+      exceptionDetails.exception?.description || exceptionDetails.text
+    );
+  });
+  await cdp.send("Runtime.enable");
+
+  const extPage = await browser.newPage();
+  await extPage.goto(`chrome-extension://${extId}/pages/settings.html`);
+  const restrictedPage = await browser.newPage();
+  await restrictedPage.goto("chrome://version");
+  await restrictedPage.bringToFront();
+
+  // What the popup's "scan region" button sends.
+  await extPage.evaluate(() =>
+    chrome.runtime.sendMessage({ action: "BG_INJECT_PICKER_LOADER" })
+  );
+  await sleep(RESTRICTED_PAGE_SETTLE_MS);
+  check(
+    "region scan on chrome:// page throws no uncaught error",
+    exceptions.length === 0,
+    exceptions.join(" | ")
+  );
+
+  await cdp.detach();
+  await restrictedPage.close();
+  await extPage.close();
+}
+
 async function main() {
   const extDir = prepareTestExtension();
   const qr = renderQrSvg(QR_TEXT);
@@ -226,6 +266,7 @@ async function main() {
 
     await testStateSurvivesWorkerRestart(browser, extId);
     await testRegionScan(browser, { url, size: qr.size }, workerErrors);
+    await testRegionScanOnRestrictedPage(browser, extId);
     check(
       "no service worker console errors",
       workerErrors.length === 0,
