@@ -61,6 +61,13 @@ body {
   white-space: nowrap;
 }
 
+/* An inline-flex button's baseline comes from its first child: the icon for
+   icon-first buttons, the text for "Options ▾". Baseline alignment therefore
+   staggers them; align their boxes by the middle instead. */
+.necker>.clickable {
+  vertical-align: middle;
+}
+
 .footer {
   flex: 1;
 }
