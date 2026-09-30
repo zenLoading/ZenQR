@@ -143,6 +143,9 @@
   "scan_region_picker_tips_scan": {
     "message": "Scan"
   },
+  "scan_region_picker_tips_touch": {
+    "message": "Drag to select a region, or tap to scan around a point"
+  },
   "scan_region_picker_tips_esc": {
     "message": "Esc"
   },

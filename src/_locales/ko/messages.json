@@ -144,6 +144,9 @@
   "scan_region_picker_tips_scan": {
     "message": "스캔"
   },
+  "scan_region_picker_tips_touch": {
+    "message": "드래그하여 영역을 선택하거나 탭하여 주변을 스캔하세요"
+  },
   "scan_region_picker_tips_esc": {
     "message": "Esc",
     "description": "[keep-original]"

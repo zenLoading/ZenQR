@@ -144,6 +144,9 @@
   "scan_region_picker_tips_scan": {
     "message": "Escanear"
   },
+  "scan_region_picker_tips_touch": {
+    "message": "Arrastra para seleccionar una región o toca para escanear alrededor de un punto"
+  },
   "scan_region_picker_tips_esc": {
     "message": "Esc",
     "description": "[keep-original]"

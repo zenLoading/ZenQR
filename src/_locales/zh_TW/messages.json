@@ -129,6 +129,9 @@
   "scan_region_picker_tips_scan": {
     "message": "掃描"
   },
+  "scan_region_picker_tips_touch": {
+    "message": "拖曳框選區域，或輕觸掃描該點周圍"
+  },
   "scan_region_picker_tips_esc": {
     "message": "Esc",
     "description": "[keep-original]"

@@ -144,6 +144,9 @@
   "scan_region_picker_tips_scan": {
     "message": "Сканировать"
   },
+  "scan_region_picker_tips_touch": {
+    "message": "Проведите пальцем, чтобы выделить область, или коснитесь, чтобы сканировать вокруг точки"
+  },
   "scan_region_picker_tips_esc": {
     "message": "Esc",
     "description": "[keep-original]"

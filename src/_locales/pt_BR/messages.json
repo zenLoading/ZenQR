@@ -144,6 +144,9 @@
   "scan_region_picker_tips_scan": {
     "message": "Digitalizar"
   },
+  "scan_region_picker_tips_touch": {
+    "message": "Arraste para selecionar uma região ou toque para digitalizar ao redor de um ponto"
+  },
   "scan_region_picker_tips_esc": {
     "message": "Esc",
     "description": "[keep-original]"

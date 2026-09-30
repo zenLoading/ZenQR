@@ -15,11 +15,16 @@ body {
 .mask {
   margin: 0;
   padding: 0;
+  /* finger drags draw the selection instead of scrolling or zooming the page */
+  touch-action: none;
 }
 
-/* hide the spotlight when the cursor is on one of mask's siblings */
-.mask:has(~ *:hover) path {
-  fill-rule: nonzero;
+/* hide the spotlight when the cursor is on one of mask's siblings; touch
+   screens leave :hover stuck after a tap, so only do this with a real pointer */
+@media (hover: hover) {
+  .mask:has(~ *:hover) path {
+    fill-rule: nonzero;
+  }
 }
 
 .input-image-container {
@@ -163,6 +168,14 @@ body {
   transition: opacity 0.1s linear 0s, transform var(--duration-fast) var(--ease-spring),
     background-color var(--duration-fast) var(--ease-out-expo);
   opacity: 1;
+}
+
+@media (pointer: coarse) {
+  .x-mark {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+  }
 }
 
 .x-mark:hover {

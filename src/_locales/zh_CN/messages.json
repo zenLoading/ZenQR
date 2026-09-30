@@ -129,6 +129,9 @@
   "scan_region_picker_tips_scan": {
     "message": "扫描"
   },
+  "scan_region_picker_tips_touch": {
+    "message": "拖动框选区域，或轻点扫描该点周围"
+  },
   "scan_region_picker_tips_esc": {
     "message": "Esc",
     "description": "[keep-original]"

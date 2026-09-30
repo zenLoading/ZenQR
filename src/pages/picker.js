@@ -10,7 +10,7 @@ import {
   useMousePositionRef,
   useWindowSize,
 } from "../utils/hooks";
-import { useEffect, useState, useCallback, useRef } from "react";
+import { useEffect, useState, useCallback, useRef, useMemo } from "react";
 import { apiNs } from "../utils/compat";
 import { PropTypes } from "prop-types";
 import { useTemporaryState } from "../utils/hooks";
@@ -29,6 +29,36 @@ const maxScaleLevel = 30;
 const distance = (maxScaleFactor - minScaleFactor) / maxScaleLevel;
 const defaultScaleLevel = 10;
 const baseScanSize = 100;
+// How far (in CSS px) a finger must move before a touch counts as a drag
+// selection rather than a tap.
+const DRAG_THRESHOLD = 10;
+// Where the scanned image settles next to the result card; `min()` keeps it
+// inside a phone-width viewport.
+const RESULT_IMAGE_SIZE = "min(400px, 90vw)";
+
+/**
+ * @param {{x:number, y:number}} center
+ * @param {number} size
+ */
+function squareAround(center, size) {
+  return {
+    x: center.x - size / 2,
+    y: center.y - size / 2,
+    width: size,
+    height: size,
+  };
+}
+
+function isSameRect(a, b) {
+  return (
+    !!a &&
+    !!b &&
+    a.x === b.x &&
+    a.y === b.y &&
+    a.width === b.width &&
+    a.height === b.height
+  );
+}
 
 // Start loading the decoder while the user is still positioning the scan
 // region, so the first scan doesn't wait on the wasm module.
@@ -99,9 +129,16 @@ function Picker({ stage, onScan, onSpotChange, scaleLevel: propsScaleLevel }) {
   const maskRef = useRef(null);
   const pathRef = useRef(null);
 
-  const prevScanSize = useRef(null);
-  const prevMousePositionRef = useRef(null);
+  // The region last drawn/reported; also what stays highlighted while scanning.
+  const lastRectRef = useRef(null);
   const mousePositionRef = useMousePositionRef();
+  // Touch/pen selection: where the finger went down, and the region it has
+  // dragged out (or tapped around). Takes precedence over the mouse position,
+  // which touch screens only update with emulated events.
+  const touchStartRef = useRef(null);
+  const touchRectRef = useRef(null);
+  // The emulated click that follows a touch must not trigger a second scan.
+  const suppressClickRef = useRef(false);
   const animationFrameRef = useRef(null);
 
   useEffect(() => {
@@ -111,6 +148,13 @@ function Picker({ stage, onScan, onSpotChange, scaleLevel: propsScaleLevel }) {
     );
   }, [windowSize]);
 
+  // Each new round of picking starts without the previous touch selection.
+  useEffect(() => {
+    if (stage === "picking") {
+      touchRectRef.current = null;
+    }
+  }, [stage]);
+
   useEffect(() => {
     cancelAnimationFrame(animationFrameRef.current);
     const updateSpotlight = () => {
@@ -119,21 +163,14 @@ function Picker({ stage, onScan, onSpotChange, scaleLevel: propsScaleLevel }) {
         const wh = windowSize.height;
         let pathDef = `M 0 0 L 0 ${wh} L ${ww} ${wh} L ${ww} 0 Z`;
 
-        let rect;
-        if (stage === "picking" && mousePositionRef.current) {
-          rect = {
-            x: mousePositionRef.current.x - scanSize / 2,
-            y: mousePositionRef.current.y - scanSize / 2,
-            width: scanSize,
-            height: scanSize,
-          };
-        } else if (stage === "scanning" && prevMousePositionRef.current) {
-          rect = {
-            x: prevMousePositionRef.current.x - scanSize / 2,
-            y: prevMousePositionRef.current.y - scanSize / 2,
-            width: scanSize,
-            height: scanSize,
-          };
+        let rect = null;
+        if (stage === "picking") {
+          rect =
+            touchRectRef.current ||
+            (mousePositionRef.current &&
+              squareAround(mousePositionRef.current, scanSize));
+        } else if (stage === "scanning") {
+          rect = lastRectRef.current;
         }
 
         if (rect) {
@@ -143,15 +180,9 @@ function Picker({ stage, onScan, onSpotChange, scaleLevel: propsScaleLevel }) {
         pathRef.current.setAttribute("d", pathDef);
 
         if (stage === "picking") {
-          if (
-            mousePositionRef.current !== prevMousePositionRef.current ||
-            prevScanSize.current !== scanSize
-          ) {
-            prevMousePositionRef.current = mousePositionRef.current;
-            prevScanSize.current = scanSize;
-            if (rect) {
-              onSpotChange(rect, scaleLevel);
-            }
+          if (rect && !isSameRect(rect, lastRectRef.current)) {
+            lastRectRef.current = rect;
+            onSpotChange(rect, scaleLevel);
           }
 
           animationFrameRef.current = requestAnimationFrame(updateSpotlight);
@@ -189,9 +220,60 @@ function Picker({ stage, onScan, onSpotChange, scaleLevel: propsScaleLevel }) {
 
   const handleClick = (e) => {
     e.stopPropagation();
+    if (suppressClickRef.current) {
+      suppressClickRef.current = false;
+      return;
+    }
     if (stage === "picking") {
       onScan();
     }
+  };
+
+  const handlePointerDown = (e) => {
+    if (e.pointerType === "mouse" || stage !== "picking") {
+      return;
+    }
+    e.currentTarget.setPointerCapture(e.pointerId);
+    touchStartRef.current = { x: e.clientX, y: e.clientY };
+    touchRectRef.current = null;
+  };
+
+  const handlePointerMove = (e) => {
+    const start = touchStartRef.current;
+    if (!start) {
+      return;
+    }
+    const width = Math.abs(e.clientX - start.x);
+    const height = Math.abs(e.clientY - start.y);
+    if (!touchRectRef.current && Math.max(width, height) < DRAG_THRESHOLD) {
+      return;
+    }
+    touchRectRef.current = {
+      x: Math.min(start.x, e.clientX),
+      y: Math.min(start.y, e.clientY),
+      width,
+      height,
+    };
+  };
+
+  const handlePointerUp = () => {
+    const start = touchStartRef.current;
+    if (!start) {
+      return;
+    }
+    touchStartRef.current = null;
+    suppressClickRef.current = true;
+    // A tap (no real drag) scans a default-sized square around the finger.
+    const rect = touchRectRef.current || squareAround(start, scanSize);
+    touchRectRef.current = rect;
+    lastRectRef.current = rect;
+    onSpotChange(rect, scaleLevel);
+    onScan(rect);
+  };
+
+  const handlePointerCancel = () => {
+    touchStartRef.current = null;
+    touchRectRef.current = null;
   };
 
   return (
@@ -203,6 +285,10 @@ function Picker({ stage, onScan, onSpotChange, scaleLevel: propsScaleLevel }) {
       xmlns="http://www.w3.org/2000/svg"
       onWheel={handleWheel}
       onClick={handleClick}
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUp}
+      onPointerCancel={handlePointerCancel}
       ref={maskRef}
       style={{
         cursor:
@@ -258,6 +344,11 @@ function Scanner({
   const [resultVisible, setResultVisible] = useState(false);
   const [spotRect, setSpotRect] = useState({ x: 0, y: 0, width: 0, height: 0 });
   const [inputImageSize, setInputImageSize] = useState(null);
+  // Phones and tablets: show touch gestures instead of mouse/keyboard hints.
+  const isTouch = useMemo(
+    () => window.matchMedia("(pointer: coarse)").matches,
+    []
+  );
   const scaleLevel = useRef(propsScaleLevel);
   const scroll = useRef(propsScroll);
 
@@ -368,16 +459,20 @@ function Scanner({
     }
   }, []);
 
-  const scan = useCallback(async () => {
-    if (!spotRect.width || !spotRect.height) {
+  /**
+   * @param {{x,y,width,height}} [pickedRect] region to scan; a touch selection
+   *   passes it directly because the spot state hasn't re-rendered yet.
+   */
+  const scan = useCallback(async (pickedRect) => {
+    const spot = pickedRect || spotRect;
+    if (!spot.width || !spot.height) {
       return;
     }
     setStage("scanning");
-    const x = Math.max(spotRect.x, 0);
-    const y = Math.max(spotRect.y, 0);
-    const width = Math.min(spotRect.x + spotRect.width, window.innerWidth) - x;
-    const height =
-      Math.min(spotRect.y + spotRect.height, window.innerHeight) - y;
+    const x = Math.max(spot.x, 0);
+    const y = Math.max(spot.y, 0);
+    const width = Math.min(spot.x + spot.width, window.innerWidth) - x;
+    const height = Math.min(spot.y + spot.height, window.innerHeight) - y;
 
     const rect = { x, y, width, height };
     let nextStage = "result";
@@ -439,8 +534,8 @@ function Scanner({
             setImagePosition({
               top: "350px",
               left: "50%",
-              width: "400px",
-              height: "400px",
+              width: RESULT_IMAGE_SIZE,
+              height: RESULT_IMAGE_SIZE,
             });
           }, 100);
           setTimer(() => {
@@ -455,10 +550,7 @@ function Scanner({
     newScan,
     options.openUrlMode,
     setTimer,
-    spotRect.height,
-    spotRect.width,
-    spotRect.x,
-    spotRect.y,
+    spotRect,
   ]);
 
   useEffect(() => {
@@ -499,7 +591,10 @@ function Scanner({
           src="../icons/zenqr.svg"
           title={T("extension_name")}
         />
-        {stage === "picking" && (
+        {stage === "picking" && isTouch && (
+          <span>{TT("scan_region_picker_tips_touch")}</span>
+        )}
+        {stage === "picking" && !isTouch && (
           <>
             <kbd>
               <img
@@ -511,7 +606,7 @@ function Scanner({
             <span>{TT("scan_region_picker_tips_adjust_size")}</span>
           </>
         )}
-        {stage === "picking" && (
+        {stage === "picking" && !isTouch && (
           <>
             <kbd>
               <img
@@ -523,13 +618,13 @@ function Scanner({
             <span>{TT("scan_region_picker_tips_scan")}</span>
           </>
         )}
-        {stage === "result" && (
+        {stage === "result" && !isTouch && (
           <>
             <kbd>R</kbd>
             <span>{TT("scan_region_picker_tips_rescan")}</span>
           </>
         )}
-        {(stage === "picking" || stage === "result") && (
+        {(stage === "picking" || stage === "result") && !isTouch && (
           <>
             <kbd>{TT("scan_region_picker_tips_esc")}</kbd>
             <span>{TT("scan_region_picker_tips_exit")}</span>
