@@ -183,65 +183,72 @@ const menuItems = {
   },
 };
 
-apiNs.runtime.onInstalled.addListener(() => {
-  // Remove all existing context menus for this extension first to ensure a clean state
-  menusApi.removeAll(() => {
-    if (apiNs.runtime.lastError) {
-      // Log error but continue, as this is not always critical
-      console.warn(
-        "Error removing context menus:",
-        apiNs.runtime.lastError.message
-      );
-    }
-  });
-
-  for (const [id, menuItem] of Object.entries(menuItems)) {
-    const createProperties = { ...menuItem, id };
-    delete createProperties.onclick;
-    menusApi.create(createProperties, () => {
+// Firefox for Android has neither context menus nor keyboard shortcuts, so
+// both APIs are missing there. Touching them unguarded would throw and take
+// the whole background script down with it.
+if (menusApi) {
+  apiNs.runtime.onInstalled.addListener(() => {
+    // Remove all existing context menus for this extension first to ensure a clean state
+    menusApi.removeAll(() => {
       if (apiNs.runtime.lastError) {
-        console.error(
-          `Error creating context menu item ${id}:`,
+        // Log error but continue, as this is not always critical
+        console.warn(
+          "Error removing context menus:",
           apiNs.runtime.lastError.message
         );
       }
     });
-  }
-});
 
-menusApi.onClicked.addListener((info, tab) => {
-  // info: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus/OnClickData
-  // tab: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab
-  const menuItem = menuItems[info.menuItemId];
-  if (menuItem && typeof menuItem.onclick === "function") {
-    menuItem.onclick(info, tab);
-  } else {
-    console.warn(
-      "No onclick handler or menu item definition found for:",
-      info.menuItemId
-    );
-  }
-});
+    for (const [id, menuItem] of Object.entries(menuItems)) {
+      const createProperties = { ...menuItem, id };
+      delete createProperties.onclick;
+      menusApi.create(createProperties, () => {
+        if (apiNs.runtime.lastError) {
+          console.error(
+            `Error creating context menu item ${id}:`,
+            apiNs.runtime.lastError.message
+          );
+        }
+      });
+    }
+  });
 
-apiNs.commands.onCommand.addListener((command) => {
-  switch (command) {
-    case "select-region-to-scan":
-      openPickerWithOptions({ openUrlMode: "NO_OPEN" });
-      break;
-    case "select-region-to-scan-open":
-      openPickerWithOptions({ openUrlMode: "OPEN" });
-      break;
-    case "select-region-to-scan-open-new-bg-tab":
-      openPickerWithOptions({ openUrlMode: "OPEN_NEW_BG_TAB" });
-      break;
-    case "select-region-to-scan-open-new-fg-tab":
-      openPickerWithOptions({ openUrlMode: "OPEN_NEW_FG_TAB" });
-      break;
-    case "scan-with-camera":
-      openPopupWithOptions({ action: "POPUP_DECODE_CAMERA" });
-      break;
-  }
-});
+  menusApi.onClicked.addListener((info, tab) => {
+    // info: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus/OnClickData
+    // tab: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab
+    const menuItem = menuItems[info.menuItemId];
+    if (menuItem && typeof menuItem.onclick === "function") {
+      menuItem.onclick(info, tab);
+    } else {
+      console.warn(
+        "No onclick handler or menu item definition found for:",
+        info.menuItemId
+      );
+    }
+  });
+}
+
+if (apiNs.commands?.onCommand) {
+  apiNs.commands.onCommand.addListener((command) => {
+    switch (command) {
+      case "select-region-to-scan":
+        openPickerWithOptions({ openUrlMode: "NO_OPEN" });
+        break;
+      case "select-region-to-scan-open":
+        openPickerWithOptions({ openUrlMode: "OPEN" });
+        break;
+      case "select-region-to-scan-open-new-bg-tab":
+        openPickerWithOptions({ openUrlMode: "OPEN_NEW_BG_TAB" });
+        break;
+      case "select-region-to-scan-open-new-fg-tab":
+        openPickerWithOptions({ openUrlMode: "OPEN_NEW_FG_TAB" });
+        break;
+      case "scan-with-camera":
+        openPopupWithOptions({ action: "POPUP_DECODE_CAMERA" });
+        break;
+    }
+  });
+}
 
 /**
  * @param {(secrets:string[]) => {secrets:string[], result:any}} update

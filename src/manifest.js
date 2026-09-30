@@ -36,6 +36,11 @@ const manifest = {
             required: ["none"],
           },
         },
+        // Firefox for Android: context menus and keyboard shortcuts are
+        // unavailable there, so the background guards both APIs at runtime.
+        gecko_android: {
+          strict_min_version: "128.0",
+        },
       },
     }
     : {

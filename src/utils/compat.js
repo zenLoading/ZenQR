@@ -64,12 +64,15 @@ export const storage =
 export const openPopup = (options) => {
   // Between Chrome 118 and Chrome 126 (October 2023 - June 2024), `action.openPopup()` is only available to policy installed extensions
   // https://developer.chrome.com/docs/extensions/reference/api/action#method-openPopup
-  try {
-    return apiNs.action.openPopup(options);
-  } catch {
-    return apiNs.tabs.create({
+  // Firefox for Android has no `action.openPopup()` at all.
+  const openInTab = () =>
+    apiNs.tabs.create({
       url: apiNs.runtime.getURL("/pages/popup.html"),
     });
+  try {
+    return Promise.resolve(apiNs.action.openPopup(options)).catch(openInTab);
+  } catch {
+    return openInTab();
   }
 };
 
@@ -112,12 +115,19 @@ export const clipboard =
     ? {
         copyPng: (canvas) => {
           // https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/clipboard/setImageData
-          return new Promise((resolve) => {
+          // Firefox for Android lacks `clipboard.setImageData`, so fall back to
+          // the async Clipboard API there.
+          return new Promise((resolve, reject) => {
             canvas.toBlob((blob) => {
-              blob
-                .arrayBuffer()
-                .then((buf) => apiNs.clipboard.setImageData(buf, "png"))
-                .then(resolve);
+              const write =
+                typeof apiNs.clipboard?.setImageData === "function"
+                  ? blob
+                    .arrayBuffer()
+                    .then((buf) => apiNs.clipboard.setImageData(buf, "png"))
+                  : navigator.clipboard.write([
+                    new ClipboardItem({ "image/png": blob }),
+                  ]);
+              write.then(resolve, reject);
             }, "image/png");
           });
         },
@@ -137,13 +147,13 @@ export const clipboard =
 
 export const canOpenShortcutSettings =
   ZENQR_BROWSER === "firefox"
-    ? () => typeof apiNs.commands.openShortcutSettings === "function"
+    ? () => typeof apiNs.commands?.openShortcutSettings === "function"
     : () => true;
 
 export const openShortcutSettings =
   ZENQR_BROWSER === "firefox"
     ? async () => {
-        if (typeof apiNs.commands.openShortcutSettings === "function") {
+        if (typeof apiNs.commands?.openShortcutSettings === "function") {
           return apiNs.commands.openShortcutSettings();
         }
       }

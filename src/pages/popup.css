@@ -97,6 +97,20 @@ body {
   animation: qrc-fade-up var(--duration-normal) var(--ease-out-expo) both;
 }
 
+/* Firefox for Android shows the popup full-width on the phone screen instead
+   of as a fixed-size desktop panel, so fill whatever space it gets. */
+@media (max-width: 440px) {
+  body,
+  .container {
+    width: 100vw;
+    height: 100dvh;
+  }
+
+  .main {
+    max-height: none;
+  }
+}
+
 .main .source {
   width: 100%;
   min-height: 6em;

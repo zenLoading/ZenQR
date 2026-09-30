@@ -1,5 +1,6 @@
 .batch-generator .box {
   width: 60em;
+  max-width: 100%;
 }
 
 .batch-generator-instructions {
