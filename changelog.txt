@@ -7,6 +7,8 @@
 - Context-menu actions and region scanning no longer lose their state when the browser suspends the background script.
 - Region scanning decodes in the scan overlay, so the first scan after the background wakes up is faster.
 - Portuguese translation now uses the pt_BR locale code, so Chrome recognizes it.
+- Region scanning no longer throws an error on pages the browser doesn't allow extensions to script (such as chrome:// pages).
+- The Options button in the generator toolbar now lines up with Batch and Template.
 
 ## [v1.0.1] - 2026-09-23
 
